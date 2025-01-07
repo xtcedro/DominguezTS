@@ -180,6 +180,52 @@ blockquote {
     max-width: 700px;
 }
 
+/* Hero Contact Section */
+.hero-contact {
+    background: linear-gradient(135deg, #0000FF, #1A1AFF); /* Blue gradient background */
+    color: #FFD700; /* Gold text */
+    text-align: center; /* Center-align content */
+    padding: 4rem 2rem; /* Add spacing for height */
+    border-bottom: 4px solid #FFD700; /* Gold border for separation */
+    box-shadow: 0 4px 20px rgba(0, 0, 255, 0.8); /* Subtle blue shadow for depth */
+}
+
+.hero-contact h1 {
+    font-size: 3rem; /* Large font size for the title */
+    margin-bottom: 1.5rem; /* Spacing below the title */
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Transparent text with gradient */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Add spacing between letters */
+}
+
+.hero-contact p {
+    font-size: 1.2rem; /* Readable font size for text */
+    margin-bottom: 2rem; /* Add spacing below the paragraph */
+    line-height: 1.8; /* Improve readability */
+    color: #FFD700; /* Gold text */
+}
+
+.hero-contact a {
+    display: inline-block; /* Make link behave like a button */
+    margin-top: 1rem; /* Add spacing above the button */
+    padding: 1rem 2rem; /* Add padding for the button */
+    background-color: #FFD700; /* Gold button background */
+    color: #0000FF; /* Blue text */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-contact a:hover {
+    background-color: #FFCC33; /* Lighter gold on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
 /* Adjusted .title-banner Styling */
 .title-banner {
   width: 100vw;
