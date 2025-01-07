@@ -3,26 +3,24 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0000FF; /* Blue background */
-    color: #FFD700; /* Gold text for readability */
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text for readability */
     line-height: 1.6;
     overflow-x: hidden;
 }
 
 /* Gold Gradient Titles */
 h1, h2, h3 {
-    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     text-transform: uppercase;
-    border: 2px solid #FFD700; /* Gold border for titles */
-    padding: 10px;
 }
 
 /* Header Titles */
 .header-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1rem;
     background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
@@ -30,45 +28,46 @@ h1, h2, h3 {
     -webkit-text-fill-color: transparent; /* Transparent text with gradient */
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 2px;
-    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.6); /* Subtle black shadow for depth */
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle black shadow for depth */
 }
+
 
 /* Navigation Bar */
 nav {
-    background-color: #0000FF; /* Blue background */
+    background-color: #000000; /* Black for nav background */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     flex-wrap: wrap;
     position: relative;
-    border-bottom: 2px solid #FFD700; /* Gold border for bottom */
+    border-bottom: 2px solid #FFD700; /* Gold border at the bottom */
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.4); /* Subtle gold shadow for depth */
 }
 
 nav a {
-    color: #FFD700; /* Gold text */
-    text-decoration: none;
+    color: #FFD700; /* Gold text for links */
+    text-decoration: none; /* Removes underline */
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
     transition: color 0.3s ease, background-color 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    padding: 0.5rem 1rem; /* Padding for better spacing */
+    border-radius: 5px; /* Smooth edges */
 }
 
 nav a:hover {
-    color: #0000FF; /* Blue text on hover */
-    background-color: #FFD700; /* Gold background */
+    color: #000000; /* Black text on hover */
+    background-color: #FFD700; /* Gold background on hover */
 }
 
-/* Navbar Container */
 .navbar {
     display: flex;
     justify-content: center; /* Center-align the links */
     align-items: center;
     gap: 2rem; /* Space between links */
-    background-color: #0000FF; /* Blue background */
+    background-color: #000000; /* Black background */
     padding: 1rem 0;
     border-bottom: 2px solid #FFD700; /* Gold border at the bottom */
     position: relative; /* For any potential positioning tweaks */
@@ -90,7 +89,7 @@ nav a:hover {
 
 /* Hover Effect for Links */
 .navbar a:hover {
-    color: #0000FF; /* Blue text on hover */
+    color: #000000; /* Black text on hover */
     background-color: #FFD700; /* Gold background on hover */
 }
 
@@ -103,11 +102,10 @@ nav a:hover {
 
 /* Hero Section */
 .hero-section {
-    background-color: #0000FF; /* Blue background */
-    color: #FFD700; /* Gold text */
+    background-color: #000000; /* Black for hero background */
+    color: #FFFFFF; /* White text */
     padding: 3rem 2rem;
     text-align: center;
-    border-bottom: 2px solid #FFD700; /* Gold border for separation */
 }
 
 .hero-section p {
@@ -116,17 +114,29 @@ nav a:hover {
     color: #FFD700; /* Gold text for paragraphs */
 }
 
-/* Hero Title */
 .hero-title {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+/* Blockquote Styling */
+blockquote {
+    font-style: italic;
+    background-color: #1C1C1C; /* Dark gray/black background */
+    padding: 1.5rem;
+    border-left: 5px solid #FFD700; /* Gold border */
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 2rem auto;
+    color: #FFFFFF; /* White text */
+    max-width: 700px;
 }
 
 /* Hero Quote Styling */
@@ -134,14 +144,14 @@ nav a:hover {
     font-style: italic;
     font-size: 1.5rem; /* Slightly larger font for emphasis */
     color: #FFD700; /* Gold text */
-    background-color: rgba(0, 0, 255, 0.6); /* Semi-transparent blue background */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
     padding: 1.5rem;
     border-left: 5px solid #FFD700; /* Gold border on the left */
     border-radius: 5px;
     max-width: 800px;
     margin: 2rem auto;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 255, 0.4); /* Subtle blue shadow for depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
 }
 
 .hero-quote em {
@@ -165,65 +175,6 @@ nav a:hover {
     color: #FFD700; /* Gold color */
     margin-left: 5px;
     vertical-align: bottom;
-}
-
-/* Blockquote Styling */
-blockquote {
-    font-style: italic;
-    background-color: #000080; /* Dark blue background */
-    padding: 1.5rem;
-    border-left: 5px solid #FFD700; /* Gold border */
-    border-radius: 5px;
-    font-size: 1.1rem;
-    margin: 2rem auto;
-    color: #FFD700; /* Gold text */
-    max-width: 700px;
-}
-
-/* Hero Contact Section */
-.hero-contact {
-    background: linear-gradient(135deg, #0000FF, #1A1AFF); /* Blue gradient background */
-    color: #FFD700; /* Gold text */
-    text-align: center; /* Center-align content */
-    padding: 4rem 2rem; /* Add spacing for height */
-    border-bottom: 4px solid #FFD700; /* Gold border for separation */
-    box-shadow: 0 4px 20px rgba(0, 0, 255, 0.8); /* Subtle blue shadow for depth */
-}
-
-.hero-contact h1 {
-    font-size: 3rem; /* Large font size for the title */
-    margin-bottom: 1.5rem; /* Spacing below the title */
-    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Transparent text with gradient */
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px; /* Add spacing between letters */
-}
-
-.hero-contact p {
-    font-size: 1.2rem; /* Readable font size for text */
-    margin-bottom: 2rem; /* Add spacing below the paragraph */
-    line-height: 1.8; /* Improve readability */
-    color: #FFD700; /* Gold text */
-}
-
-.hero-contact a {
-    display: inline-block; /* Make link behave like a button */
-    margin-top: 1rem; /* Add spacing above the button */
-    padding: 1rem 2rem; /* Add padding for the button */
-    background-color: #FFD700; /* Gold button background */
-    color: #0000FF; /* Blue text */
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.hero-contact a:hover {
-    background-color: #FFCC33; /* Lighter gold on hover */
-    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Adjusted .title-banner Styling */
@@ -251,33 +202,30 @@ html {
  overflow-x: hidden;
 }
 
+
 /* About Section */
 .about-section {
-    background: linear-gradient(135deg, #0000FF, #1A1AFF); /* Blue to dark blue gradient */
-    color: #FFD700; /* Gold text */
+    background: linear-gradient(135deg, #000000, #1C1C1C); /* Black gradient */
+    color: #FFFFFF; /* White text */
     padding: 3rem 2rem;
     text-align: center;
     border: 4px solid #FFD700; /* Gold border */
-    box-shadow: 0 4px 15px rgba(0, 0, 255, 0.8); /* Blue shadow for depth */
-    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Slight shadow */
+    border-radius: 10px;
     margin: 2rem auto;
-    max-width: 900px; /* Center content */
+    max-width: 900px;
 }
 
 .about-section h2 {
-    font-size: 2rem; /* Slightly larger for emphasis */
-    margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Transparent background with gradient */
-    text-transform: uppercase; /* Uniform title styling */
-    letter-spacing: 1.2px; /* Enhance readability */
+    font-size: 1.8rem;
+    color: #FFD700; /* Gold for titles */
+    margin-bottom: 1rem;
 }
 
 .about-section p {
-    font-size: 1.1rem; /* Slightly larger for better readability */
-    line-height: 1.8; /* Improved spacing for readability */
-    margin-bottom: 1rem; /* Add spacing between paragraphs */
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
 }
 
 .about-section a {
@@ -288,185 +236,170 @@ html {
 }
 
 .about-section a:hover {
-    color: #FFCC33; /* Lighter gold on hover */
-}
-
-/* Content Section */
-.content-section {
-    background: linear-gradient(135deg, #0000FF, #1A1AFF); /* Blue to dark blue gradient */
-    color: #FFD700; /* Gold text */
-    padding: 3rem 2rem;
-    margin: 2rem auto;
-    max-width: 1200px;
-    border: 4px solid #FFD700; /* Gold border */
-    border-radius: 10px; /* Smooth corners */
-    box-shadow: 0 6px 25px rgba(0, 0, 255, 0.8); /* Blue shadow for prominence */
-    text-align: center;
-}
-
-.content-section h2 {
-    font-size: 2.2rem; /* Slightly larger for emphasis */
-    margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Transparent text with gradient */
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.5px; /* Enhance readability */
-    text-shadow: 0 4px 8px rgba(0, 0, 255, 0.7); /* Subtle text shadow for depth */
+    color: #D4AF37; /* Lighter gold on hover */
 }
 
 /* Call to Action Section */
 .call-to-action-section {
-    background: linear-gradient(135deg, #0000FF, #1A1AFF); /* Blue to dark blue gradient */
-    color: #FFD700; /* Gold text */
+    background: linear-gradient(135deg, #000000, #1C1C1C); /* Black gradient */
+    color: #FFFFFF; /* White text */
     padding: 3rem 2rem;
     text-align: center;
     border-top: 4px solid #FFD700; /* Gold border */
-    border-radius: 10px; /* Smooth corners */
+    border-radius: 10px;
     margin: 2rem auto;
     max-width: 900px;
-    box-shadow: 0 4px 20px rgba(0, 0, 255, 0.8); /* Deeper blue shadow for depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Slight shadow */
 }
 
 .call-to-action-section h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Transparent text with gradient */
-    text-transform: uppercase; /* Uniform title styling */
-    letter-spacing: 1.5px; /* Enhance readability */
+    -webkit-text-fill-color: transparent;
 }
 
 .call-to-action-section p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    line-height: 1.8; /* Improved spacing */
-    color: #FFD700; /* Gold text */
+    line-height: 1.8;
+    color: #FFFFFF; /* White text */
 }
 
 .call-to-action-section strong {
     color: #FFD700; /* Gold for emphasis */
 }
 
+.call-to-action-section .cta-button {
+    background-color: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.call-to-action-section .cta-button:hover {
+    background-color: #D4AF37; /* Darker gold on hover */
+    transform: scale(1.05);
+}
+
 /* Call-to-Action Button */
-.call-to-action-section .cta-button,
 .cta-button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: #FFD700; /* Gold button */
-    color: #0000FF; /* Blue text */
+    color: #000000; /* Black text */
     font-weight: bold;
-    text-transform: uppercase;
     text-decoration: none;
-    border-radius: 5px; /* Smooth corners */
+    border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.call-to-action-section .cta-button:hover,
 .cta-button:hover {
-    background-color: #FFCC33; /* Lighter gold on hover */
-    transform: scale(1.05); /* Slight zoom effect */
-}
-
-/* Services Section */
-.services-section {
-    padding: 3rem 2rem;
-    text-align: center;
-    background-color: #0000FF; /* Blue background */
-    color: #FFD700; /* Gold text */
-}
-
-.services-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.service-item {
-    background: #0000FF; /* Blue background */
-    padding: 1.5rem;
-    border: 2px solid #FFD700; /* Gold border */
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.5); /* Blue shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #FFD700; /* Gold text */
-}
-
-.service-item:hover {
+    background-color: #D4AF37; /* Darker gold on hover */
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 255, 0.7); /* Stronger blue shadow on hover */
 }
 
-/* Gradient Text for Titles */
-.service-item h3 {
-    background: linear-gradient(135deg, #FFD700, #FFAA00); /* Gold gradient */
+/* Content Section */
+.content-section {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-/* Project Gallery Section */
-.projects-gallery {
+/* Media Container */
+.media-container {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #0000FF; /* Blue background for gallery */
-    border: 2px solid #FFD700; /* Gold border */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5); /* Blue shadow for depth */
+    justify-content: center; /* Center-align items */
+    gap: 2rem; /* Space between items */
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    margin: 2rem 0;
 }
 
-.projects-gallery figure {
+.media-container figure {
     max-width: 300px;
     text-align: center;
-    background-color: #0000FF; /* Blue background for figure */
-    border-radius: 8px;
-    overflow: hidden;
-    border: 2px solid #FFD700; /* Gold border for each figure */
+}
+
+.media-container img {
+    width: 100%; /* Responsive image */
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projects-gallery figure:hover {
+.media-container img:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 255, 0.7); /* Stronger blue shadow on hover */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5); /* Gold shadow */
 }
 
-.projects-gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-bottom: 2px solid #FFD700; /* Gold border below the image */
-}
-
-.projects-gallery figcaption {
-    padding: 0.5rem;
+.media-container figcaption {
+    margin-top: 0.5rem;
     font-size: 1rem;
-    color: #FFD700; /* Gold text for captions */
-    background: linear-gradient(135deg, #0000FF, #1A1AFF); /* Subtle blue gradient */
+    color: #FFD700; /* Gold text */
     font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 255, 0.5); /* Inner shadow for depth */
+}
+
+/* Video Container */
+.video-container {
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.video-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #FFD700; /* Gold text */
+    font-weight: bold;
+}
+
+.video-container video {
+    width: 100%; /* Responsive video */
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+.video-container figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #FFFFFF; /* White text */
+    font-style: italic;
 }
 
 /* Why Choose Us Section */
 .why-choose-us {
-    background-color: #0000FF; /* Blue background */
-    color: #FFD700; /* Gold text */
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
     padding: 3rem 2rem;
     text-align: center;
     border: 4px solid #FFD700; /* Gold border */
     border-radius: 10px;
     margin: 2rem auto;
     max-width: 1200px;
-    box-shadow: 0 4px 20px rgba(0, 0, 255, 0.8); /* Deeper blue shadow for prominence */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
 }
 
 .why-choose-us h2 {
@@ -474,10 +407,10 @@ html {
     margin-bottom: 1.5rem;
     background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Transparent background for gradient text */
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1.5px; /* Enhance readability */
+    letter-spacing: 1px;
 }
 
 .why-choose-us p {
@@ -500,7 +433,7 @@ html {
     font-size: 1.2rem;
     padding-left: 2.5rem;
     position: relative;
-    color: #FFD700; /* Gold text */
+    color: #FFFFFF; /* White text */
     font-weight: bold;
 }
 
@@ -515,7 +448,7 @@ html {
 
 .why-choose-us blockquote {
     font-style: italic;
-    background-color: #1A1AFF; /* Dark blue background */
+    background-color: #333333; /* Dark gray blockquote background */
     color: #FFD700; /* Gold text */
     padding: 1.5rem;
     margin: 2rem auto;
@@ -530,7 +463,7 @@ html {
     margin-top: 2rem;
     padding: 0.75rem 1.5rem;
     background-color: #FFD700; /* Gold button */
-    color: #0000FF; /* Blue text */
+    color: #000000; /* Black text */
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
@@ -539,21 +472,101 @@ html {
 }
 
 .why-choose-us .cta-button:hover {
-    background-color: #FFCC33; /* Lighter gold on hover */
+    background-color: #D4AF37; /* Lighter gold on hover */
+    transform: scale(1.05);
+}
+
+/* Language Modal */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden; /* Prevents scrolling when the modal is open */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #000000; /* Pure black background */
+    color: #FFFFFF; /* White text */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4); /* Subtle gold shadow */
+    max-width: 400px;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+/* Modal Title */
+.modal-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Transparent text with gradient */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Language Options */
+.language-options {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Language Buttons */
+.language-options button {
+    background-color: #1C1C1C; /* Dark gray for buttons */
+    color: #FFD700; /* Gold text */
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between text and flag */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.4); /* Subtle gold shadow */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hover Effect for Buttons */
+.language-options button:hover {
+    background-color: #FFD700; /* Gold hover effect */
+    color: #000000; /* Black text on hover */
     transform: scale(1.05); /* Slight zoom */
 }
 
-/* Legal Links */
+/* Flag Icon */
+.flag-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for flags */
+    border: 2px solid #FFD700; /* Gold border around flag */
+}
+
 .legal-links {
     list-style-type: none; /* Removes default bullet points */
     padding: 0; /* Removes default padding */
     margin: 0; /* Removes default margin */
     display: flex; /* Aligns items horizontally */
     justify-content: center; /* Centers items */
-    gap: 1.5rem; /* Adds spacing between items */
+    gap: 20px; /* Adds spacing between items */
     font-size: 1rem; /* Sets text size to be consistent with the theme */
     color: #FFD700; /* Gold text color for items */
-    border-top: 2px solid #FFD700; /* Gold border at the top for separation */
 }
 
 .legal-links li {
@@ -568,114 +581,137 @@ html {
 }
 
 .legal-links a:hover {
-    color: #0000FF; /* Blue text color on hover */
+    color: #FFFFFF; /* White text color on hover */
     text-decoration: underline; /* Adds underline on hover */
 }
 
 /* Footer */
 footer {
-    background-color: #0000FF; /* Blue background */
-    color: #FFD700; /* Gold text for footer */
-    text-align: center; /* Centers text */
-    padding: 1.5rem; /* Adds padding for spacing */
-    margin-top: 2rem; /* Adds margin at the top */
-    border-top: 4px solid #FFD700; /* Gold border on top */
-    box-shadow: 0 -4px 15px rgba(0, 0, 255, 0.5); /* Subtle blue shadow above */
-    font-size: 0.9rem; /* Slightly smaller font for footer text */
+    background-color: #000000; /* Pure black background */
+    color: #FFD700; /* Gold text for links and text */
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 2px solid #FFD700; /* Optional: Gold border at the top */
+    box-shadow: 0 -2px 10px rgba(255, 215, 0, 0.4); /* Optional: Subtle gold shadow above */
+    margin-top: 2rem;
 }
 
-/* Footer Hover Effect */
 footer a {
-    color: #FFD700; /* Gold text for footer links */
-    text-decoration: none; /* Removes underline */
+    color: #FFD700; /* Gold text for links */
+    text-decoration: none;
+    font-weight: bold;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 footer a:hover {
-    color: #0000FF; /* Blue text on hover */
-    text-decoration: underline; /* Underline on hover */
+    color: #FFFFFF; /* White on hover */
+    text-decoration: underline;
 }
 
 
+/* Mobile View Styling (max-width: 767px) */
 @media (max-width: 480px) {
     body {
         font-size: 14px;
         margin: 0;
         padding: 0;
-        line-height: 1.4; /* Adjust for better readability */
     }
 
-    .navbar {
-        flex-direction: column;
+    .desktop-nav {
+        flex-direction: column; /* Stack navigation links vertically */
         align-items: center;
-        gap: 1rem; /* Space between links */
         padding: 1rem 0;
+        gap: 1rem; /* Space between links */
     }
 
-    .navbar a {
-        font-size: 0.85rem; /* Smaller text */
-        padding: 0.5rem; /* Adjust padding */
-        text-align: center; /* Center links */
+    .desktop-nav a {
+        font-size: 0.85rem; /* Smaller font size for mobile */
+        width: 100%; /* Full-width links */
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+        text-align: center; /* Center align text */
+    }
+
+    .desktop-nav a.active {
+        border-bottom: none; /* Remove underline on active link for mobile */
+    }
+
+    .hero-section {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
     }
 
     .hero-title {
-        font-size: 1.8rem; /* Reduce title size */
+        font-size: 1.8rem; /* Resize title for better visibility */
+        margin-bottom: 1rem;
     }
 
     .hero-section p {
-        font-size: 0.9rem; /* Adjust paragraph size */
+        font-size: 1rem;
         line-height: 1.5;
+        margin-bottom: 1.5rem;
     }
 
     .cta-button {
-        font-size: 0.9rem;
-        padding: 0.6rem 1rem; /* Adjust button size */
+        font-size: 1rem;
+        padding: 0.8rem 1rem; /* Adjust button size for readability */
     }
 
-    .legal-links {
-        flex-direction: column; /* Stack links */
-        gap: 10px; /* Space between links */
-        text-align: center;
-        font-size: 0.8rem; /* Smaller text */
-    }
-
-    .legal-links a {
-        font-size: 0.85rem;
-        text-align: center;
+    .title-banner {
+        padding: 1rem 0; /* Add spacing for mobile */
+        background-color: #f8f8f8; /* Optional: light background for contrast */
     }
 
     .title-banner img {
-        max-width: 100%; /* Ensure image fits */
+        max-width: 100%; /* Ensure full responsiveness */
         height: auto;
-    }
-
-    .media-container {
-        flex-direction: column;
-        gap: 1rem;
+        margin: 0 auto; /* Center the image */
     }
 
     .hero-contact {
-        padding: 1rem; /* Reduce padding */
-        font-size: 0.9rem; /* Adjust size */
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+        margin: 1.5rem auto; /* Adjust margin for spacing */
+        font-size: 0.9rem; /* Adjust font size */
     }
+
+    .hero-contact h2 {
+        font-size: 1.5rem; /* Slightly smaller heading */
+    }
+
+    .hero-contact p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+
+    .hero-contact a {
+        font-size: 1rem; /* Consistent link size */
+    }
+
+    .hero-contact {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+        margin: 1rem auto; /* Center and reduce margin */
+        max-width: 90%; /* Use most of the screen width */
+    }
+
 }
 
+/* Tablet View Adjustments (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        font-size: 16px; /* Slightly larger text */
+    body { font-size: 22px; /* Adjust base font size */ }
+
+    .desktop-nav {
+        justify-content: space-between; /* Distribute navigation links evenly */
+        padding: 1rem 1.5rem;
     }
 
-    .navbar {
-        justify-content: space-evenly;
-        padding: 1rem 2rem;
+    .desktop-nav a {
+        font-size: 0.9rem; /* Slightly larger font size for tablets */
+        padding: 0.5rem 1rem;
     }
 
-    .navbar a {
-        font-size: 1rem; /* Standard font size */
+    .desktop-nav a.active {
+        border-bottom: 2px solid #FFD700; /* Retain underline for tablets */
     }
 
     .hero-title {
-        font-size: 2rem; /* Adjust title size */
+        font-size: 2.2rem; /* Adjust title size for tablets */
     }
 
     .cta-button {
@@ -683,32 +719,39 @@ footer a:hover {
         padding: 0.8rem 1.2rem; /* Adjust button size */
     }
 
-    .hero-section p {
-        font-size: 1rem; /* Standard text size */
-        line-height: 1.6;
-    }
-
-    .legal-links {
-        flex-wrap: wrap; /* Wrap links for space */
-        gap: 0.5rem; /* Adjust gap */
-        font-size: 0.9rem; /* Slightly smaller size */
-    }
-
-    .legal-links a {
-        font-size: 0.9rem;
+    .title-banner {
+        padding: 0; /* Moderate padding for tablets */
     }
 
     .title-banner img {
-        max-width: 90%; /* Slightly smaller */
-    }
-
-    .media-container {
-        flex-wrap: wrap;
-        gap: 1.5rem; /* Adjust spacing */
+        width: 100vw; /* Slightly reduce image size */
     }
 
     .hero-contact {
-        padding: 1.5rem 1rem; /* Adjust padding */
-        font-size: 1rem;
+        padding: 2rem; /* Standard padding for tablets */
+        margin: 2rem auto;
+        font-size: 1rem; /* Standard paragraph size */
+    }
+
+    .hero-contact h2 {
+        font-size: 1.7rem; /* Adjust heading size */
+    }
+
+    .hero-contact p {
+        font-size: 1rem; /* Standard paragraph size */
+    }
+
+    .hero-contact a {
+        font-size: 1rem; /* Consistent link size */
+    }
+
+    .legal-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .legal-links a {
+        font-size: 12px;
     }
 }
