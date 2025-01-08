@@ -32,6 +32,84 @@ h1, h2, h3 {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle black shadow for depth */
 }
 
+/* Appointments Section */
+.appointments-section {
+    padding: 2rem;
+    background-color: #000; /* Black background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 215, 0, 0.2); /* Gold shadow */
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.appointments-section .section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #FFD700; /* Gold text */
+}
+
+/* Appointment Form */
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.appointment-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.appointment-form .form-group label {
+    font-weight: bold;
+    color: #FFD700; /* Gold text for labels */
+}
+
+.appointment-form .form-group input,
+.appointment-form .form-group select,
+.appointment-form .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #FFD700; /* Gold border */
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #000; /* Black background */
+    color: #FFD700; /* Gold text */
+}
+
+.appointment-form .form-group input:focus,
+.appointment-form .form-group select:focus,
+.appointment-form .form-group textarea:focus {
+    border-color: #FFD700; /* Gold border on focus */
+    outline: none;
+    box-shadow: 0 0 4px rgba(255, 215, 0, 0.5); /* Gold glow on focus */
+    background-color: #111; /* Slightly lighter black for focus */
+}
+
+.appointment-form .cta-button {
+    padding: 0.75rem;
+    background-color: #FFD700; /* Gold background */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-form .cta-button:hover {
+    background-color: #FFC107; /* Slightly brighter gold on hover */
+}
+
+.appointment-form #responseMessage {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #FFD700; /* Gold text */
+}
+
 
 /* Base Styles for the Response Message */
 .response-message {
