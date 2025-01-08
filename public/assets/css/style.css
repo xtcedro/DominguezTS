@@ -33,13 +33,6 @@ h1, h2, h3 {
 }
 
 
-.appointment-form #responseMessage {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: #333;
-}
-
 /* Base Styles for the Response Message */
 .response-message {
   font-size: 1rem;
