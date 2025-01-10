@@ -6,9 +6,32 @@
     <meta name="description" content="Dominguez Tech Solutions offers fast and affordable iPhone and computer repairs, custom software development, and website design in Oklahoma City. Quality service with 24-hour delivery.">
     <title>Home - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'es') {
+                window.location.href = 'index_es.html';
+            } else {
+                document.getElementById('language-modal').style.display = 'none';
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <!-- Language Selection Modal -->
+    <div id="language-modal" class="modal">
+        <div class="modal-content">
+            <h2>Choose Your Language 🌎</h2>
+            <div class="language-options">
+                <button onclick="setLanguage('en')">
+                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English 🇺🇸
+                </button>
+                <button onclick="setLanguage('es')">
+                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> Español 🇲🇽
+                </button>
+            </div>
+        </div>
+    </div>
     <!-- Header -->
     <header>
         <h1 class="header-title">🚀 Dominguez Tech Solutions 🌟</h1>
