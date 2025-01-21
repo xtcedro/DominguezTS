@@ -1,5 +1,7 @@
 // auth.js - Handles user registration and login
 document.addEventListener("DOMContentLoaded", () => {
+    const API_BASE_URL = "https://domingueztechsolutions.com/api/users"; // Update API base URL dynamically
+
     // Handle Register Form Submission
     const registerForm = document.getElementById("registerForm");
     if (registerForm) {
@@ -13,12 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Validate passwords match
             if (password !== confirmPassword) {
-                displayMessage("Passwords do not match", "error", "registerForm");
+                displayMessage("Passwords do not match.", "error", "registerForm");
                 return;
             }
 
             try {
-                const response = await fetch("/api/users/register", {
+                const response = await fetch(`${API_BASE_URL}/register`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -26,16 +28,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     body: JSON.stringify({ name, email, password }),
                 });
 
-                const message = await response.text();
+                const result = await response.json();
 
                 if (response.ok) {
-                    displayMessage(message || "Registration successful!", "success", "registerForm");
-                    document.getElementById("registerForm").reset(); // Clear form
+                    displayMessage(result.message || "Registration successful!", "success", "registerForm");
+                    registerForm.reset(); // Clear form
                     setTimeout(() => {
                         window.location.href = "login.html"; // Redirect to login
                     }, 2000);
                 } else {
-                    displayMessage(`Error: ${message || "Registration failed."}`, "error", "registerForm");
+                    displayMessage(`Error: ${result.message || "Registration failed."}`, "error", "registerForm");
                 }
             } catch (error) {
                 console.error("Registration Error:", error);
@@ -54,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const password = document.getElementById("password").value.trim();
 
             try {
-                const response = await fetch("/api/users/login", {
+                const response = await fetch(`${API_BASE_URL}/login`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -62,18 +64,17 @@ document.addEventListener("DOMContentLoaded", () => {
                     body: JSON.stringify({ email, password }),
                 });
 
-                const message = await response.text();
+                const result = await response.json();
 
                 if (response.ok) {
-                    displayMessage(message || "Login successful!", "success", "loginForm");
-                    const result = await response.json();
+                    displayMessage(result.message || "Login successful!", "success", "loginForm");
                     localStorage.setItem("token", result.token); // Save JWT token
-                    document.getElementById("loginForm").reset(); // Clear form
+                    loginForm.reset(); // Clear form
                     setTimeout(() => {
                         window.location.href = "dashboard.html"; // Redirect to dashboard
                     }, 2000);
                 } else {
-                    displayMessage(`Error: ${message || "Login failed."}`, "error", "loginForm");
+                    displayMessage(`Error: ${result.message || "Login failed."}`, "error", "loginForm");
                 }
             } catch (error) {
                 console.error("Login Error:", error);
