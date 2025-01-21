@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Highlight active tab
     const currentUrl = window.location.pathname;
-    const links = nav.querySelectorAll("a");
+    const links = navbar.querySelectorAll("a");
 
     links.forEach(link => {
         if (link.getAttribute("href") === currentUrl) {
