@@ -83,3 +83,34 @@ appointment-form .cta-button {
     background-color: #D4AF37; /* Lighter gold on hover */
     transform: scale(1.05);
 }
+
+
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.auth-buttons .cta-button {
+    font-size: 1em;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .cta-button.secondary {
+    background-color: #6c757d;
+}
+
+.auth-buttons .cta-button:hover {
+    background-color: #0056b3;
+}
+
+.auth-buttons .cta-button.secondary:hover {
+    background-color: #5a6268;
+}
