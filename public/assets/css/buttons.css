@@ -1,0 +1,85 @@
+appointment-form .cta-button {
+    padding: 0.75rem 2rem;
+    background-color: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.appointment-form .cta-button:hover {
+    background-color: #FFCC33; /* Lighter gold on hover */
+    transform: scale(1.05); /* Slight zoom */
+}
+.appointment-card .cta-button {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.appointment-card .cta-button:hover {
+    background-color: #FFCC33; /* Lighter gold on hover */
+    transform: scale(1.05); /* Slight zoom */
+}
+
+.call-to-action-section .cta-button {
+    background-color: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.call-to-action-section .cta-button:hover {
+    background-color: #D4AF37; /* Darker gold on hover */
+    transform: scale(1.05);
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #D4AF37; /* Darker gold on hover */
+    transform: scale(1.05);
+}
+
+.why-choose-us .cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.why-choose-us .cta-button:hover {
+    background-color: #D4AF37; /* Lighter gold on hover */
+    transform: scale(1.05);
+}
