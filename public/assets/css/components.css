@@ -469,3 +469,12 @@ blockquote {
         width: 100%; /* 1 item per row for very small screens */
     }
 }
+
+.navbar a.active {
+    background-color: #ffd700; /* Highlighted gold background */
+    color: #1a1a1a; /* Dark text for contrast */
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
