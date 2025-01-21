@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard - Manage your account, appointments, and services with Dominguez Tech Solutions.">
+    <title>Dashboard - Dominguez Tech Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        // Sign out function
+        function signOut() {
+            localStorage.removeItem("token"); // Remove JWT token from storage
+            window.location.href = "login.html"; // Redirect to login page
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">🚀 Dashboard - Dominguez Tech Solutions 🌟</h1>
+        <div class="title-banner">
+            <img src="assets/images/banner1.png" alt="Dominguez Tech Solutions - Trusted Tech Experts in Oklahoma City">
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">📖 About Us</a>
+        <a href="about2.html">👨‍💻 About Pedro Dominguez</a>
+        <a href="services.html">🛠️ Services</a>
+        <a href="gallery.html">🖼️ Gallery</a>
+        <a href="appointments.html">📅 Submit Appointments</a>
+        <a href="view-appointments.html">👀 View Appointments</a>
+        <a href="contact.html">📬 Contact Us</a>
+        <a href="dashboard.html" class="active">📊 Dashboard</a>
+    </nav>
+
+    <!-- Dashboard Overview Section -->
+    <section class="hero-section">
+        <h1 class="hero-title">👋 Welcome Back to Your Dashboard 🌟</h1>
+        <p class="hero-subtitle">
+            Manage your account, appointments, and services with ease. 💼✨
+        </p>
+        <div class="cta-buttons">
+            <button class="cta-button" onclick="location.href='appointments.html'">📅 Manage Appointments</button>
+            <button class="cta-button secondary" onclick="location.href='services.html'">🛠️ View Services</button>
+            <button class="cta-button secondary" onclick="signOut()">🔓 Sign Out</button>
+        </div>
+    </section>
+
+    <!-- About Section (Reused) -->
+    <section id="about-section" class="about-section">
+        <h2>👤 Join the Dominguez Tech Solutions Community 🌟</h2>
+        <p>
+            Discover the benefits of being part of the Dominguez Tech Solutions family. Stay updated, manage your services, 
+            and unlock exclusive features tailored to your needs.
+        </p>
+        <div class="auth-buttons">
+            <button class="cta-button" onclick="location.href='register.html'">📝 Register Now</button>
+            <button class="cta-button secondary" onclick="location.href='login.html'">🔑 Login</button>
+        </div>
+    </section>
+
+    <!-- Dashboard Features Section -->
+    <section class="features-section">
+        <h2>📊 Your Dashboard Features</h2>
+        <div class="features-container">
+            <div class="feature-item">
+                <h3>📅 Manage Appointments</h3>
+                <p>View, update, or cancel your appointments effortlessly. Stay on top of your schedule. 🕒</p>
+            </div>
+            <div class="feature-item">
+                <h3>⚙️ Service History</h3>
+                <p>Track your past services and view invoices at your convenience. 🧾</p>
+            </div>
+            <div class="feature-item">
+                <h3>🔒 Update Account</h3>
+                <p>Securely update your account details, including password and email preferences. 🛡️</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h2>🤝 Why Choose Dominguez Tech Solutions? 🚀</h2>
+        <p>
+            Partnering with us means more than receiving a service—it means gaining a team committed to your success. 🌟
+        </p>
+        <ul>
+            <li>💻 <strong>Affordable and reliable tech repair services.</strong></li>
+            <li>⏱️ <strong>Quick turnaround times to get your devices running again.</strong></li>
+            <li>📍 <strong>Serving the Oklahoma City metro area with a personal touch.</strong></li>
+            <li>🔧 <strong>Satisfaction guaranteed on all services.</strong></li>
+        </ul>
+        <blockquote class="hero-quote">
+            🌟 <em>"Let us show you how technology can transform your business and simplify your life."</em> 🌟
+        </blockquote>
+        <a href="services.html" class="cta-button">🛠️ Explore Our Services</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dominguez Tech Solutions. 🌟 Built with ❤️ in Oklahoma City. All rights reserved.</p>
+        <nav class="legal-links">
+            <a href="legal/terms.html">📝 Terms and Conditions</a>
+            <a href="legal/privacy.html">🔒 Privacy Policy</a>
+            <a href="legal/disclaimer.html">⚠️ Disclaimer</a>
+            <a href="legal/warranty.html">📜 Warranty Policy</a>
+            <a href="legal/refund.html">💵 Refund Policy</a>
+            <a href="legal/accessibility.html">♿ Accessibility Statement</a>
+            <a href="legal/cookies.html">🍪 Cookie Policy</a>
+        </nav>
+    </footer>
+</body>
+</html>
