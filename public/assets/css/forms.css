@@ -42,3 +42,99 @@
     font-size: 1rem;
     color: #FFD700; /* Gold text */
 }
+
+/* General Form Section Styles */
+.form-section {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1a1a1a; /* Dark background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffd700; /* Gold color for titles */
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Form Group Styles */
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff; /* White label text */
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #ffd700; /* Gold border for inputs */
+    border-radius: 5px;
+    background-color: #2a2a2a; /* Slightly lighter background for inputs */
+    color: #ffffff; /* White text for inputs */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #ffcc00; /* Lighter gold on focus */
+}
+
+/* Submit Button Styles */
+.cta-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ffd700; /* Gold button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00; /* Lighter gold on hover */
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+    background-color: #e6b800; /* Slightly darker gold on click */
+    transform: scale(0.98);
+}
+
+/* Response Message Styles */
+#responseMessage {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: none; /* Hidden by default */
+}
+
+.response-message.success {
+    color: #4caf50; /* Green for success */
+    display: block;
+}
+
+.response-message.error {
+    color: #f44336; /* Red for error */
+    display: block;
+}
