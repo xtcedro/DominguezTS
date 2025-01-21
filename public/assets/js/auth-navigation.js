@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const token = localStorage.getItem("token");
     const navbar = document.querySelector(".navbar");
 
+    // Set the navigation bar
     if (token) {
         // User is signed in
         navbar.innerHTML = `
@@ -28,12 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
-    // Highlight active tab
-    const currentUrl = window.location.pathname;
+    // Highlight the active tab
+    const currentPath = window.location.pathname.split('/').pop(); // Get the current file name
     const links = navbar.querySelectorAll("a");
 
     links.forEach(link => {
-        if (link.getAttribute("href") === currentUrl) {
+        const linkPath = link.getAttribute("href");
+        if (linkPath === currentPath) {
             link.classList.add("active");
         }
     });
