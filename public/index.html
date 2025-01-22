@@ -7,8 +7,16 @@
     <title>Home - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/auth-navigation.js" defer></script>
-    <script src="assets/js/language-selection.js" defer></script>
     <script src="assets/js/load-components.js" defer></script>
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'es') {
+                window.location.href = 'index_es.html'; // Redirect to Spanish version
+            } else {
+                document.getElementById('language-modal').style.display = 'none';
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -29,6 +37,10 @@
 
     <!-- Include Header -->
     <div id="header"></div>
+
+	<nav class="navbar">
+    <!-- Navigation links will be dynamically implemented using auth-navigation.js -->
+	</nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
