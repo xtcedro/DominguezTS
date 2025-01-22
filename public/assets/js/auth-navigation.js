@@ -7,25 +7,25 @@ document.addEventListener("DOMContentLoaded", () => {
         // User is signed in
         navbar.innerHTML = `
             <a href="index.html">🏠 Home</a>
-            <a href="about.html">📖 About Us</a>
-            <a href="about2.html">👨‍💻 About Pedro Dominguez</a>
-            <a href="services.html">🛠️ Services</a>
-            <a href="gallery.html">🖼️ Gallery</a>
-            <a href="appointments.html">📅 Submit Appointments</a>
-            <a href="view-appointments.html">👀 View Appointments</a>
-            <a href="contact.html">📬 Contact Us</a>
-            <a href="dashboard.html">📊 Dashboard</a>
+            <a href="pages/about.html">📖 About Us</a>
+            <a href="pages/about2.html">👨‍💻 About Pedro Dominguez</a>
+            <a href="pages/services.html">🛠️ Services</a>
+            <a href="pages/gallery.html">🖼️ Gallery</a>
+            <a href="pages/appointments.html">📅 Submit Appointments</a>
+            <a href="pages/view-appointments.html">👀 View Appointments</a>
+            <a href="pages/contact.html">📬 Contact Us</a>
+            <a href="dashboard/dashboard.html">📊 Dashboard</a>
             <button class="cta-button secondary" onclick="signOut()">🔓 Sign Out</button>
         `;
     } else {
         // Visitor (not signed in)
         navbar.innerHTML = `
             <a href="index.html">🏠 Home</a>
-            <a href="about.html">📖 About Us</a>
-            <a href="about2.html">👨‍💻 About Pedro Dominguez</a>
-            <a href="services.html">🛠️ Services</a>
-            <a href="register.html">📝 Register</a>
-            <a href="login.html">🔑 Login</a>
+            <a href="pages/about.html">📖 About Us</a>
+            <a href="pages/about2.html">👨‍💻 About Pedro Dominguez</a>
+            <a href="pages/services.html">🛠️ Services</a>
+            <a href="auth/register.html">📝 Register</a>
+            <a href="auth/login.html">🔑 Login</a>
         `;
     }
 
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     links.forEach(link => {
         const linkPath = link.getAttribute("href");
-        if (linkPath === currentPath) {
+        if (linkPath.includes(currentPath)) {
             link.classList.add("active");
         }
     });
@@ -44,5 +44,5 @@ document.addEventListener("DOMContentLoaded", () => {
 // Sign Out Function
 function signOut() {
     localStorage.removeItem("token");
-    window.location.href = "login.html";
+    window.location.href = "auth/login.html";
 }
