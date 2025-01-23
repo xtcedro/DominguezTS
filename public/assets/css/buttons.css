@@ -98,3 +98,25 @@
     transform: scale(1.05); /* Slight zoom */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Elevated shadow */
 }
+
+/* Add Button Style (if needed) */
+.services-section .cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000; /* Black text */
+    background-color: #FFD700; /* Gold background */
+    border: 2px solid #FFD700; /* Match border with gold */
+    border-radius: 5px; /* Smooth rounded corners */
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* Smooth hover transition */
+    cursor: pointer;
+}
+
+.services-section .cta-button:hover {
+    background-color: #FFA500; /* Slightly darker gold on hover */
+    color: #ffffff; /* White text on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
