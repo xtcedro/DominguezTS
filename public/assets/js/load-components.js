@@ -13,3 +13,12 @@ fetch('../components/footer.html')
         document.getElementById('footer').innerHTML = data;
     })
     .catch(error => console.error('Error loading footer:', error));
+
+
+ // Load Footer for Spanish pages
+fetch('../components/footer_es.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer_es').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
