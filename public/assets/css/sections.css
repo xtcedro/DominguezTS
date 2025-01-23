@@ -345,3 +345,75 @@ footer a:hover {
     color: #FFFFFF; /* White on hover */
     text-decoration: underline;
 }
+
+/* About Section */
+.about-section {
+    background: linear-gradient(135deg, #000000, #1C1C1C); /* Black gradient */
+    color: #FFFFFF; /* White text */
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 4px solid #FFD700; /* Gold border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    border-radius: 15px; /* Smooth rounded corners */
+    margin: 2rem auto;
+    max-width: 900px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect for the entire section */
+.about-section:hover {
+    transform: scale(1.02); /* Slight zoom */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); /* Elevated shadow */
+}
+
+/* Section Title */
+.about-section h2 {
+    font-size: 2.2rem; /* Larger, more impactful title */
+    color: #FFD700; /* Gold for titles */
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Slight spacing for a polished look */
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    animation: fadeIn 1s ease-out; /* Fade-in effect for the title */
+}
+
+/* Section Paragraph */
+.about-section p {
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    line-height: 1.8; /* Improved line spacing */
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif; /* Modern font pairing */
+    animation: fadeIn 1.5s ease-out; /* Fade-in effect for paragraphs */
+}
+
+/* Links */
+.about-section a {
+    color: #FFD700; /* Gold for links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem; /* Added padding for a button-like feel */
+    border: 2px solid #FFD700; /* Button-like border */
+    border-radius: 5px; /* Rounded corners for the link */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Makes the link more prominent */
+    margin-top: 1rem;
+}
+
+.about-section a:hover {
+    color: #000000; /* Black text */
+    background-color: #FFD700; /* Gold background */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
