@@ -575,3 +575,15 @@ blockquote {
         transform: scale(1);
     }
 }
+
+/* Appointment Card */
+.appointment-card {
+    background: #000000; /* Black background for cards */
+    color: #FFD700; /* Gold text */
+    padding: 1.5rem;
+    border: 2px solid #FFD700; /* Gold border for separation */
+    border-radius: 8px; /* Smooth edges */
+    width: 300px; /* Fixed card width */
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5); /* Subtle gold shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
