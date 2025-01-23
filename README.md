@@ -50,9 +50,9 @@
 
 # Clone the repository:
 
-'''
+'''bash
 git clone https://github.com/xtcedro/DominguezTS.git
-''' 
+
 
 # 🌐 Website Preview
 ## Visit the live site at www.domingueztechsolutions.com to see the frontend in action.
