@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crea tu cuenta con Dominguez Tech Solutions.">
+    <title>Registro | Dominguez Tech Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/auth-navigation_es.js" defer></script>
+    <script src="../assets/js/load-components.js" defer></script>
+</head>
+
+<body>
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar"></nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="hero-title">🔐 Crea tu Cuenta 🌟</h1>
+        <blockquote class="hero-quote">
+            💡 <em>"¡Empieza tu viaje con Dominguez Tech Solutions hoy mismo!"</em> 💻
+        </blockquote>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <section class="appointments-section">
+            <h2 class="section-title">📝 Registro 🚀</h2>
+            <form class="appointment-form" id="registerForm">
+                <div class="form-group">
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" placeholder="Juan Pérez" required maxlength="50">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Crea una contraseña segura" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirma tu contraseña" required>
+                </div>
+
+                <!-- Legal Notice -->
+                <div class="legal-notice">
+                    <p>
+                        Al registrarte, aceptas nuestros
+                        <a href="terms_es.html" target="_blank">Términos y Condiciones</a>.
+                    </p>
+                </div>
+
+                <button type="submit" class="cta-button">Registrar</button>
+                <p id="responseMessage"></p>
+            </form>
+            <div class="create-account-section">
+                <p class="create-account-text">¿Ya tienes una cuenta? ¡Inicia sesión ahora!</p>
+                <a href="login_es.html" class="cta-button secondary-button">Inicia Sesión</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer_es"></div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/auth.js" defer></script>
+</body>
+</html>
