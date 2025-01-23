@@ -8,32 +8,28 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/auth-navigation.js" defer></script>
     <script src="assets/js/load-components.js" defer></script>
-    <script>
-        function setLanguage(lang) {
-            if (lang === 'es') {
-                window.location.href = 'index_es.html'; // Redirect to Spanish version
-            } else {
-                document.getElementById('language-modal').style.display = 'none';
-            }
-        }
-    </script>
+
 </head>
 
 <body>
     <!-- Language Selection Modal -->
-    <div id="language-modal" class="modal">
-        <div class="modal-content">
-            <h2>Choose Your Language 🌎</h2>
-            <div class="language-options">
-                <button onclick="setLanguage('en')">
-                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English 🇺🇸
-                </button>
-                <button onclick="setLanguage('es')">
-                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> Español 🇲🇽
-                </button>
-            </div>
+<div id="language-modal" class="modal">
+    <div class="modal-content">
+        <h2>Choose Your Language 🌎</h2>
+        <div class="language-options">
+            <!-- English Option -->
+            <button class="language-button" id="english-button">
+                <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> 
+                English 🇺🇸
+            </button>
+            <!-- Spanish Option -->
+            <button class="language-button" id="spanish-button">
+                <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> 
+                Español 🇲🇽
+            </button>
         </div>
     </div>
+</div>
 
     <!-- Include Header -->
     <div id="header"></div>
