@@ -13,30 +13,27 @@
 
 <body>
     <!-- Language Selection Modal -->
-<div id="language-modal" class="modal">
-    <div class="modal-content">
-        <h2>Choose Your Language 🌎</h2>
-        <div class="language-options">
-            <!-- English Option -->
-            <button class="language-button" id="english-button">
-                <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> 
-                English 🇺🇸
-            </button>
-            <!-- Spanish Option -->
-            <button class="language-button" id="spanish-button">
-                <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> 
-                Español 🇲🇽
-            </button>
+    <div id="language-modal" class="modal">
+        <div class="modal-content">
+            <h2>Choose Your Language 🌎</h2>
+            <div class="language-options">
+                <button class="language-button" id="english-button">
+                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> 
+                    English 🇺🇸
+                </button>
+                <button class="language-button" id="spanish-button">
+                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> 
+                    Español 🇲🇽
+                </button>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- Include Header -->
     <div id="header"></div>
 
-	<nav class="navbar">
-    <!-- Navigation links will be dynamically implemented using auth-navigation.js -->
-	</nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar"></nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -47,8 +44,10 @@
         <p>
             At Dominguez Tech Solutions, we turn tech challenges into opportunities with <strong>24-hour repairs</strong>, custom software, and website designs tailored to your needs. 💼✨
         </p>
-        <button class="cta-button" onclick="location.href='pages/services.html'">💻 Discover Our Services</button>
-        <button class="cta-button secondary" onclick="location.href='pages/contact.html'">📞 Contact Us</button>
+        <div class="hero-buttons">
+            <button class="cta-button" onclick="location.href='pages/services.html'">💻 Discover Our Services</button>
+            <button class="cta-button secondary" onclick="location.href='pages/contact.html'">📞 Contact Us</button>
+        </div>
     </section>
 
     <!-- Services Section -->
@@ -72,7 +71,6 @@
                 <p>Launch your professional website in 24 hours. Optimized for SEO and mobile devices. 📱</p>
             </div>
         </div>
-        <br>
         <button class="cta-button" onclick="location.href='pages/services.html'">✨ Learn More</button>
     </section>
 
@@ -94,21 +92,23 @@
         <a href="pages/about.html" class="cta-button">📖 About Dominguez Tech Solutions</a>
     </section>
 
-    <!-- About Section with Register/Login -->
-    <section id="about-section" class="about-section">
-        <h2>👤 Join the Dominguez Tech Solutions Community 🌟</h2>
+    <!-- Exclusive Access Section -->
+    <section id="exclusive-access" class="exclusive-access-section">
+        <h2>✨ Exclusive Features for Registered Users 🎉</h2>
         <p>
-            Become a part of our growing community and gain access to personalized tech solutions
-            and updates. Create an account to manage your services, appointments, and more!
-            As a member, you’ll also enjoy exclusive access to a curated gallery of images generated
-            using Artificial Intelligence, showcasing innovative tech inspirations.
+            By registering for an account, you gain access to exclusive features like:
         </p>
+        <ul>
+            <li>🎨 A gallery of Artificial Intelligence-generated images.</li>
+            <li>📅 The ability to <strong>view, add, and delete appointments</strong>.</li>
+            <li>🔔 Personalized notifications and updates about your services.</li>
+        </ul>
+        <p>Register today and log in to unlock these features and more!</p>
         <div class="auth-buttons">
             <button class="cta-button" onclick="location.href='auth/register.html'">📝 Register Now</button>
             <button class="cta-button secondary" onclick="location.href='auth/login.html'">🔑 Login</button>
         </div>
     </section>
-
 
     <!-- Include Footer -->
     <div id="footer"></div>
