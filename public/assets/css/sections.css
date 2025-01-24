@@ -330,28 +330,38 @@ html {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5); /* Gold shadow for depth */
 }
+
 /* Why Choose Us Section */
 .why-choose-us {
-    background-color: #000000; /* Black background */
+    background: #000000 url('assets/background-pattern.png') repeat; /* Black background with subtle pattern */
+    background-size: cover;
     color: #FFFFFF; /* White text */
     padding: 3rem 2rem;
     text-align: center;
-    border: 4px solid #FFD700; /* Gold border */
+    border: 4px solid transparent;
+    border-image: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00) 1; /* Gold gradient border */
     border-radius: 10px;
     margin: 2rem auto;
     max-width: 1200px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .why-choose-us h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease-in-out infinite; /* Animate gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
 }
 
 .why-choose-us p {
@@ -370,21 +380,50 @@ html {
 }
 
 .why-choose-us ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    padding-left: 2.5rem;
-    position: relative;
     color: #FFFFFF; /* White text */
     font-weight: bold;
+    position: relative;
+    padding-left: 0;
 }
 
 .why-choose-us ul li::before {
     content: "✔"; /* Checkmark symbol */
     color: #FFD700; /* Gold color */
     font-size: 1.5rem;
-    position: absolute;
-    left: 0; /* Align icon to the left of the text */
-    top: 0;
+    flex-shrink: 0;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.why-choose-us ul li:hover::before {
+    transform: scale(1.2); /* Interactive scaling effect */
+}
+
+.why-choose-us:hover {
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6); /* Enhance shadow on hover */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Inspiration Section */
