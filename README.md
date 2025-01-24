@@ -1,80 +1,105 @@
 # Dominguez Tech Solutions (Frontend Repository)
 
-### Welcome to the DominguezTS repository! This serves as the frontend for the official website of Dominguez Tech Solutions, currently hosted at www.domingueztechsolutions.com. This repository is a work in progress and contains the necessary HTML, CSS, and frontend components for the website.
+Welcome to the **Dominguez Tech Solutions** frontend repository! This serves as the codebase for the official website, currently hosted at [www.domingueztechsolutions.com](https://www.domingueztechsolutions.com). The repository is a work in progress, containing HTML, CSS, and frontend components designed for scalability and maintainability.
 
-### 📂 Repository Structure
-#### The project is organized to ensure modularity, clarity, and ease of maintenance. Below is a breakdown of the current file structure:
+---
 
-#### Root
-#### index.html and localized versions like index_es.html for the website's main entry point.
+## 📂 Repository Structure
 
-#### Various legal, about, and functional HTML pages.
+The project is organized to ensure modularity, clarity, and ease of maintenance. Here's the current file structure:
+
+### Root Directory
+- **`index.html`**: The main entry point of the website.
+- **Localized versions**: Example - `index_es.html` for Spanish support.
+- **Various pages**: Includes legal notices, about, and functional pages.
 
 ### Folders
+1. **`assets/`**
+   - Contains all static files, including images, icons, and other assets used across the website.
 
-#### 1. assets/
-#### This directory contains all static files such as images, icons, and other assets used across the website.
+2. **`components/`**
+   - **`header.html`**: Defines the navigation bar for the website.
+   - **`footer.html`**: Contains the footer section with legal and contact information.
+   - **Localized versions**: Example - `header_es.html`, `footer_es.html` for Spanish translations.
 
-#### 2. components/
-##### header.html: Defines the navigation bar for the website.
-##### footer.html: Contains the footer section, including legal and contact information.
-##### Localized versions (header_es.html, footer_es.html) to support Spanish translations.
+3. **`legal/`**
+   - Includes legal notice pages such as:
+     - Accessibility Policy: `accessibility.html`
+     - Cookies Policy: `cookies.html`
+     - Refund Policy: `refund.html`
+     - Privacy and Warranty Information.
+   - Spanish-translated legal files: Example - `privacy_es.html`, `warranty_es.html`.
 
-### 3. legal/
-#### Includes legal notice pages, such as:
-#### Accessibility policy (accessibility.html)
-#### Cookies policy (cookies.html)
-#### Refund policy (refund.html)
-#### Privacy and warranty information.
-#### Spanish-translated legal files (e.g., privacy_es.html, warranty_es.html).
+4. **`pages/`**
+   - Contains additional content pages, including:
+     - About: `about.html`, `about_es.html`
+     - Appointments: `appointments.html`, `appointments_es.html`
+     - Gallery: `gallery.html`, `gallery_es.html`
+     - Other pages: Login, registration, and dashboards.
 
-### 4. pages/
-#### Holds other website content pages, including:
-#### About: about.html and about_es.html
-#### Appointments: appointments.html and appointments_es.html
-#### Gallery: gallery.html and gallery_es.html
-#### Additional pages like login, registration, and dashboards.
+---
 
-### 🌟 Features
-#### Multilingual Support: Includes Spanish-translated pages (_es.html) for accessibility.
-#### Reusable Components: Header and footer files for consistent layout across pages.
-#### Legal Compliance: All required policies (e.g., privacy, terms) are organized under legal/.
-#### Modular Design: File structure supports scalability and maintainability.
+## 🌟 Features
 
-### 🛠️ Tech Stack
-#### HTML5: For structuring content.
-#### CSS3: Modularized for styling consistency and simplicity.
-#### JavaScript (future): For interactivity enhancements.
+- **Multilingual Support**: Spanish-translated pages (`_es.html`) for accessibility.
+- **Reusable Components**: Modular header and footer for a consistent layout.
+- **Legal Compliance**: Comprehensive policies organized in the `legal/` directory.
+- **Modular Design**: Scalable file structure for future enhancements.
 
-### 🚀 Usage
-#### To contribute to the frontend or deploy locally:
+---
 
-### Clone the repository:
+## 🛠️ Tech Stack
+
+- **HTML5**: For semantic structure.
+- **CSS3**: Modularized for consistent and maintainable styling.
+- **JavaScript** *(planned)*: To enhance interactivity.
+
+---
+
+## 🚀 Usage
+
+To contribute or run the frontend locally, follow these steps:
+
+### Clone the Repository
 
 ```
 git clone https://github.com/xtcedro/DominguezTS.git
 ```
 
-### 🌐 Website Preview
-#### Visit the live site at www.domingueztechsolutions.com to see the frontend in action.
 
-### 💡 Contributing
-#### Contributions are welcome! Please follow these steps:
+### Open in Your Browser
+Navigate to the project directory and open `index.html` in your browser to preview the site.
 
-### Fork the repository.
+---
 
-### Create a new branch:
+## 🌐 Website Preview
+
+Visit the live site: [www.domingueztechsolutions.com](https://www.domingueztechsolutions.com)
+
+---
+
+## 💡 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. **Fork the repository** on GitHub.
+2. **Create a new branch**:
 
 ```
-git checkout -b feature-name
+git clone https://github.com/xtcedro/DominguezTS.git
 ```
+3. Commit your changes and open a **pull request**.
 
-### Commit your changes and open a pull request.
+---
 
-### 📧 Contact
-#### For inquiries, feel free to reach out:
+## 📧 Contact
 
-## Email: domingueztechsolutions@gmail.com
+For inquiries, reach out via email:
+
+**Email**: [domingueztechsolutions@gmail.com](mailto:domingueztechsolutions@gmail.com)
+
+---
 
 ## ❤️ Credits
-## Built with ❤️ in Oklahoma City 🌆 by Pedro Dominguez.
+
+**Built with ❤️ in Oklahoma City 🌆 by Pedro Dominguez.**
