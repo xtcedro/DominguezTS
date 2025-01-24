@@ -595,6 +595,6 @@ footer a {
 }
 
 footer a:hover {
-    color: #FFFFFF; /* White on hover */
+    color: #000000; /* Black on hover */
     text-decoration: underline;
 }
