@@ -1,22 +1,33 @@
+/* Appointment Form */
 .appointment-form {
     display: grid;
     gap: 1.5rem;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 2rem auto; /* Add top and bottom spacing for better alignment */
+    padding: 2rem; /* Add padding to give the form breathing room */
+    background: linear-gradient(135deg, #000000, #1C1C1C); /* Black gradient background */
+    border: 2px solid #FFD700; /* Gold border */
+    border-radius: 10px; /* Smooth, rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Elevated shadow for depth */
 }
 
+/* Form Group */
 .appointment-form .form-group {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
+/* Labels */
 .appointment-form .form-group label {
     margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem; /* Slightly larger for readability */
+    font-weight: bold; /* Add boldness for emphasis */
     color: #FFD700; /* Gold text */
+    letter-spacing: 0.5px; /* Subtle spacing for a professional touch */
 }
 
+/* Input, Select, and Textarea Fields */
 .appointment-form .form-group input,
 .appointment-form .form-group select,
 .appointment-form .form-group textarea {
@@ -26,19 +37,45 @@
     font-size: 1rem;
     color: #000000; /* Black text */
     background-color: #FFFFFF; /* White background */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth focus transition */
 }
 
+/* Focus State */
 .appointment-form .form-group input:focus,
 .appointment-form .form-group select:focus,
 .appointment-form .form-group textarea:focus {
     outline: none;
     border-color: #FFD700; /* Gold focus border */
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.8); /* Gold glow */
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.8); /* Enhanced gold glow */
 }
+
+/* Response Message */
 .appointment-form #responseMessage {
     text-align: center;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem; /* Slightly larger for emphasis */
     color: #FFD700; /* Gold text */
+    font-weight: bold; /* Bold for prominence */
+    letter-spacing: 0.5px; /* Professional spacing */
+}
+
+/* Subtle Animation */
+.appointment-form .form-group input,
+.appointment-form .form-group select,
+.appointment-form .form-group textarea {
+    transition: all 0.2s ease-in-out; /* Smooth hover and focus transitions */
+}
+
+.appointment-form .form-group input:hover,
+.appointment-form .form-group select:hover,
+.appointment-form .form-group textarea:hover {
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); /* Subtle hover glow */
+}
+
+/* Rounded Border */
+.appointment-form .form-group input,
+.appointment-form .form-group select,
+.appointment-form .form-group textarea {
+    border-radius: 8px; /* Slightly more rounded for modern feel */
 }
