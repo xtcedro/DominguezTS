@@ -11,38 +11,44 @@ The project is organized to ensure modularity, clarity, and ease of maintenance.
 ### Root Directory
 - **`index.html`**: The main entry point of the website.
 - **Localized versions**: Example - `index_es.html` for Spanish support.
-- **Various pages**: Includes legal notices, about, and functional pages.
+- **Various pages**: Includes about, legal notices, and functional pages.
 
 ### Folders
-1. **`assets/`**
-   - Contains all static files, including:
-     - **Images**: Logos, banner images, and thumbnails.
-     - **CSS**: Styling files, including `style.css`.
-     - **Videos**: Promotional or informational videos.
-     - **PDFs**: Downloadable open letters and other resources.
+1. **`about/`**
+   - Contains information about the organization or platform.
 
-2. **`pages/`**
-   - Organized into subdirectories for clarity and scalability:
-     - **`about/`**: Contains the "About Us" pages.
-     - **`appointments/`**: Manages appointment-related pages.
-     - **`contact/`**: Includes contact forms and information.
-     - **`gallery/`**: Showcases media and images for the gallery.
-     - **`home/`**: Main homepage and localized versions.
-     - **`legal/`**: Legal pages such as terms, privacy, and accessibility policies.
-     - **`letters/`**: Hosts open letters and related resources.
+2. **`appointments/`**
+   - Pages related to scheduling and managing appointments.
 
-3. **`legal/`**
-   - Includes individual legal notice pages such as:
+3. **`authentication/`**
+   - Handles login, registration, and user account-related pages.
+
+4. **`contact/`**
+   - Contact forms and information for user inquiries.
+
+5. **`dashboard/`**
+   - Contains admin or user dashboard-related pages.
+
+6. **`gallery/`**
+   - Showcases images, videos, or other media assets.
+
+7. **`home/`**
+   - Homepage and localized versions for different languages.
+
+8. **`legal/`**
+   - Includes legal pages such as:
      - Accessibility Policy: `accessibility.html`
      - Cookies Policy: `cookies.html`
      - Privacy Policy: `privacy.html`
      - Terms and Conditions: `terms.html`
    - **Spanish Translations**: Example - `privacy_es.html`, `terms_es.html`.
 
-4. **`components/`**
-   - **`header.html`**: Defines the navigation bar for the website.
-   - **`footer.html`**: Contains the footer section with legal and contact information.
-   - **Localized versions**: Example - `header_es.html`, `footer_es.html` for Spanish translations.
+9. **`services/`**
+   - Details about the services offered, including descriptions and pricing.
+
+---
+
+This file structure reflects the modular approach to maintaining organized and scalable web development practices for the `DominguezTS` repository. Let me know if you’d like further refinements or additional details! 😊
 
 
 ## 🌟 Features
