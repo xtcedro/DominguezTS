@@ -93,19 +93,52 @@ h1, h2, h3 {
 /* Features Section */
 .features-section {
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 4rem 1.5rem; /* More generous padding for a spacious layout */
     text-align: center;
-    background-color: #1a1a1a; /* Matches the dark background of the website */
+    background-color: #1a1a1a; /* Dark background */
     color: #ffd700; /* Gold text for titles */
-    border-top: 2px solid #ffd700; /* Adds a subtle gold line at the top */
+    border-top: 4px solid #ffd700; /* Thicker gold line for a more striking effect */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
 .features-section h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
+    font-size: 2.5rem; /* Larger title for emphasis */
+    font-weight: 700; /* Bolder font weight for professionalism */
+    margin-bottom: 2.5rem; /* Extra space below the title */
+    text-transform: uppercase; /* Consistent styling for titles */
+    letter-spacing: 2px; /* Subtle spacing for a modern look */
     color: #ffd700; /* Gold for titles */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Glow effect for elegance */
+}
+
+.features-section p {
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    margin-bottom: 1.5rem; /* Comfortable spacing between paragraphs */
+    line-height: 1.8; /* Improved line spacing for readability */
+    color: #ffffff; /* White text for supporting content */
+}
+
+.features-section ul {
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px; /* Restricts width for better focus */
+}
+
+.features-section li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 215, 0, 0.1); /* Subtle gold background */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.features-section li:hover {
+    transform: scale(1.02); /* Slight zoom on hover for interactivity */
+    background-color: rgba(255, 215, 0, 0.2); /* Darker gold on hover */
+    cursor: pointer;
 }
 
 /* Appointment Form Section */
