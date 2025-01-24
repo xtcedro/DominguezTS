@@ -483,6 +483,56 @@ html {
     text-indent: 2rem; /* Indent first line for reflective style */
 }
 
+/* General section styles */
+.exclusive-access-section {
+    background-color: black;
+    color: gold;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+.exclusive-access-section h2 {
+    font-size: 2rem;
+    color: gold;
+    text-shadow: 0 2px 5px rgba(255, 215, 0, 0.8);
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styles */
+.exclusive-access-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
+/* List styles */
+.exclusive-access-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.exclusive-access-section ul li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.exclusive-access-section ul li:before {
+    content: "•";
+    color: gold;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+}
+
 /* Footer */
 footer {
     background-color: #000000; /* Pure black background */
