@@ -144,3 +144,11 @@
         font-size: 12px;
     }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .notification-box {
+        font-size: 0.9rem; /* Slightly smaller text for small screens */
+        padding: 0.75rem;
+    }
+}
