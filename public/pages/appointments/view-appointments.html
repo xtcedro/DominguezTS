@@ -9,62 +9,7 @@
     <script src="../assets/js/auth-navigation.js" defer></script>
     <script src="../assets/js/load-components.js" defer></script>
     <script src="../assets/js/auth-check.js" defer></script> <!--authentication check script -->
-
-    <script>
-        const API_BASE_URL = window.location.origin.includes('localhost')
-            ? 'http://localhost:3000'
-            : 'https://www.domingueztechsolutions.com';
-
-        async function fetchAppointments() {
-            try {
-                const response = await fetch(`${API_BASE_URL}/api/appointments`, {
-                    method: 'GET',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                });
-
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-
-                const appointments = await response.json();
-                const appointmentsContainer = document.getElementById('appointments-container');
-                appointmentsContainer.innerHTML = '';
-
-                if (appointments.length === 0) {
-                    appointmentsContainer.innerHTML = '<p class="no-appointments">No appointments found. 📅</p>';
-                    return;
-                }
-
-                appointments.forEach((appointment) => {
-                    const appointmentCard = document.createElement('div');
-                    appointmentCard.className = 'appointment-card';
-
-                    const formattedDate = new Date(appointment.appointment_date).toLocaleDateString();
-                    const formattedTime = appointment.appointment_time || 'Not specified';
-
-                    appointmentCard.innerHTML = `
-                        <h3>👤 ${appointment.name}</h3>
-                        <p><strong>📧 Email:</strong> ${appointment.email}</p>
-                        <p><strong>📞 Phone:</strong> ${appointment.phone}</p>
-                        <p><strong>📅 Date:</strong> ${formattedDate}</p>
-                        <p><strong>⏰ Time:</strong> ${formattedTime}</p>
-                        <p><strong>🛠️ Service:</strong> ${appointment.service || 'No service specified.'}</p>
-                        <p><strong>💬 Details:</strong> ${appointment.message || 'No additional details provided.'}</p>
-                    `;
-
-                    appointmentsContainer.appendChild(appointmentCard);
-                });
-            } catch (error) {
-                const appointmentsContainer = document.getElementById('appointments-container');
-                appointmentsContainer.innerHTML = `<p class="error-message">Error fetching appointments: ${error.message}</p>`;
-                console.error('Error fetching appointments:', error);
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', fetchAppointments);
-    </script>
+    <script src="../assets/js/view-appointment.js" defer></script>
 </head>
 <body>
     <!-- Include Header -->
@@ -73,6 +18,15 @@
     <!-- Navigation Bar -->
     <nav class="navbar"></nav>
 
+
+    <section class="attention">
+        <p>
+        ⚠️ These features are still under development. While you can create an
+        account and log in, <strong>all accounts will be deleted on February 1st, 2025</strong>
+        when the next features, including <strong>email verification</strong> and
+        <strong>password recovery</strong>, go live. Thank you for your understanding! 😊
+        </p>
+    </section>
 
     <!-- Hero Section -->
     <section class="hero-section">
