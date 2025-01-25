@@ -90,6 +90,20 @@ h1, h2, h3 {
     }
 }
 
+/* About Section */
+. attention-section {
+    background: linear-gradient(135deg, #000000, #1C1C1C); /* Black gradient */
+    color: #FF0000; /* Red text */
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 4px solid #FFD700; /* Gold border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    border-radius: 15px; /* Smooth rounded corners */
+    margin: 2rem auto;
+    max-width: 900px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* Attention Paragraph */
 .attention-section p {
     font-size: 1.1rem; /* Slightly larger text for readability */
