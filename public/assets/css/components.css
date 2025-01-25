@@ -687,6 +687,9 @@ blockquote::after {
     font-family: 'Arial', sans-serif; /* Clean, modern font */
     font-size: 1rem; /* Adjust text size */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure no content spills outside the box */
+    line-height: 1.6; /* Improve text spacing for readability */
+    word-wrap: break-word; /* Handle long words properly */
 }
 
 /* Highlight Key Text */
