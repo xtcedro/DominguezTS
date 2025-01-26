@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="gallery_es.html">🖼️ Galería</a>
             <a href="appointments_es.html">📅 Enviar Citas</a>
             <a href="view-appointments_es.html">👀 Ver Citas</a>
+            <a href="pricing_es.html">📬 Precios</a>
             <a href="contact_es.html">📬 Contáctenos</a>
             <a href="dashboard_es.html">📊 Tablero</a>
             <button class="cta-button secondary" onclick="signOut()">🔓 Cerrar Sesión</button>
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="services_es.html">🛠️ Servicios</a>
             <a href="register_es.html">📝 Registrarse</a>
             <a href="login_es.html">🔑 Iniciar Sesión</a>
+            <a href="pricing_es.html">📬 Precios</a>
             <a href="contact_es.html">📬 Contáctenos</a>
         `;
     }
