@@ -66,103 +66,6 @@
 }
 
 
-/* Language Modal */
-.modal {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Darker transparent black */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    overflow: hidden; /* Prevents scrolling when the modal is open */
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-/* Modal Content */
-.modal-content {
-    background: linear-gradient(145deg, #0A0A0A, #1A1A1A); /* Rich black gradient */
-    color: #FFD700; /* Gold text */
-    padding: 2rem;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(255, 223, 0, 0.5); /* Bright gold shadow */
-    max-width: 500px;
-    width: 90%;
-    font-size: 1.5rem;
-    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
-}
-
-/* Modal Title */
-.modal-content h2 {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    background: linear-gradient(135deg, #FFD700, #FFC300, #FFB700); /* Gold gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Transparent text with gradient */
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Language Options */
-.language-options {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-    flex-wrap: wrap; /* Wrap buttons if needed on smaller screens */
-}
-
-/* Language Buttons */
-.language-options button {
-    background: linear-gradient(145deg, #0A0A0A, #1C1C1C); /* Black gradient */
-    color: #FFD700; /* Gold text */
-    padding: 1rem 2rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; /* Space between text and flag */
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 223, 0, 0.5); /* Bright gold shadow */
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Hover Effect for Buttons */
-.language-options button:hover {
-    background: #FFD700; /* Gold background on hover */
-    color: #000000; /* Black text on hover */
-    transform: scale(1.1); /* Slight zoom */
-    box-shadow: 0 6px 15px rgba(255, 223, 0, 0.7); /* Stronger gold shadow on hover */
-}
-
-/* Flag Icons */
-.flag-icon {
-    width: 30px;
-    height: 20px;
-    border-radius: 3px; /* Slightly rounded flags */
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4); /* Subtle shadow on flags */
-}
-
-/* Fade-in Animation for Modal */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
 .navbar a.active {
     background-color: #ffd700; /* Highlighted gold background */
     color: #1a1a1a; /* Dark text for contrast */
@@ -171,6 +74,7 @@
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
 }
+
 /* Features Container */
 .features-container {
     display: flex;
