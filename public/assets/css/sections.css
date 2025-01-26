@@ -810,6 +810,162 @@ footer {
     overflow: hidden;
 }
 
+/* Pricing Section */
+.pricing-section {
+    background-color: #000000; /* Black background */
+    color: #ffd700; /* Gold text color */
+    padding: 50px 20px;
+    text-align: center;
+    overflow: hidden; /* Ensures animations stay within bounds */
+}
+
+.pricing-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffd700; /* Gold color */
+    animation: fadeInDown 1s ease-in-out; /* Title animation */
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeInUp 1s ease-in-out; /* Fade-in for cards */
+}
+
+/* Pricing Item */
+.pricing-item {
+    background-color: #333333; /* Dark gray for contrast */
+    border: 2px solid #ffd700; /* Gold border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px); /* Starts below view */
+    animation: cardSlideIn 0.8s ease forwards;
+}
+
+.pricing-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.pricing-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.pricing-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.pricing-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.pricing-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #ffffff; /* White text for readability */
+}
+
+.pricing-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.pricing-item ul li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: #ffffff; /* White text for readability */
+}
+
+.pricing-item .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffd700; /* Gold color for price */
+}
+
+.pricing-item .cta-button {
+    display: inline-block;
+    background-color: #ffd700; /* Gold button */
+    color: #000000; /* Black text */
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 1.5s infinite; /* Subtle pulsing button animation */
+}
+
+.pricing-item .cta-button:hover {
+    background-color: #e6be00; /* Darker gold on hover */
+    transform: translateY(-3px);
+}
+
+/* Hover Effects for Pricing Item */
+.pricing-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(255, 215, 0, 0.4); /* Gold glow */
+}
+
+/* Animations */
+
+/* Title and Text Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card Slide-In Animation */
+@keyframes cardSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* Footer Links */
 footer a {
     color: #FFD700; /* Gold text for links */
