@@ -1,4 +1,84 @@
-/* Appointments Container */
+.title-banner img {
+  display: block;
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+  animation: fadeInZoom 2s ease-out, waveEffect 6s ease-in-out infinite, pulseGlow 3s ease-in-out infinite;
+  transition: transform 0.5s ease, filter 0.5s ease; /* Smooth hover transitions */
+}
+
+/* Keyframe for Fade In with Zoom */
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Keyframe for Waving Effect (Swaying Left to Right) */
+@keyframes waveEffect {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Keyframe for Pulsing Glow Effect */
+@keyframes pulseGlow {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+/* Keyframe for Subtle Bounce (Continuous Floating Effect) */
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Applying Float Effect */
+.title-banner img:hover {
+  animation: floatEffect 3s ease-in-out infinite, pulseGlow 3s ease-in-out infinite;
+}/* Appointments Container */
 .appointments-container {
     display: flex;
     flex-wrap: wrap; /* Wrap cards to the next row */
