@@ -125,3 +125,29 @@
     outline: 3px solid #FFC200; /* Gold outline for focus */
     outline-offset: 3px; /* Offset for clarity */
 }
+
+/* Language Buttons */
+.language-options button {
+    background: linear-gradient(145deg, #1A1A1A, #2A2A2A); /* Dark black gradient */
+    color: #FFD700; /* Vibrant gold text */
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between text and flag */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5); /* Gold shadow */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hover Effect for Buttons */
+.language-options button:hover {
+    background: #FFD700; /* Vibrant gold background on hover */
+    color: #000000; /* Black text on hover */
+    transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.6); /* Stronger gold shadow on hover */
+}
