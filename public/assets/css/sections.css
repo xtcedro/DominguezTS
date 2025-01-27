@@ -518,21 +518,6 @@ html {
     position: relative;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .content-section {
-        padding: 3rem 1.5rem; /* Adjust padding for smaller screens */
-        max-width: 90%; /* Reduce width for mobile */
-    }
-
-    .content-section h2 {
-        font-size: 2rem; /* Scale heading size for smaller devices */
-    }
-
-    .content-section p {
-        font-size: 1.2rem; /* Adjust paragraph size */
-    }
-}
 
 /* Services Section */
 .services-section {
