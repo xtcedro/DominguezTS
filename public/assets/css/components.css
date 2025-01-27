@@ -392,13 +392,7 @@ blockquote::after {
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.title-banner img {
-  display: block;
-  width: 100vw; /* Slightly reduce size */
-  height: auto;
-  margin: 0 auto;
-  object-fit: cover;
-}
+
 
 /* Media Container */
 .media-container {
