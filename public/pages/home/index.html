@@ -8,27 +8,21 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="../assets/js/auth-navigation.js" defer></script>
     <script src="../assets/js/load-components.js" defer></script>
-    <script src="../assets/js/language-selection.js" defer></script>
+    <script src="../assets/js/modal.js" defer></script>
 </head>
-
 <body>
-    <!-- Language Selection Modal -->
-    <div id="language-modal" class="modal">
+    <!-- Discount Modal -->
+    <div id="modal" class="modal">
         <div class="modal-content">
-            <h2>Choose Your Language 🌎</h2>
-            <div class="language-options">
-                <button class="language-button" id="english-button">
-                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon">
-                    English 🇺🇸
-                </button>
-                <button class="language-button" id="spanish-button">
-                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon">
-                    Español 🇲🇽
-                </button>
+            <h2>🎉 Get 20% Off Your First Purchase! 🎨</h2>
+            <p>Sign up for an account today and enjoy a 20% discount on your first service or purchase with Antuna's Painting and Remodeling. 🛠️</p>
+            <div class="modal-buttons">
+                <button class="cta-button" onclick="location.href='register.html'">📝 Register Now</button>
+                <button class="cta-button secondary" id="close-modal">❌ Close</button>
             </div>
         </div>
     </div>
-
+    
     <!-- Include Header -->
     <div id="header"></div>
 
