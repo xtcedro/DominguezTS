@@ -1,0 +1,679 @@
+.title-banner img {
+  display: block;
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease; /* Smooth hover transitions */
+
+/* Appointments Container */
+.appointments-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards to the next row */
+    gap: 2rem; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    margin-top: 2rem;
+}
+
+/* Appointment Card */
+.appointment-card {
+    background: #000000; /* Black background for cards */
+    color: #FFD700; /* Gold text */
+    padding: 1.5rem;
+    border: 2px solid #FFD700; /* Gold border for separation */
+    border-radius: 8px; /* Smooth edges */
+    width: 300px; /* Fixed card width */
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5); /* Subtle gold shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.7); /* Stronger shadow on hover */
+}
+
+.appointment-card h2 {
+    font-size: 1.5rem; /* Title size for cards */
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Transparent gradient */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.appointment-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #FFFFFF; /* White text for details */
+    margin-bottom: 0.5rem;
+}
+/* Base Styles for the Response Message */
+.response-message {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  display: none; /* Initially hidden */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Success Message Styles */
+.response-message.success {
+  color: #155724; /* Dark green text */
+  background-color: #d4edda; /* Light green background */
+  border: 1px solid #c3e6cb; /* Subtle green border */
+}
+
+/* Error Message Styles */
+.response-message.error {
+  color: #721c24; /* Dark red text */
+  background-color: #f8d7da; /* Light red background */
+  border: 1px solid #f5c6cb; /* Subtle red border */
+}
+
+
+.navbar a.active {
+    background-color: #ffd700; /* Highlighted gold background */
+    color: #1a1a1a; /* Dark text for contrast */
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Features Container */
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Increased spacing for better separation */
+    padding: 2rem; /* Add padding around the container */
+}
+
+/* Feature Item */
+.feature-item {
+    width: calc(33.33% - 2rem); /* Maintain 3 items per row with improved spacing */
+    background: linear-gradient(135deg, #1c1c1c, #2a2a2a); /* Gradient background for depth */
+    border: 2px solid #FFD700; /* Gold border for the cards */
+    border-radius: 15px; /* Smoother edges for a modern look */
+    padding: 2rem; /* Increase padding for a spacious layout */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px); /* More noticeable lift on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+    background: linear-gradient(135deg, #333333, #444444); /* Darker gradient on hover */
+}
+
+/* Decorative Glow on Hover */
+.feature-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.3), transparent);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: -1; /* Ensure it stays behind the card content */
+}
+
+.feature-item:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Feature Item Title */
+.feature-item h3 {
+    font-size: 1.8rem; /* Slightly larger for prominence */
+    font-weight: 900; /* Extra bold for emphasis */
+    margin-bottom: 1.5rem; /* Increased spacing below the title */
+    color: #FFD700; /* Gold for subtitles */
+    text-transform: uppercase; /* Professional look */
+    letter-spacing: 1.5px; /* Add spacing for elegance */
+    transition: color 0.3s ease;
+}
+
+.feature-item h3:hover {
+    color: #FFF5B8; /* Lighter gold on hover for interactivity */
+}
+
+/* Feature Item Description */
+.feature-item p {
+    font-size: 1.1rem; /* Slightly larger for readability */
+    color: #E0E0E0; /* Softer white for better contrast */
+    line-height: 1.8; /* Improved readability for longer text */
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-item {
+        width: calc(50% - 2rem); /* 2 items per row for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-item {
+        width: 100%; /* 1 item per row for mobile screens */
+    }
+}
+
+/* Language Modal */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Slightly transparent black */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden; /* Prevents scrolling when the modal is open */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Modal Content */
+.modal-content {
+    background: linear-gradient(145deg, #1C1C1C, #000000); /* Subtle dark gradient */
+    color: #FFFFFF;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5); /* Enhanced gold shadow */
+    max-width: 500px;
+    width: 90%;
+    font-size: 1.5rem;
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Modal Title */
+.modal-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Transparent text with gradient */
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Language Options */
+.language-options {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Wrap buttons if needed on smaller screens */
+}
+
+/* Language Buttons */
+.language-options button {
+    background: linear-gradient(145deg, #1C1C1C, #2A2A2A); /* Dark gradient */
+    color: #FFD700; /* Gold text */
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between text and flag */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5); /* Enhanced gold shadow */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hover Effect for Buttons */
+.language-options button:hover {
+    background: #FFD700; /* Gold background on hover */
+    color: #000000; /* Black text on hover */
+    transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.6); /* Stronger shadow on hover */
+}
+
+/* Flag Icons */
+.flag-icon {
+    width: 30px;
+    height: 20px;
+    border-radius: 3px; /* Slightly rounded flags */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow on flags */
+}
+
+/* Fade-in Animation for Modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #000000; /* Black for nav background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    border-bottom: 2px solid #FFD700; /* Gold border at the bottom */
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.4); /* Subtle gold shadow for depth */
+}
+
+nav a {
+    color: #FFD700; /* Gold text for links */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem 1rem; /* Padding for better spacing */
+    border-radius: 5px; /* Smooth edges */
+}
+
+nav a:hover {
+    color: #000000; /* Black text on hover */
+    background-color: #FFD700; /* Gold background on hover */
+}
+
+/* Adjusted .title-banner Styling */
+.title-banner {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Optional: Set background color */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Blockquote Styling */
+blockquote {
+    font-style: italic;
+    background: linear-gradient(135deg, #1C1C1C, #292929); /* Subtle gradient for depth */
+    padding: 2rem; /* Increased padding for a more spacious design */
+    border-left: 6px solid #FFD700; /* Slightly thicker gold border */
+    border-radius: 10px; /* Smooth, modern corners */
+    font-size: 1.3rem; /* Larger font for readability */
+    margin: 2.5rem auto; /* Increased vertical spacing */
+    color: #E0E0E0; /* Softer white for text */
+    max-width: 800px; /* Slightly wider for balance */
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    line-height: 1.8; /* Improve readability */
+    text-align: justify; /* Professional text alignment */
+}
+
+blockquote::before {
+    content: '“'; /* Opening quotation mark */
+    font-size: 3rem; /* Larger, decorative quote */
+    color: #FFD700; /* Gold color */
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    z-index: 1; /* Ensure it appears above the background */
+}
+
+blockquote::after {
+    content: '”'; /* Closing quotation mark */
+    font-size: 3rem;
+    color: #FFD700;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    z-index: 1;
+}
+
+/* Hero Quote Styling */
+.hero-quote {
+    font-style: italic;
+    font-size: 1.8rem; /* Larger font for prominence */
+    color: #FFD700; /* Gold text */
+    background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+    padding: 2rem; /* Increased padding for emphasis */
+    border-left: 6px solid #FFD700; /* Gold border on the left */
+    border-radius: 15px; /* Smooth, modern edges */
+    max-width: 850px; /* Slightly wider for better balance */
+    margin: 3rem auto; /* Increased spacing around the quote */
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Deeper shadow for impact */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-quote em {
+    color: #FFFFFF; /* White color for emphasized text */
+    font-weight: bold;
+    font-size: 1.6rem; /* Slightly larger for emphasis */
+    display: block;
+    margin-top: 1rem;
+    text-transform: uppercase; /* Professional touch */
+    letter-spacing: 1.5px; /* Add spacing for elegance */
+}
+
+.hero-quote::before {
+    content: '“'; /* Opening quotation mark */
+    font-size: 4rem; /* Larger decorative quote */
+    color: #FFD700; /* Gold color */
+    position: absolute;
+    top: -20px;
+    left: 10%;
+    opacity: 0.2; /* Subtle decorative opacity */
+    z-index: 0;
+}
+
+.hero-quote::after {
+    content: '”'; /* Closing quotation mark */
+    font-size: 4rem;
+    color: #FFD700;
+    position: absolute;
+    bottom: -20px;
+    right: 10%;
+    opacity: 0.2; /* Subtle decorative opacity */
+    z-index: 0;
+}
+
+.hero-quote:hover {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); /* Slight gradient on hover */
+    transform: scale(1.02); /* Subtle zoom effect on hover */
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+
+
+/* Media Container */
+.media-container {
+    display: flex;
+    justify-content: center; /* Center-align items */
+    gap: 2rem; /* Space between items */
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    margin: 2rem 0;
+}
+
+.media-container figure {
+    max-width: 300px;
+    text-align: center;
+}
+
+.media-container img {
+    width: 100%; /* Responsive image */
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-container img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5); /* Gold shadow */
+}
+
+.media-container figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #FFD700; /* Gold text */
+    font-weight: bold;
+}
+/* Video Container */
+.video-container {
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.video-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #FFD700; /* Gold text */
+    font-weight: bold;
+}
+
+.video-container video {
+    width: 100%; /* Responsive video */
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+.video-container figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #FFFFFF; /* White text */
+    font-style: italic;
+}
+
+/* Services Container */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem; /* Slightly larger gap for better spacing */
+    flex-wrap: wrap;
+    padding: 2rem; /* Add padding around the container */
+    background: linear-gradient(135deg, #1C1C1C, #000000); /* Subtle gradient background */
+    border-radius: 15px; /* Smooth edges for the container */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Service Item */
+.service-item {
+    background: linear-gradient(135deg, #000000, #1A1A1A); /* Subtle gradient for depth */
+    padding: 2rem; /* Increased padding for a spacious look */
+    border: 3px solid #FFD700; /* Thicker gold border for prominence */
+    border-radius: 12px; /* Smoother edges */
+    width: 320px; /* Slightly wider cards */
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.4); /* Softer gold shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    color: #FFD700; /* Gold text for consistency */
+    text-align: center; /* Center-align the content */
+    overflow: hidden; /* Prevent overflow for decorative elements */
+    position: relative;
+}
+
+/* Decorative Glow */
+.service-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.2), transparent);
+    z-index: 0; /* Behind content */
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    border-radius: 50%;
+}
+
+.service-item:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+/* Hover Effect */
+.service-item:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 12px 30px rgba(255, 215, 0, 0.6); /* Stronger gold shadow */
+    background: linear-gradient(135deg, #1A1A1A, #333333); /* Subtle gradient shift on hover */
+}
+
+/* Service Title */
+.service-item h3 {
+    background: linear-gradient(135deg, #FFD700, #FFC400); /* Bright gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Gradient text effect */
+    font-weight: 900; /* Extra bold for prominence */
+    text-transform: uppercase; /* Professional touch */
+    font-size: 1.8rem; /* Slightly larger for emphasis */
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px; /* Add spacing for elegance */
+    position: relative;
+    z-index: 1; /* Ensure title is above decorative glow */
+}
+
+/* Service Description */
+.service-item p {
+    font-size: 1.2rem; /* Larger font for readability */
+    color: #E0E0E0; /* Softer white for better contrast */
+    line-height: 1.8; /* Improved readability */
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Call-to-Action Button */
+.service-item a {
+    display: inline-block;
+    background: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px; /* Smooth edges for buttons */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+    text-decoration: none; /* Remove underline */
+}
+
+.service-item a:hover {
+    background: #FFC400; /* Brighter gold on hover */
+    transform: translateY(-3px); /* Subtle lift on hover */
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.6); /* Add shadow on hover */
+}
+
+.projects-gallery figure {
+    max-width: 300px;
+    text-align: center;
+    background-color: #000000; /* Black background for figure */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #FFD700; /* Gold border for each figure */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-gallery figure:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.7); /* Stronger gold shadow on hover */
+}
+
+.projects-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #FFD700; /* Gold border below the image */
+}
+
+.projects-gallery figcaption {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #FFD700; /* Gold text for captions */
+    background: linear-gradient(135deg, #000000, #1C1C1C); /* Subtle black gradient */
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); /* Inner shadow for depth */
+}
+
+.why-choose-us blockquote {
+    font-style: italic;
+    background: linear-gradient(135deg, #2a2a2a, #3d3d3d); /* Subtle gradient for depth */
+    color: #FFD700; /* Gold text */
+    padding: 2rem; /* Increased padding for a spacious design */
+    margin: 2.5rem auto; /* More balanced spacing */
+    border-left: 6px solid #FFD700; /* Slightly thicker gold border */
+    border-radius: 10px; /* Smoother, modern corners */
+    font-size: 1.4rem; /* Slightly larger font for readability */
+    max-width: 800px; /* Keep width manageable */
+    line-height: 1.8; /* Improve readability */
+    position: relative;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    text-align: justify; /* Professional text alignment */
+    overflow: hidden;
+}
+
+/* Decorative Glow Effect */
+.why-choose-us blockquote::before {
+    content: '“'; /* Opening quotation mark */
+    font-size: 4rem; /* Larger, decorative size */
+    color: rgba(255, 215, 0, 0.6); /* Softer gold for decoration */
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    z-index: 0; /* Behind the text */
+    opacity: 0.8;
+}
+
+.why-choose-us blockquote::after {
+    content: '”'; /* Closing quotation mark */
+    font-size: 4rem;
+    color: rgba(255, 215, 0, 0.6); /* Softer gold for decoration */
+    position: absolute;
+    bottom: -20px;
+    right: 15px;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+/* Hover Effect */
+.why-choose-us blockquote:hover {
+    background: linear-gradient(135deg, #3d3d3d, #4a4a4a); /* Slight gradient shift */
+    transform: scale(1.02); /* Subtle zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional Responsive Design */
+@media (max-width: 768px) {
+    .why-choose-us blockquote {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        padding: 1.5rem;
+    }
+}
+
+.legal-links {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Aligns items horizontally */
+    justify-content: center; /* Centers items */
+    gap: 20px; /* Adds spacing between items */
+    font-size: 1rem; /* Sets text size to be consistent with the theme */
+    color: #FFD700; /* Gold text color for items */
+}
+
+.legal-links li {
+    display: inline; /* Ensures list items are inline */
+}
+
+.legal-links a {
+    text-decoration: none; /* Removes underline */
+    color: #FFD700; /* Gold text for links */
+    font-weight: bold; /* Makes links bold */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.legal-links a:hover {
+    color: #000000; /* Black text color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
