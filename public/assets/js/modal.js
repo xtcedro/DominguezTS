@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Get modal and buttons
-    const discountModal = document.getElementById("modal");
+    const discountModal = document.getElementById("discount-modal");
     const closeModal = document.getElementById("close-modal");
 
     // Check if the modal has already been shown
