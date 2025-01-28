@@ -1,7 +1,41 @@
+/* Header */
+header {
+  display: flex;
+  justify-content: left; /* Align logo to the left */
+  align-items: center; /* Vertically center the logo */
+  padding: 0.5rem; /* Reduced padding for a compact header */
+  background-color: #001f54; /* Dark Blue */
+  height: 70px; /* Enough height for the logo and spacing */
+  animation: slideIn 1.5s ease-out; /* Apply keyframe animation */
+}
+
 /* Logo */
-header .logo img {
-  max-height: 50px; /* Adjust size for larger logo */
+.logo img {
+  max-height: 50px; /* Ensure the logo height is 50px */
   width: auto; /* Maintain aspect ratio */
+  animation: fadeIn 1.5s ease-in; /* Smooth fade-in animation for logo */
+}
+
+/* Keyframe for Header Animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0; /* Fully transparent */
+  }
+  100% {
+    transform: translateX(0); /* Slide into position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Keyframe for Logo Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Fully transparent */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+  }
 }
 
 .hero-banner {
