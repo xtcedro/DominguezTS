@@ -1,13 +1,15 @@
 /* Header */
 header {
   display: flex;
-  align-items: center;
+  justify-content: center; /* Horizontally center the logo */
+  align-items: center; /* Vertically center the logo */
   padding: 1rem 2rem;
   background-color: #001f54; /* Dark Blue */
+  height: 200px; /* Optional: Set height if needed */
 }
 
 /* Logo */
 header .logo img {
-  max-height: 150px; /* Increased height for a larger logo */
-  width: auto; /* Maintains aspect ratio */
+  max-height: 150px; /* Adjust size for larger logo */
+  width: auto; /* Maintain aspect ratio */
 }
