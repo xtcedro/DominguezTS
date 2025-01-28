@@ -13,19 +13,7 @@ body {
   color: #333;
 }
 
-/* Header */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: #001f54; /* Dark Blue */
-  color: #fff;
-}
 
-header .logo img {
-  max-height: 50px;
-}
 
 #navbar ul {
   list-style: none;
