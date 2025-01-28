@@ -1,81 +1,98 @@
-/* Appointment Form */
+/* Appointment Form Styles */
+.appointment-booker {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light background */
+  margin: 2rem auto;
+  border: 2px solid gold; /* Gold border */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+}
+
+.appointment-booker h2 {
+  margin-bottom: 1rem;
+  color: #001f54; /* Dark Blue */
+  font-size: 1.8rem;
+}
+
+.appointment-booker p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #333; /* Neutral text color */
+  line-height: 1.6;
+}
+
 .appointment-form {
-    display: grid;
-    gap: 1.5rem;
-    max-width: 600px;
-    margin: 2rem auto; /* Add top and bottom spacing for better alignment */
-    padding: 2rem; /* Add padding to give the form breathing room */
-    background: linear-gradient(135deg, #000000, #1C1C1C); /* Black gradient background */
-    border: 2px solid #FFD700; /* Gold border */
-    border-radius: 10px; /* Smooth, rounded corners */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Elevated shadow for depth */
+  width: 100%;
 }
 
-/* Form Group */
-.appointment-form .form-group {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 
-/* Labels */
-.appointment-form .form-group label {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem; /* Slightly larger for readability */
-    font-weight: bold; /* Add boldness for emphasis */
-    color: #FFD700; /* Gold text */
-    letter-spacing: 0.5px; /* Subtle spacing for a professional touch */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #001f54; /* Dark Blue */
 }
 
-/* Input, Select, and Textarea Fields */
-.appointment-form .form-group input,
-.appointment-form .form-group select,
-.appointment-form .form-group textarea {
-    padding: 0.75rem;
-    border: 2px solid #FFD700; /* Gold border */
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #000000; /* Black text */
-    background-color: #FFFFFF; /* White background */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth focus transition */
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
 }
 
-/* Focus State */
-.appointment-form .form-group input:focus,
-.appointment-form .form-group select:focus,
-.appointment-form .form-group textarea:focus {
-    outline: none;
-    border-color: #FFD700; /* Gold focus border */
-    box-shadow: 0 0 8px rgba(255, 215, 0, 0.8); /* Enhanced gold glow */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: gold; /* Gold border focus */
+  box-shadow: 0 0 5px gold;
 }
 
-/* Response Message */
-.appointment-form #responseMessage {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 1.1rem; /* Slightly larger for emphasis */
-    color: #FFD700; /* Gold text */
-    font-weight: bold; /* Bold for prominence */
-    letter-spacing: 0.5px; /* Professional spacing */
+textarea {
+  resize: none;
 }
 
-/* Subtle Animation */
-.appointment-form .form-group input,
-.appointment-form .form-group select,
-.appointment-form .form-group textarea {
-    transition: all 0.2s ease-in-out; /* Smooth hover and focus transitions */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #001f54; /* Dark Blue */
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
-.appointment-form .form-group input:hover,
-.appointment-form .form-group select:hover,
-.appointment-form .form-group textarea:hover {
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); /* Subtle hover glow */
+.btn:hover {
+  background-color: #004080; /* Slightly lighter blue */
 }
 
-/* Rounded Border */
-.appointment-form .form-group input,
-.appointment-form .form-group select,
-.appointment-form .form-group textarea {
-    border-radius: 8px; /* Slightly more rounded for modern feel */
+.btn:active {
+  background-color: #002640; /* Darker blue for click effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .appointment-booker {
+    padding: 1rem;
+  }
+
+  label,
+  input,
+  textarea,
+  .btn {
+    font-size: 0.9rem;
+  }
 }
