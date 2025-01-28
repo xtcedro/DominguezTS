@@ -17,17 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.style.display = "none";
     }
 
-    // Show the discount modal first
-    showModal(discountModal);
+    // Show the social modal first
+    showModal(socialModal);
 
-    // When the discount modal is closed, show the social modal
-    closeDiscountModal.addEventListener("click", () => {
-        closeModal(discountModal);
-        showModal(socialModal);
-    });
-
-    // Add functionality to close the social modal
+    // When the social modal is closed, show the discount modal
     closeSocialModal.addEventListener("click", () => {
         closeModal(socialModal);
+        showModal(discountModal);
+    });
+
+    // Add functionality to close the discount modal
+    closeDiscountModal.addEventListener("click", () => {
+        closeModal(discountModal);
     });
 });
