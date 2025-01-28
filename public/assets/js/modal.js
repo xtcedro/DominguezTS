@@ -1,39 +1,34 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Get the modals
-    const discountModal = document.getElementById("discount-modal");
+document.addEventListener("DOMContentLoaded", function () {
     const socialModal = document.getElementById("social-modal");
+    const discountModal = document.getElementById("discount-modal");
+    const closeSocialModalBtn = document.getElementById("close-social-modal");
+    const closeDiscountModalBtn = document.getElementById("close-modal");
 
-    // Get the close buttons
-    const closeDiscountModal = document.getElementById("close-modal");
-    const closeSocialModal = document.getElementById("close-social-modal");
+    // Check localStorage to see if modals have already been shown
+    const modalsShown = localStorage.getItem("modalsShown");
 
-    // Function to show a modal with animation
-    function showModal(modal) {
-        modal.classList.add("modal-show"); // Add the 'show' class for animation
-        modal.classList.remove("modal-hide"); // Remove the 'hide' class if present
-        modal.style.display = "flex"; // Ensure it's visible
+    // Function to show the social modal
+    function showSocialModal() {
+        socialModal.style.display = "block";
+
+        closeSocialModalBtn.addEventListener("click", function () {
+            socialModal.style.display = "none";
+            showDiscountModal(); // Show the next modal
+        });
     }
 
-    // Function to close a modal with animation
-    function closeModal(modal) {
-        modal.classList.add("modal-hide"); // Add the 'hide' class for animation
-        modal.classList.remove("modal-show"); // Remove the 'show' class if present
-        setTimeout(() => {
-            modal.style.display = "none"; // Hide the modal after the animation ends
-        }, 300); // Match the animation duration in milliseconds
+    // Function to show the discount modal
+    function showDiscountModal() {
+        discountModal.style.display = "block";
+
+        closeDiscountModalBtn.addEventListener("click", function () {
+            discountModal.style.display = "none";
+            localStorage.setItem("modalsShown", "true"); // Mark modals as shown
+        });
     }
 
-    // Show the social modal first
-    showModal(socialModal);
-
-    // When the social modal is closed, show the discount modal
-    closeSocialModal.addEventListener("click", () => {
-        closeModal(socialModal);
-        showModal(discountModal);
-    });
-
-    // Add functionality to close the discount modal
-    closeDiscountModal.addEventListener("click", () => {
-        closeModal(discountModal);
-    });
+    // Show the modals in order only if they haven't been shown before
+    if (!modalsShown) {
+        showSocialModal();
+    }
 });
