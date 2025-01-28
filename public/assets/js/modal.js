@@ -7,14 +7,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeDiscountModal = document.getElementById("close-modal");
     const closeSocialModal = document.getElementById("close-social-modal");
 
-    // Function to show a modal
+    // Function to show a modal with animation
     function showModal(modal) {
-        modal.style.display = "block";
+        modal.classList.add("modal-show"); // Add the 'show' class for animation
+        modal.classList.remove("modal-hide"); // Remove the 'hide' class if present
+        modal.style.display = "flex"; // Ensure it's visible
     }
 
-    // Function to close a modal
+    // Function to close a modal with animation
     function closeModal(modal) {
-        modal.style.display = "none";
+        modal.classList.add("modal-hide"); // Add the 'hide' class for animation
+        modal.classList.remove("modal-show"); // Remove the 'show' class if present
+        setTimeout(() => {
+            modal.style.display = "none"; // Hide the modal after the animation ends
+        }, 300); // Match the animation duration in milliseconds
     }
 
     // Show the social modal first
