@@ -1,15 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Track currently active modals
+    let activeModal = null;
+
     /**
      * Generalized function to show a modal
      * @param {string} modalId - The ID of the modal to be shown
      */
     function showModal(modalId) {
+        if (activeModal) closeModal(activeModal); // Close any active modal first
         const modal = document.getElementById(modalId);
         if (modal) {
             modal.style.display = "block";
             modal.setAttribute("aria-hidden", "false");
             const content = modal.querySelector(".modal-content");
             if (content) content.focus(); // Set focus to modal content for accessibility
+            activeModal = modalId; // Track the currently active modal
         }
     }
 
@@ -22,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (modal) {
             modal.style.display = "none";
             modal.setAttribute("aria-hidden", "true");
+            if (activeModal === modalId) activeModal = null; // Clear the active modal
         }
     }
 
@@ -49,9 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
      */
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
-            document.querySelectorAll(".modal").forEach((modal) => {
-                closeModal(modal.id);
-            });
+            if (activeModal) closeModal(activeModal); // Close the active modal
         }
     });
 
