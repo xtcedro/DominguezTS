@@ -1,12 +1,3 @@
-/* Header */
-header {
-  display: flex;
-  justify-content: center; /* Horizontally center the logo */
-  align-items: center; /* Vertically center the logo */
-  padding: 1rem 2rem;
-  background-color: #001f54; /* Dark Blue */
-  height: 200px; /* Optional: Set height if needed */
-}
 
 /* Mission Section */
 .mission {
