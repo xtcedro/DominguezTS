@@ -30,4 +30,4 @@ document.addEventListener("DOMContentLoaded", () => {
     closeDiscountModal.addEventListener("click", () => {
         closeModal(discountModal);
     });
-});
+}); 
