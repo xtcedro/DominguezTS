@@ -3,7 +3,7 @@
   padding: 2rem;
   margin: 2rem auto;
   max-width: 600px;
-  background-color: #ffffff; /* White Background */
+  background-color: #001f54; 
   border: 2px solid #FFD700; /* Gold Border */
   border-radius: 8px;
   text-align: left;
@@ -24,6 +24,12 @@
 .contact-info li {
   margin-bottom: 1.5rem; /* Added spacing for better readability */
   font-size: 1.2rem;
+}
+
+/* Emphasized Notes */
+.contact-info em {
+  font-style: italic;
+  color: #666; /* Subtle gray for notes */
 }
 
 /* Mission Section */
