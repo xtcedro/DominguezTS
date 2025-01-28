@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Schedule your appointment with Dominguez Tech Solutions quickly and securely.">
+  <title>Appointment Booker - Dominguez Tech Solutions</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="assets/js/script.js"></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div id="header"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar"></nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Appointment Booker Section -->
+    <section class="appointment-booker">
+      <h2>📅 Public Appointment Booker 📅</h2>
+      <p>
+        💡 Schedule your appointment without the hassle of signing up or logging in. Once submitted, your appointment is locked 🔒 and cannot be deleted 🛑 or modified. 📝
+      </p>
+      <form action="/submit-appointment" method="POST" class="appointment-form">
+        <div class="form-group">
+          <label for="name">👤 Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">📧 Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">📞 Your Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="date">📅 Appointment Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">⏰ Appointment Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="details">📝 Appointment Details</label>
+          <textarea id="details" name="details" rows="4" placeholder="Provide additional details about your appointment" required></textarea>
+        </div>
+        <button type="submit" class="btn">🚀 Book Appointment 🚀</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <div id="footer"></div>
+
+</body>
+</html>
