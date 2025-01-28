@@ -109,43 +109,6 @@
   color: gold;
 }
 
-.contact-info {
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 600px;
-  background-color: #001f54;
-  border: 2px solid gold; /* Gold border */
-  border-radius: 8px;
-  text-align: left;
-}
-
-.contact-info h2 {
-  color: #ffffff; 
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.contact-info ul {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-info li {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.contact-info a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
 
 /* Sales Pitch Section */
 .sales-pitch {
