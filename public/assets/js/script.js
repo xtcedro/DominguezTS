@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function setupNavigation() {
     const navbar = document.querySelector(".navbar");
 
     // Set the navigation bar
@@ -19,4 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.add("active");
         }
     });
-});
+}
