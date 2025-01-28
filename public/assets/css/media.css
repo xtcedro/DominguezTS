@@ -184,3 +184,37 @@
         font-size: 1.2rem; /* Adjust paragraph size */
     }
 }
+
+/* Media Queries for Tablets (widths between 600px and 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .modal-content {
+        padding: 1.5rem; /* Reduce padding */
+        max-width: 400px; /* Decrease max width */
+        font-size: 1.2rem; /* Slightly smaller font size */
+    }
+
+    .modal-content h2 {
+        font-size: 2rem; /* Smaller title font size */
+        letter-spacing: 0.8px; /* Adjust letter spacing */
+    }
+}
+
+/* Media Queries for Mobile Phones (widths below 600px) */
+@media (max-width: 599px) {
+    .modal-content {
+        padding: 1rem; /* Further reduce padding */
+        max-width: 90%; /* Adjust width to fit smaller screens */
+        font-size: 1rem; /* Reduce font size for content */
+    }
+
+    .modal-content h2 {
+        font-size: 1.8rem; /* Decrease title font size */
+        letter-spacing: 0.6px; /* Adjust letter spacing for readability */
+    }
+
+    .modal {
+        justify-content: flex-start; /* Align modal content to the top */
+        align-items: flex-start; /* Start from the top-left */
+        padding: 1rem; /* Add padding to modal container */
+    }
+}
