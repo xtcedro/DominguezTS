@@ -31,7 +31,8 @@ body {
   text-decoration: underline;
 }
 
-/* Navbar Styling */
+
+ /* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: center; /* Center-align the navigation items */
@@ -140,11 +141,6 @@ footer .legal-links a {
   text-decoration: none;
   font-weight: bold;
   font-size: 0.9rem;
-}
-
-footer .legal-links a:hover {
-  text-decoration: underline;
-  color: #ffffff; /* White */
 }
 
 /* Responsive Design for Footer */
