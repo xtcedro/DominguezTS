@@ -1,98 +1,74 @@
-/* Appointment Form Styles */
+/* Appointment Booker Section */
 .appointment-booker {
-  text-align: center;
   padding: 2rem;
-  background-color: #f9f9f9; /* Light background */
   margin: 2rem auto;
-  border: 2px solid gold; /* Gold border */
+  max-width: 600px;
+  background-color: #001f54; /* Dark Blue Background */
+  color: #ffffff; /* White Text */
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .appointment-booker h2 {
+  font-size: 2rem;
+  color: gold; /* Gold Heading */
   margin-bottom: 1rem;
-  color: #001f54; /* Dark Blue */
-  font-size: 1.8rem;
+  text-align: center;
+  text-shadow: 0 0 10px gold; /* Glow Effect */
 }
 
 .appointment-booker p {
+  font-size: 1.2rem;
   margin-bottom: 2rem;
-  font-size: 1rem;
-  color: #333; /* Neutral text color */
   line-height: 1.6;
+  text-align: center;
 }
 
+/* Form Styling */
 .appointment-form {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
-  text-align: left;
-}
-
-label {
-  display: block;
+.form-group label {
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #001f54; /* Dark Blue */
+  color: gold;
 }
 
-input,
-textarea {
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
-  font-family: Arial, sans-serif;
 }
 
-input:focus,
-textarea:focus {
+.form-group input:focus,
+.form-group textarea:focus {
   outline: none;
-  border-color: gold; /* Gold border focus */
+  border-color: gold;
   box-shadow: 0 0 5px gold;
 }
 
-textarea {
-  resize: none;
-}
-
+/* Submit Button */
 .btn {
-  display: block;
-  width: 100%;
-  padding: 0.8rem;
-  background-color: #001f54; /* Dark Blue */
-  color: #fff;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: gold; /* Gold Button */
+  color: #001f54; /* Dark Blue Text */
+  font-size: 1.2rem;
   font-weight: bold;
-  font-size: 1rem;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-  background-color: #004080; /* Slightly lighter blue */
-}
-
-.btn:active {
-  background-color: #002640; /* Darker blue for click effect */
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-  .appointment-booker {
-    padding: 1rem;
-  }
-
-  label,
-  input,
-  textarea,
-  .btn {
-    font-size: 0.9rem;
-  }
+  background-color: #ffc107; /* Lighter Gold on Hover */
+  transform: scale(1.05); /* Slightly Larger on Hover */
 }
