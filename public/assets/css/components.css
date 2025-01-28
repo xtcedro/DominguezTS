@@ -1,3 +1,98 @@
+/* Keyframes for Fade-In and Slide-Up */
+@keyframes modalFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes modalFadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+/* Language Modal */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Slightly darker black */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden; /* Prevents scrolling when the modal is open */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Active Modal (for triggering animations) */
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+    animation: modalFadeIn 0.5s ease-out forwards;
+}
+
+/* Modal Exit Animation */
+.modal.exiting {
+    animation: modalFadeOut 0.5s ease-out forwards;
+}
+
+/* Modal Content */
+.modal-content {
+    background: linear-gradient(145deg, #1A1A1A, #000000); /* Dark black gradient */
+    color: #FFD700; /* Gold text */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5); /* Gold shadow */
+    max-width: 500px;
+    width: 90%;
+    font-size: 1.5rem;
+    animation: modalFadeIn 0.5s ease-out forwards;
+}
+
+/* Modal Title */
+.modal-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #FFD700, #FFC107, #FFB000); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Transparent text with gradient */
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Language Options */
+.language-options {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Wrap buttons if needed on smaller screens */
+}
+
+/* Flag Icons */
+.flag-icon {
+    width: 30px;
+    height: 20px;
+    border-radius: 3px; /* Slightly rounded flags */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow on flags */
+}
 /* Appointments Container */
 .appointments-container {
     display: flex;
