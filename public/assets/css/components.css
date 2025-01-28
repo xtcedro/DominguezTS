@@ -1,4 +1,24 @@
+/* Logo Image Styling */
+.logo img {
+  max-width: 100%; /* Ensures the logo scales with its container */
+  max-height: 50px; /* Restrict height to 50px */
+  object-fit: contain; /* Ensures the logo scales without distortion */
+  margin: 0 auto; /* Center the logo within its container */
+  display: block; /* Make it a block-level element for better alignment */
+  animation: fadeInLogo 1.5s ease-out; /* Add a smooth fade-in animation */
+}
 
+/* Keyframe Animation for Logo */
+@keyframes fadeInLogo {
+  0% {
+    opacity: 0; /* Fully transparent */
+    transform: scale(0.9); /* Slightly smaller */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Full size */
+  }
+}
 /* Keyframe for Header Animation */
 @keyframes slideIn {
   0% {
