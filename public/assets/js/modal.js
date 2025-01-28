@@ -7,27 +7,37 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check localStorage to see if modals have already been shown
     const modalsShown = localStorage.getItem("modalsShown");
 
-    // Function to show the social modal
+    // Function to show a modal
+    function showModal(modal) {
+        modal.style.display = "block";
+    }
+
+    // Function to hide a modal
+    function hideModal(modal) {
+        modal.style.display = "none";
+    }
+
+    // Function to handle showing the social modal
     function showSocialModal() {
-        socialModal.style.display = "block";
+        showModal(socialModal);
 
         closeSocialModalBtn.addEventListener("click", function () {
-            socialModal.style.display = "none";
-            showDiscountModal(); // Show the next modal
+            hideModal(socialModal);
+            showDiscountModal(); // Proceed to the next modal
         });
     }
 
-    // Function to show the discount modal
+    // Function to handle showing the discount modal
     function showDiscountModal() {
-        discountModal.style.display = "block";
+        showModal(discountModal);
 
         closeDiscountModalBtn.addEventListener("click", function () {
-            discountModal.style.display = "none";
+            hideModal(discountModal);
             localStorage.setItem("modalsShown", "true"); // Mark modals as shown
         });
     }
 
-    // Show the modals in order only if they haven't been shown before
+    // Show modals in sequence only if they haven't been shown before
     if (!modalsShown) {
         showSocialModal();
     }
