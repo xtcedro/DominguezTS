@@ -1,3 +1,30 @@
+/* Contact Information Section */
+.contact-info {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  background-color: #ffffff; /* White Background */
+  border: 2px solid #FFD700; /* Gold Border */
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-info h2 {
+  color: #001f54; /* Dark Blue */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 1.5rem; /* Added spacing for better readability */
+  font-size: 1.2rem;
+}
 
 /* Mission Section */
 .mission {
