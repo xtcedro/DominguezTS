@@ -51,33 +51,6 @@ body {
     }
 }
 
-/* Navbar Styling */
-.navbar {
-  display: flex;
-  justify-content: center; /* Center-align the navigation items */
-  align-items: center;
-  background-color: #001f54; /* Dark Blue background */
-  padding: 1rem 2rem;
-  gap: 2rem; /* Spacing between navigation links */
-}
-
-.navbar a {
-  color: #fff; /* White text */
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
-}
-
-.navbar a:hover {
-  color: gold; /* Gold text on hover */
-  transform: scale(1.1); /* Slightly enlarge the link on hover */
-}
-
-.navbar a.active {
-  color: gold; /* Highlight active link */
-  text-decoration: underline; /* Underline for active link */
-}
  /* Hero Section */
 .hero {
   text-align: center;
@@ -96,7 +69,7 @@ body {
   color: #d1d1d1; /* Light Gray */
 }
 
- 
+
 
 /* Services List */
 .services {
