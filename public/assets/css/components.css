@@ -1,15 +1,13 @@
-/* Header */
-header {
-  display: flex;
-  justify-content: center; /* Horizontally center the logo */
-  align-items: center; /* Vertically center the logo */
-  padding: 1rem 2rem;
-  background-color: #001f54; /* Dark Blue */
-  height: 200px; /* Optional: Set height if needed */
-}
-
 /* Logo */
 header .logo img {
   max-height: 150px; /* Adjust size for larger logo */
   width: auto; /* Maintain aspect ratio */
+}
+
+.hero-banner {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
