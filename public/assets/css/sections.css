@@ -242,3 +242,49 @@
   background-color: #ffc107; /* Lighter Gold on Hover */
   transform: scale(1.05); /* Slightly Larger on Hover */
 }
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the navigation */
+    align-items: center;
+    background-color: #001f54; /* Dark Blue */
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex; /* Ensures horizontal alignment */
+    list-style: none; /* Removes default list styling */
+    gap: 2rem; /* Adds spacing between links */
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual Link Styling */
+.nav-links a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #FFD700; /* Gold buttons */
+    color: #001f54; /* Dark Blue text */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effects */
+.nav-links a:hover {
+    background-color: #FFC107; /* Slightly lighter gold */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Active Link */
+.nav-links a.active {
+    background-color: #E6AC00; /* Darker gold for active link */
+    color: #001f54; /* Dark Blue text */
+}
