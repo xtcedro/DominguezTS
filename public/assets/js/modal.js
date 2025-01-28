@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeDiscountModal = document.getElementById("close-modal");
     const closeSocialModal = document.getElementById("close-social-modal");
 
+    let socialModalShown = false; // Flag to ensure social modal is shown only once
+
     // Check if the discount modal has already been shown
     if (!localStorage.getItem("discountModalShown")) {
         // Show the discount modal immediately
@@ -18,8 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
     closeDiscountModal.addEventListener("click", () => {
         discountModal.style.display = "none";
 
-        // Show the social modal
-        socialModal.style.display = "block";
+        // Show the social modal if it hasn't been shown yet
+        if (!socialModalShown) {
+            socialModal.style.display = "block";
+            socialModalShown = true;
+        }
     });
 
     // Close social modal when its close button is clicked
@@ -31,7 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("click", (event) => {
         if (event.target === discountModal) {
             discountModal.style.display = "none";
-            socialModal.style.display = "block";
+
+            // Show the social modal if it hasn't been shown yet
+            if (!socialModalShown) {
+                socialModal.style.display = "block";
+                socialModalShown = true;
+            }
         } else if (event.target === socialModal) {
             socialModal.style.display = "none";
         }
