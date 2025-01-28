@@ -60,23 +60,7 @@ body {
   text-decoration: underline; /* Underline for active link */
 }
 
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: #001f54; /* Dark Blue */
-  color: #fff;
-}
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: #d1d1d1; /* Light Gray */
-}
 
 /* Services List */
 .services {
