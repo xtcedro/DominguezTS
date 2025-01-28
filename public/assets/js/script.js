@@ -1,22 +1,9 @@
-export function setupNavigation() {
-    const navbar = document.querySelector(".navbar");
+import { loadHeader, loadFooter } from './load-components.js';
+import { setupNavigation } from './navigation.js';
 
-    // Set the navigation bar
-    navbar.innerHTML = `
-        <a href="index.html">🏠 Home</a>
-        <a href="about.html">📖 About Us</a>
-        <a href="services.html">🛠️ Services</a>
-        <a href="contact.html">📬 Contact Us</a>
-    `;
-
-    // Highlight the active tab
-    const currentPath = window.location.pathname.split('/').pop(); // Get the current file name
-    const links = navbar.querySelectorAll("a");
-
-    links.forEach(link => {
-        const linkPath = link.getAttribute("href");
-        if (linkPath.includes(currentPath)) {
-            link.classList.add("active");
-        }
-    });
-}
+// Initialize the components and navigation bar
+document.addEventListener("DOMContentLoaded", () => {
+    loadHeader(); // Dynamically load the header
+    loadFooter(); // Dynamically load the footer
+    setupNavigation(); // Set up the navigation bar
+});
