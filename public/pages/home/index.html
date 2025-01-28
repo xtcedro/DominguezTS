@@ -1,150 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dominguez Tech Solutions offers fast and affordable iPhone and computer repairs, custom software development, and website design in Oklahoma City. Quality service with 24-hour delivery.">
-    <title>Home - Dominguez Tech Solutions</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../assets/js/auth-navigation.js" defer></script>
-    <script src="../assets/js/load-components.js" defer></script>
-    <script src="../assets/js/modal.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dominguez Tech Solutions - Fast, Affordable Tech Solutions for Your Business and Life!">
+  <title>Dominguez Tech Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
 </head>
-    
 <body>
-
-
-<!-- Social Modal -->
-<div id="social-modal" class="modal" aria-hidden="true">
-  <div class="modal-content" tabindex="-1">
-    <h2>👋 Meet Pedro M. Dominguez</h2>
-    <p>
-      Hi, I’m Pedro M. Dominguez, creator of 
-      <a href="https://www.domingueztechsolutions.com" target="_blank" rel="noopener noreferrer">Dominguez Tech Solutions</a> 
-      and <a href="https://www.okdevs.xyz" target="_blank" rel="noopener noreferrer">OK Devs</a>. 
-      I’m building a production system to revolutionize web app development and empower businesses to innovate. 🌟
-    </p>
-    <p>
-      Both platforms are still in development, serving as my learning ground as I explore and push boundaries in web 
-      development. Let’s collaborate to create a better, more connected future. 🌐✨
-    </p>
-    <div class="modal-buttons">
-      <a href="https://github.com/xtcedro" class="cta-button github" target="_blank" rel="noopener noreferrer">
-        🖥️ My GitHub Projects 💻
-      </a>
-      <a href="https://www.facebook.com/share/1DC5VXX4fu/" class="cta-button facebook" target="_blank" rel="noopener noreferrer">
-        👍 Follow on Facebook 📘
-      </a>
-      <a href="https://twitter.com/xtcedro" class="cta-button x" target="_blank" rel="noopener noreferrer">
-        🐦 Follow on X 🔗
-      </a>
-      <!-- Update the id for this close button -->
-      <button id="close-social-modal" class="cta-button secondary">❌ Close</button>
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Dominguez Tech Solutions Logo">
     </div>
-  </div>
-</div>
+    <nav id="navbar"></nav>
+  </header>
 
-<!-- Discount Modal -->
-<div id="discount-modal" class="modal" aria-hidden="true">
-  <div class="modal-content" tabindex="-1">
-    <h2>🎉 20% OFF Your First Project! 🚀</h2>
-    <p>
-      Join Dominguez Tech Solutions today and get <strong>20% OFF</strong> your first project. Let’s turn your ideas into reality! 💼✨
-    </p>
-    <div class="modal-buttons">
-      <button class="cta-button primary" onclick="location.href='register.html'">📝 Register Now</button>
-      <!-- Update the id for this close button -->
-      <button id="close-modal" class="cta-button secondary">❌ Close</button>
-    </div>
-  </div>
-</div>
+  <main>
+    <section class="hero">
+      <h1>🎉 Welcome to Dominguez Tech Solutions 🎉</h1>
+      <p>
+        🌟 At Dominguez Tech Solutions, we offer cutting-edge services designed to help local businesses thrive. 
+        🚀 Discover how we can help you achieve your goals! 🌟
+      </p>
+    </section>
 
-
-    <!-- Include Header -->
-    <div id="header"></div>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar"></nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <h1 class="hero-title">👋 Welcome to Dominguez Tech Solutions 🌟</h1>
-        <p class="hero-subtitle">
-            Empowering Oklahoma City with reliable, fast, and affordable tech services. ⚡
-        </p>
-        <p>
-            At Dominguez Tech Solutions, we turn tech challenges into opportunities with <strong>24-hour repairs</strong>, custom software, and website designs tailored to your needs. 💼✨
-        </p>
-        <div class="hero-buttons">
-            <button class="cta-button" onclick="location.href='services.html'">💻 Discover Our Services</button>
-            <button class="cta-button secondary" onclick="location.href='contact.html'">📞 Contact Us</button>
+    <section class="appointment-booker">
+      <h2>📅 Public Appointment Booker 📅</h2>
+      <p>
+        💡 Schedule your appointment without the hassle of signing up or logging in. Once submitted, your appointment is locked 🔒 and cannot be deleted 🛑 or modified. 📝
+      </p>
+      <form action="/submit-appointment" method="POST" class="appointment-form">
+        <div class="form-group">
+          <label for="name">👤 Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <h2>🌟 What We Offer 🛠️</h2>
-        <div class="services-container">
-            <div class="service-item">
-                <h3>📱 iPhone Repairs</h3>
-                <p>Fast screen replacements, battery fixes, and more. Affordable prices, same-day service. 🔋</p>
-            </div>
-            <div class="service-item">
-                <h3>💻 Computer Repairs</h3>
-                <p>Hardware upgrades, virus removal, and system optimization for all brands and operating systems. 🖥️</p>
-            </div>
-            <div class="service-item">
-                <h3>⚙️ Custom Software Development</h3>
-                <p>Streamline your business operations with tailor-made software solutions. 📊</p>
-            </div>
-            <div class="service-item">
-                <h3>🌐 Website Development</h3>
-                <p>Launch your professional website in 24 hours. Optimized for SEO and mobile devices. 📱</p>
-            </div>
+        <div class="form-group">
+          <label for="email">📧 Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
         </div>
-        <button class="cta-button" onclick="location.href='pages/services.html'">✨ Learn More</button>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="why-choose-us">
-        <h2>🤝 Why Choose Dominguez Tech Solutions? 🚀</h2>
-        <p>
-            Partnering with us means more than receiving a service—it means gaining a team committed to your success. 🌟
-        </p>
-        <ul>
-            <li>💻 <strong>Affordable and reliable tech repair services.</strong></li>
-            <li>⏱️ <strong>Quick turnaround times to get your devices running again.</strong></li>
-            <li>📍 <strong>Serving the Oklahoma City metro area with a personal touch.</strong></li>
-            <li>🔧 <strong>Satisfaction guaranteed on all services.</strong></li>
-        </ul>
-        <blockquote class="hero-quote">
-            🌟 <em>"Let us show you how technology can transform your business and simplify your life."</em> 🌟
-        </blockquote>
-        <a href="about.html" class="cta-button">📖 About Dominguez Tech Solutions</a>
-    </section>
-
-    <!-- Exclusive Access Section -->
-    <section id="exclusive-access" class="exclusive-access-section">
-        <h2>✨ Unlock a World of Exclusive Features with Your Account! 🎉</h2>
-            <p>
-            Ready to elevate your experience? By registering for an account, you open the door to a range of exciting, personalized features designed just for you! Here’s what you can look forward to:
-            </p>
-        <ul>
-            <li>🎨 **A Stunning Gallery of AI-Generated Images**: Explore a curated collection of one-of-a-kind artwork created by cutting-edge Artificial Intelligence!</li>
-            <li>📅 **Complete Control Over Your Appointments**: Seamlessly <strong>view, add, and manage your appointments</strong>—all in one place, on your terms!</li>
-            <li>🔔 **Stay Updated with Personalized Notifications**: Get real-time updates on your services, ensuring you’re always in the loop and never miss out!</li>
-            <li>💡 **Exclusive Tips, Tricks, and Insights**: Receive helpful content that enhances your experience and keeps you ahead of the game!</li>
-        </ul>
-            <p>
-            Don’t wait! Register now and log in to unlock these incredible features—and even more surprises waiting just for you! The journey starts here. ✨
-            </p>
-        <div class="auth-buttons">
-            <button class="cta-button" onclick="location.href='register.html'">📝 Register Now</button>
-            <button class="cta-button secondary" onclick="location.href='login.html'">🔑 Login</button>
+        <div class="form-group">
+          <label for="phone">📞 Your Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
         </div>
+        <div class="form-group">
+          <label for="date">📅 Appointment Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">⏰ Appointment Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="details">📝 Appointment Details</label>
+          <textarea id="details" name="details" rows="4" placeholder="Provide additional details about your appointment" required></textarea>
+        </div>
+        <button type="submit" class="btn">🚀 Book Appointment 🚀</button>
+      </form>
     </section>
+  </main>
 
-    <!-- Include Footer -->
-    <div id="footer"></div>
+  <footer>
+    <p>Built with ❤️ by Dominguez Tech Solutions 🌟</p>
+  </footer>
 </body>
 </html>
