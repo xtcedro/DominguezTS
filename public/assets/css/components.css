@@ -1,6 +1,6 @@
 /* Logo */
 header .logo img {
-  max-height: 150px; /* Adjust size for larger logo */
+  max-height: 50px; /* Adjust size for larger logo */
   width: auto; /* Maintain aspect ratio */
 }
 
