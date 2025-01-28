@@ -38,18 +38,6 @@
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Active Modal (for triggering animations) */
-.modal.active {
-    visibility: visible;
-    opacity: 1;
-    animation: modalFadeIn 0.5s ease-out forwards;
-}
-
-/* Modal Exit Animation */
-.modal.exiting {
-    animation: modalFadeOut 0.5s ease-out forwards;
-}
-
 /* Modal Content */
 .modal-content {
     background: linear-gradient(145deg, #1A1A1A, #000000); /* Dark black gradient */
