@@ -31,7 +31,52 @@ body {
   text-decoration: underline;
 }
 
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center;
+    background-color: #001f54; /* Dark Blue background */
+    padding: 1rem; /* Padding for spacing */
+    position: sticky;
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure navbar stays on top */
+}
 
+/* Navigation Links */
+.navbar .nav-links {
+    display: flex; /* Ensures horizontal layout */
+    flex-direction: row; /* Explicitly set row layout */
+    list-style: none; /* Remove default list styling */
+    gap: 2rem; /* Spacing between navigation links */
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual Link Styling */
+.navbar a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #FFD700; /* Gold buttons */
+    color: #001f54; /* Dark Blue text */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded edges */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effects */
+.navbar a:hover {
+    background-color: #FFC107; /* Slightly lighter gold */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Active Link */
+.navbar a.active {
+    background-color: #E6AC00; /* Darker gold for active link */
+    color: #001f54; /* Dark Blue text */
+}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
