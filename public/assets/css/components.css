@@ -11,7 +11,7 @@ header {
 
 /* Logo */
 .logo img {
-  max-height: 50px; /* Ensure the logo height is 50px */
+  max-height: 70px; /* Ensure the logo height is 50px */
   width: auto; /* Maintain aspect ratio */
   animation: fadeIn 1.5s ease-in; /* Smooth fade-in animation for logo */
 }
