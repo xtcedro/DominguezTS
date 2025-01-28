@@ -4,3 +4,34 @@ header .logo img {
   width: auto; /* Maintain aspect ratio */
 }
 
+.hero-banner {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInSlideUp 1.5s ease-in-out; /* Apply keyframe animation */
+  transform: scale(1); /* Default scale */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.hero-banner:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Keyframe Animation */
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0; /* Fully transparent */
+    transform: translateY(20px); /* Slide in from below */
+  }
+  50% {
+    opacity: 0.5; /* Semi-transparent */
+    transform: translateY(10px); /* Midway position */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Final position */
+  }
+}
+
