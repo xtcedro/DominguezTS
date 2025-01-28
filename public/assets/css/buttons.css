@@ -41,8 +41,3 @@
   }
 }
 
-/* Emphasized Notes */
-.contact-info em {
-  font-style: italic;
-  color: #666; /* Subtle gray for notes */
-}
