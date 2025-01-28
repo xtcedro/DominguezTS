@@ -147,7 +147,7 @@
     height: auto;
     margin: 0 auto;
     object-fit: cover;
-    border-bottom: 4px solid #FF0000; /* Red border below the image */
+    border-bottom: 4px solid #FFD700; /* Gold border below the image */
 }
 
 /* Navigation Bar */
