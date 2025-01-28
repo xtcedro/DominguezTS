@@ -1,24 +1,41 @@
-/* Logo Image Styling */
-.logo img {
-  max-width: 100%; /* Ensures the logo scales with its container */
-  max-height: 50px; /* Restrict height to 50px */
-  object-fit: contain; /* Ensures the logo scales without distortion */
-  margin: 0 auto; /* Center the logo within its container */
-  display: block; /* Make it a block-level element for better alignment */
-  animation: fadeInLogo 1.5s ease-out; /* Add a smooth fade-in animation */
+/* Header Section */
+header {
+  display: flex;
+  justify-content: flex-start; /* Align logo to the left */
+  align-items: center; /* Vertically center the content */
+  padding: 0.5rem 2rem; /* Reduced padding for compact design */
+  background-color: #001f54; /* Dark Blue background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  height: 60px; /* Fixed height for consistency */
+  position: sticky; /* Sticks the header to the top while scrolling */
+  top: 0; /* Ensures it stays at the very top */
+  z-index: 1000; /* Ensures the header stays above other elements */
+}
+
+/* Logo Container */
+header .logo {
+  display: flex;
+  align-items: center; /* Center the logo vertically */
+}
+
+header .logo img {
+  max-height: 50px; /* Set logo height */
+  object-fit: contain; /* Maintain aspect ratio */
+  animation: fadeInLogo 1.5s ease-out; /* Smooth fade-in animation */
 }
 
 /* Keyframe Animation for Logo */
 @keyframes fadeInLogo {
   0% {
     opacity: 0; /* Fully transparent */
-    transform: scale(0.9); /* Slightly smaller */
+    transform: translateY(-10px); /* Slide down effect */
   }
   100% {
     opacity: 1; /* Fully visible */
-    transform: scale(1); /* Full size */
+    transform: translateY(0); /* Back to position */
   }
 }
+
 /* Keyframe for Header Animation */
 @keyframes slideIn {
   0% {
