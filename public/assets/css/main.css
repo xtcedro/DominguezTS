@@ -31,6 +31,58 @@ body {
   text-decoration: underline;
 }
 
+/* Keyframe Animations */
+
+/* Fade-in and slide-up animation for hero content */
+@keyframes heroFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glowing effect for the title */
+@keyframes heroTitleGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+  }
+  50% {
+    text-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700, 0 0 60px #FFD700;
+  }
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #001f54; /* Dark Blue */
+  color: #fff;
+  animation: heroFadeIn 1.5s ease-out; /* Fade-in animation for the section */
+}
+
+/* Hero Title */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: heroFadeIn 1.5s ease-out; /* Fade-in and slide-up for the title */
+  animation-delay: 0.5s; /* Slight delay for the title */
+  animation-fill-mode: both; /* Ensure animation stays visible */
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700; /* Initial glow */
+  animation: heroTitleGlow 2.5s infinite alternate; /* Continuous glowing effect */
+}
+
+/* Hero Paragraph */
+.hero p {
+  font-size: 1.2rem;
+  color: #d1d1d1; /* Light Gray */
+  animation: heroFadeIn 1.5s ease-out; /* Fade-in and slide-up for the paragraph */
+  animation-delay: 1s; /* Delay for smooth entrance after the title */
+  animation-fill-mode: both; /* Ensure animation stays visible */
+}
 
  /* Navbar Styling */
 .navbar {
