@@ -1,11 +1,22 @@
-export function setupNavigation() {
-  const navbar = document.getElementById('navbar');
-  navbar.innerHTML = `
-    <ul>
-      <li><a href="index.html">🏠 Home</a></li>
-      <li><a href="about.html">ℹ️ About Us</a></li>
-      <li><a href="services.html">🛠️ Services</a></li>
-      <li><a href="contact.html">📞 Contact</a></li>
-    </ul>
-  `;
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.querySelector(".navbar");
+
+    // Set the navigation bar
+    navbar.innerHTML = `
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">📖 About Us</a>
+        <a href="services.html">🛠️ Services</a>
+        <a href="contact.html">📬 Contact Us</a>
+    `;
+
+    // Highlight the active tab
+    const currentPath = window.location.pathname.split('/').pop(); // Get the current file name
+    const links = navbar.querySelectorAll("a");
+
+    links.forEach(link => {
+        const linkPath = link.getAttribute("href");
+        if (linkPath.includes(currentPath)) {
+            link.classList.add("active");
+        }
+    });
+});
