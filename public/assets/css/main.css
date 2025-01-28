@@ -5,7 +5,15 @@
   box-sizing: border-box;
 }
 
-
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #001f54; /* Dark Blue Background */
+  color: #ffffff; /* White Text for Contrast */
+  margin: 0; /* Ensure no default margin */
+  padding: 0; /* Ensure no default padding */
+}
 
 #navbar ul {
   list-style: none;
