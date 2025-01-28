@@ -1,6 +1,6 @@
 // script.js
-import { loadHeader, loadFooter } from './load-components.js';
-import { setupNavigation } from './navigation.js'; // Example: Another module
+import { loadHeader, loadFooter } from './assets/js/load-components.js';
+import { setupNavigation } from './assets/js/navigation.js'; // Example: Another module
 
 // Initialize components and navigation
 document.addEventListener('DOMContentLoaded', () => {
