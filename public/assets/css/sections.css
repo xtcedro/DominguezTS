@@ -1,3 +1,92 @@
+/* Keyframe Animations */
+
+/* Fade-in animation for the entire section */
+@keyframes fadeInSection {
+  0% {
+    opacity: 0; /* Fully transparent */
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Set in place */
+  }
+}
+
+/* Glow animation for links */
+@keyframes linkGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px #FFD700; /* Subtle glow */
+  }
+  50% {
+    box-shadow: 0 0 20px #FFD700; /* Intense glow */
+  }
+}
+
+/* Contact Information Section */
+.contact-info {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  background-color: #001f54; 
+  border: 2px solid #FFD700; /* Gold Border */
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  animation: fadeInSection 1.5s ease-out; /* Apply fade-in animation */
+}
+
+/* Section Header */
+.contact-info h2 {
+  color: #FFD700; /* Gold */
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  animation: fadeInSection 1.5s ease-out; /* Header fades in with the section */
+}
+
+/* List Styling */
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 1.5rem; /* Added spacing for better readability */
+  font-size: 1.2rem;
+  animation: fadeInSection 1.8s ease-out; /* Slight delay for list items */
+}
+
+/* Emphasized Notes */
+.contact-info em {
+  font-style: italic;
+  color: #666; /* Subtle gray for notes */
+  animation: fadeInSection 2s ease-out; /* Slightly delayed fade-in */
+}
+
+/* Contact Information Link Styles */
+.contact-info a {
+  display: inline-block; /* Make links block-like for better clickable area */
+  padding: 0.5rem 1rem; /* Add padding for a button-like feel */
+  color: #FFD700; /* Gold text for links */
+  background-color: #001f54; /* Dark Blue background */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold for emphasis */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  animation: linkGlow 3s infinite alternate; /* Glow animation for links */
+}
+
+/* Link Hover and Active Effects */
+.contact-info a:hover {
+  background-color: #004080; /* Lighter blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.contact-info a:active {
+  background-color: #00294d; /* Darker blue when clicked */
+  transform: translateY(0); /* Reset lift */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for click effect */
+}
 
 /* Mission Section */
 .mission {
