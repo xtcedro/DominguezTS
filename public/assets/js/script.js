@@ -1,8 +1,10 @@
-import { setupNavigation } from './navigation.js';
-import { loadHeaderAndFooter } from './load-components.js';
+// script.js
+import { loadHeader, loadFooter } from './load-components.js';
+import { setupNavigation } from './navigation.js'; // Example: Another module
 
-// Call the functions
+// Initialize components and navigation
 document.addEventListener('DOMContentLoaded', () => {
-  setupNavigation();
-  loadHeaderAndFooter();
+  loadHeader();
+  loadFooter();
+  setupNavigation(); // Example function to set up navigation if needed
 });
