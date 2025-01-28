@@ -1,257 +1,31 @@
-/* General CTA Button */
-.cta-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: #FFD700; /* Gold button */
-    color: #000000; /* Black text */
-    border: 2px solid #FFD700; /* Matching border */
-    border-radius: 8px; /* Smooth rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
-    transition: all 0.3s ease; /* Smooth transitions */
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif; /* Professional font */
+/* Gold Button Styles */
+.contact-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #FFD700; /* Gold */
+  color: #001f54; /* Dark Blue Text */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text for emphasis */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover and Focus Effects */
-.cta-button:hover,
-.cta-button:focus {
-    background-color: #D4AF37; /* Darker gold */
-    color: #FFFFFF; /* White text */
-    border-color: #D4AF37; /* Update border */
-    transform: translateY(-2px); /* Lift effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Elevated shadow */
-    outline: none;
+.contact-button:hover {
+  background-color: #FFC107; /* Slightly lighter gold on hover */
+  transform: scale(1.05); /* Slight zoom effect */
 }
 
-/* Secondary CTA Button */
-.cta-button.secondary {
-    background-color: #6c757d; /* Neutral gray */
-    color: #ffffff; /* White text */
-    border: 2px solid #6c757d; /* Matching border */
+.contact-button:active {
+  background-color: #E6AC00; /* Darker gold when clicked */
+  transform: scale(1); /* Reset scale on click */
 }
 
-.cta-button.secondary:hover,
-.cta-button.secondary:focus {
-    background-color: #5a6268; /* Darker gray */
-    color: #e1e1e1; /* Slightly lighter text */
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle elevated shadow */
+/* Emphasized Notes */
+.contact-info em {
+  font-style: italic;
+  color: #666; /* Subtle gray for notes */
 }
-
-/* Buttons in Forms */
-.appointment-form .cta-button,
-.appointment-card .cta-button,
-.call-to-action-section .cta-button {
-    width: 100%; /* Full-width for small screens */
-    max-width: 300px; /* Limit width on larger screens */
-    margin: 1rem auto; /* Center button */
-}
-
-/* Authentication Buttons */
-.auth-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem; /* Space between buttons */
-}
-
-.auth-buttons .cta-button {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    background-color: #007bff; /* Blue button */
-    color: #ffffff; /* White text */
-    border: 2px solid #007bff;
-    transition: all 0.3s ease;
-}
-
-.auth-buttons .cta-button:hover,
-.auth-buttons .cta-button:focus {
-    background-color: #0056b3; /* Darker blue */
-    color: #e1e1e1; /* Slightly lighter text */
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* "Why Choose Us" Section Button */
-.why-choose-us .cta-button {
-    margin-top: 2rem;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    background-color: #FFD700; /* Gold */
-    color: #000000; /* Black text */
-    border-radius: 8px;
-    border: 2px solid #FFD700; /* Matching border */
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-}
-
-.why-choose-us .cta-button:hover,
-.why-choose-us .cta-button:focus {
-    background-color: #FFA500; /* Slightly darker gold */
-    color: #ffffff; /* White text */
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Elevated shadow */
-}
-
-/* Services Section Button */
-.services-section .cta-button {
-    margin-top: 2rem;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    background-color: #FFD700; /* Gold */
-    color: #000000; /* Black text */
-    border: 2px solid #FFD700; /* Matching border */
-    border-radius: 8px;
-    text-transform: uppercase;
-    transition: all 0.3s ease; /* Smooth hover transition */
-    cursor: pointer;
-}
-
-.services-section .cta-button:hover {
-    background-color: #FFA500; /* Slightly darker gold */
-    color: #ffffff; /* White text */
-    transform: translateY(-3px); /* Lift effect */
-}
-
-/* Accessibility Improvements */
-.cta-button:focus-visible {
-    outline: 3px solid #FFC200; /* Gold outline for focus */
-    outline-offset: 3px; /* Offset for clarity */
-}
-
-/* Language Buttons */
-.language-options button {
-    background: linear-gradient(145deg, #1A1A1A, #2A2A2A); /* Dark black gradient */
-    color: #FFD700; /* Vibrant gold text */
-    padding: 1rem 2rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; /* Space between text and flag */
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5); /* Gold shadow */
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Hover Effect for Buttons */
-.language-options button:hover {
-    background: #FFD700; /* Vibrant gold background on hover */
-    color: #000000; /* Black text on hover */
-    transform: scale(1.1); /* Slight zoom */
-    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.6); /* Stronger gold shadow on hover */
-}
-
-/* Primary CTA Button */
-.cta-button.primary {
-    display: inline-block;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #007bff; /* Bright blue */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    animation: pulse 2s infinite; /* Keyframe animation */
-}
-
-.cta-button.primary:hover {
-    background-color: #0056b3; /* Darker blue for hover */
-    transform: scale(1.05);
-}
-
-.cta-button.primary:active {
-    background-color: #004085; /* Even darker blue */
-    transform: scale(0.98);
-}
-
-/* Secondary Close Button */
-.cta-button.secondary {
-    display: inline-block;
-    padding: 10px 18px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #6c757d; /* Neutral gray */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    animation: slide-in 1s ease-out; /* Keyframe animation */
-}
-
-.cta-button.secondary:hover {
-    background-color: #5a6268; /* Slightly darker gray */
-    transform: scale(1.05);
-}
-
-.cta-button.secondary:active {
-    background-color: #545b62;
-    transform: scale(0.98);
-}
-
-/* Keyframe Animations */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
-    }
-    50% {
-        transform: scale(1.1);
-        box-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
-    }
-}
-
-@keyframes slide-in {
-    0% {
-        transform: translateX(-50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.cta-button.github {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 5px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    color: #ffffff; /* White text for contrast */
-    background-color: #24292f; /* GitHub's dark theme color */
-    border: 2px solid #24292f;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.cta-button.github:hover {
-    background-color: #0366d6; /* GitHub's blue accent color for hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
-    color: #ffffff; /* Ensure text stays white */
-}
-
-.cta-button.github:active {
-    background-color: #003f91; /* Darker blue for active state */
-    transform: scale(0.98); /* Slightly shrink on click */
-}
-
