@@ -81,15 +81,6 @@
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow on flags */
 }
 
-/* Show Modal Animation */
-.modal-show {
-    animation: modalFadeIn 0.3s ease forwards;
-}
-
-/* Hide Modal Animation */
-.modal-hide {
-    animation: modalFadeOut 0.3s ease forwards;
-}
 /* Appointments Container */
 .appointments-container {
     display: flex;
