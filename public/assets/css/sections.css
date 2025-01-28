@@ -232,3 +232,90 @@
     background-color: #E6AC00; /* Darker gold for active link */
     color: #001f54; /* Dark Blue text */
 }
+
+/* Founder Section */
+.founder {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  background-color: #001f54; /* Dark Blue Background */
+  color: #ffffff; /* White Text */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Founder Details Layout */
+.founder-details {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* Founder Image */
+.founder-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular photo */
+  border: 3px solid #FFD700; /* Gold border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+/* Social Buttons */
+.social-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Social Button Styles */
+.social-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Twitter Button */
+.social-button.twitter {
+  background-color: #1DA1F2; /* Twitter Blue */
+  color: white;
+}
+
+.social-button.twitter:hover {
+  background-color: #0d8bdb;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(29, 161, 242, 0.3);
+}
+
+/* Facebook Button */
+.social-button.facebook {
+  background-color: #1877F2; /* Facebook Blue */
+  color: white;
+}
+
+.social-button.facebook:hover {
+  background-color: #166fe5;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(24, 119, 242, 0.3);
+}
+
+/* GitHub Button */
+.social-button.github {
+  background-color: #333; /* GitHub Dark */
+  color: white;
+}
+
+.social-button.github:hover {
+  background-color: #24292e;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(36, 41, 46, 0.3);
+}
