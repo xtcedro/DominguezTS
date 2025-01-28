@@ -89,3 +89,33 @@ header .logo img {
   }
 }
 
+/* Navigation Bar */
+nav {
+    background-color: #001f54; /* Dark Blue for nav background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    border-bottom: 2px solid #FFD700; /* Gold border at the bottom */
+    box-shadow: 0 2px 5px rgba(0, 0, 139, 0.4); /* Subtle blue shadow for depth */
+}
+
+/* Navigation Links */
+nav a {
+    color: #FFD700; /* Gold text for links */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem 1rem; /* Padding for better spacing */
+    border-radius: 5px; /* Smooth edges */
+}
+
+/* Hover Effects */
+nav a:hover {
+    color: #001f54; /* Dark Blue text on hover */
+    background-color: #FFD700; /* Gold background on hover */
+}
