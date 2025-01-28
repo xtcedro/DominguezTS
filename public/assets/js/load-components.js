@@ -1,6 +1,6 @@
 // Load Header
 export function loadHeader() {
-    fetch('../components/header.html')
+    fetch('../../components/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
@@ -10,7 +10,7 @@ export function loadHeader() {
 
 // Load Footer
 export function loadFooter() {
-    fetch('../components/footer.html')
+    fetch('../../components/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer').innerHTML = data;
