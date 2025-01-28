@@ -32,12 +32,12 @@ body {
 }
 
 
-/* Navbar Styling */
+ /* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: center; /* Center-align the navigation items */
   align-items: center;
-  background-color: #8B0000; /* Dark Red background */
+  background-color: #001f54; /* Dark Blue background */
   padding: 1rem 2rem;
   gap: 2rem; /* Spacing between navigation links */
 }
@@ -51,12 +51,12 @@ body {
 }
 
 .navbar a:hover {
-  color: #FFD700; /* Gold text on hover */
+  color: gold; /* Gold text on hover */
   transform: scale(1.1); /* Slightly enlarge the link on hover */
 }
 
 .navbar a.active {
-  color: #FFD700; /* Highlight active link */
+  color: gold; /* Highlight active link */
   text-decoration: underline; /* Underline for active link */
 }
 
@@ -64,8 +64,8 @@ body {
 .about-hero {
   text-align: center;
   padding: 4rem 2rem;
-  background-color: #8B0000; /* Dark Red */
-  color: #fff; /* White text */
+  background-color: #001f54; /* Dark Blue */
+  color: #fff;
 }
 
 .about-hero h1 {
@@ -75,7 +75,7 @@ body {
 
 .about-hero p {
   font-size: 1.2rem;
-  color: #F5F5F5; /* Light Gray */
+  color: #d1d1d1; /* Light Gray */
 }
 
 /* Services List */
@@ -83,8 +83,8 @@ body {
   margin: 2rem auto;
   padding: 2rem;
   max-width: 800px;
-  background: #fff; /* White Background */
-  border: 2px solid #FFD700; /* Gold Border */
+  background: #ffffff; /* White Background */
+  border: 2px solid gold; /* Gold Border */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -92,7 +92,7 @@ body {
 .services h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #8B0000; /* Dark Red */
+  color: #001f54; /* Dark Blue */
 }
 
 .services ul {
@@ -110,12 +110,12 @@ body {
 
 .services li::before {
   content: "✔️";
-  color: #FFD700; /* Gold checkmark */
+  color: gold; /* Gold checkmark */
 }
 
 /* Footer */
 footer {
-  background-color: #8B0000; /* Dark Red */
+  background-color: #001f54; /* Dark Blue */
   color: #fff;
   text-align: center;
   padding: 2rem;
@@ -137,15 +137,10 @@ footer .legal-links {
 }
 
 footer .legal-links a {
-  color: #FFD700; /* Gold */
+  color: #ffd700; /* Gold */
   text-decoration: none;
   font-weight: bold;
   font-size: 0.9rem;
-}
-
-footer .legal-links a:hover {
-  text-decoration: underline;
-  color: #ffffff; /* White */
 }
 
 /* Responsive Design for Footer */
