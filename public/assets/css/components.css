@@ -420,6 +420,52 @@ blockquote {
     max-width: 800px;
 }
 
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Add space between buttons */
+    align-items: center; /* Center the buttons */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for a larger button */
+    margin: 5px 0; /* Add margin for spacing */
+    font-size: 1rem; /* Increase font size if needed */
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent; /* For hover effects */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button.facebook {
+    background-color: #4267B2;
+    color: white;
+}
+
+.cta-button.facebook:hover {
+    background-color: #365899;
+}
+
+.cta-button.x {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.cta-button.x:hover {
+    background-color: #0d8cdc;
+}
+
+.cta-button.secondary {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.cta-button.secondary:hover {
+    background-color: #d6d6d6;
+}
+
 /* Legal Notice */
 .legal-notice {
     font-size: 0.9rem; /* Adjust the font size for readability */
