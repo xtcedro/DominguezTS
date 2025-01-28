@@ -113,6 +113,16 @@ body {
   color: gold; /* Gold checkmark */
 }
 
+footer {
+  background-color: #001f54; /* Dark Blue */
+  color: #ffffff; /* White text for contrast */
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 3px solid #FFD700; /* Gold border for a touch of elegance */
+}
+
 footer p {
   margin-bottom: 1rem;
   line-height: 1.6;
