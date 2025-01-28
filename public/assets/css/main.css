@@ -31,7 +31,60 @@ body {
   text-decoration: underline;
 }
 
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center; /* Vertically center content */
+    background-color: #001f54; /* Dark Blue background */
+    padding: 1rem; /* Padding for spacing */
+    position: sticky;
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure navbar stays on top */
+}
 
+/* Logo Styling */
+.navbar .logo {
+    margin-right: auto; /* Align logo to the far left */
+}
+
+.navbar .logo img {
+    height: 50px; /* Set logo height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+    display: flex; /* Horizontally align the links */
+    gap: 2rem; /* Spacing between navigation links */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Individual Link Styling */
+.navbar a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Emphasize the links */
+    font-size: 1rem; /* Standard font size */
+    padding: 0.5rem 1rem; /* Add spacing inside links */
+    border-radius: 5px; /* Rounded edges */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover Effects */
+.navbar a:hover {
+    background-color: #004080; /* Slightly lighter blue */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Active Link */
+.navbar a.active {
+    background-color: #FFD700; /* Gold highlight for active link */
+    color: #001f54; /* Dark blue text on active link */
+}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
