@@ -1,44 +1,33 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const socialModal = document.getElementById("social-modal");
+document.addEventListener("DOMContentLoaded", () => {
+    // Get the modals
     const discountModal = document.getElementById("discount-modal");
-    const closeSocialModalBtn = document.getElementById("close-social-modal");
-    const closeDiscountModalBtn = document.getElementById("close-modal");
+    const socialModal = document.getElementById("social-modal");
 
-    // Check localStorage to see if modals have already been shown
-    const modalsShown = localStorage.getItem("modalsShown");
+    // Get the close buttons
+    const closeDiscountModal = document.getElementById("close-modal");
+    const closeSocialModal = document.getElementById("close-social-modal");
 
     // Function to show a modal
     function showModal(modal) {
         modal.style.display = "block";
     }
 
-    // Function to hide a modal
-    function hideModal(modal) {
+    // Function to close a modal
+    function closeModal(modal) {
         modal.style.display = "none";
     }
 
-    // Function to handle showing the social modal
-    function showSocialModal() {
-        showModal(socialModal);
+    // Show the social modal first
+    showModal(socialModal);
 
-        closeSocialModalBtn.addEventListener("click", function () {
-            hideModal(socialModal);
-            showDiscountModal(); // Proceed to the next modal
-        });
-    }
-
-    // Function to handle showing the discount modal
-    function showDiscountModal() {
+    // When the social modal is closed, show the discount modal
+    closeSocialModal.addEventListener("click", () => {
+        closeModal(socialModal);
         showModal(discountModal);
+    });
 
-        closeDiscountModalBtn.addEventListener("click", function () {
-            hideModal(discountModal);
-            localStorage.setItem("modalsShown", "true"); // Mark modals as shown
-        });
-    }
-
-    // Show modals in sequence only if they haven't been shown before
-    if (!modalsShown) {
-        showSocialModal();
-    }
+    // Add functionality to close the discount modal
+    closeDiscountModal.addEventListener("click", () => {
+        closeModal(discountModal);
+    });
 });
