@@ -46,46 +46,40 @@
   color: gold;
 }
 
-.contact-form {
+.contact-info {
   padding: 2rem;
   margin: 2rem auto;
   max-width: 600px;
-  background-color: #f9f9f9;
-  border: 2px solid gold;
+  background-color: #f9f9f9; /* Light background */
+  border: 2px solid gold; /* Gold border */
   border-radius: 8px;
+  text-align: left;
 }
 
-.contact-form .form-group {
-  margin-bottom: 1.5rem;
+.contact-info h2 {
+  color: #001f54; /* Dark Blue */
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-.contact-form label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 0.5rem;
+.contact-info ul {
+  list-style: none;
+  padding: 0;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
+.contact-info li {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.contact-form button {
-  display: block;
-  width: 100%;
-  padding: 0.8rem;
-  background-color: #001f54;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
+.contact-info a {
+  color: #001f54; /* Dark Blue for links */
+  text-decoration: none;
 }
 
-.contact-form button:hover {
-  background-color: #004080;
+.contact-info a:hover {
+  text-decoration: underline;
 }
