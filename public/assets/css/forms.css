@@ -72,3 +72,31 @@
   background-color: #ffc107; /* Lighter Gold on Hover */
   transform: scale(1.05); /* Slightly Larger on Hover */
 }
+
+/* Dropdown Styling */
+select {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid gold;
+  border-radius: 5px;
+  background-color: #001f54;
+  color: #fff;
+  cursor: pointer;
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+select:hover {
+  background-color: #002b6b;
+}
+
+select:focus {
+  border-color: gold;
+  outline: none;
+}
+
+/* Dropdown Options */
+select option {
+  background-color: #001f54;
+  color: #fff;
+}
