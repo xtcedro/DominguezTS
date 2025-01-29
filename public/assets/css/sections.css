@@ -338,3 +338,100 @@
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(36, 41, 46, 0.3);
 }
+
+/* Keyframe Animations */
+@keyframes fadeInSection {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes linkGlow {
+  0% {
+    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700;
+  }
+  100% {
+    box-shadow: 0 0 15px #FFD700, 0 0 30px #FFD700;
+  }
+}
+
+/* Contact Information Section */
+.contact-info {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  background: linear-gradient(145deg, #001f54, #002b6b); /* Gradient background */
+  border: 2px solid #FFD700; /* Gold Border */
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  animation: fadeInSection 1.5s ease-out;
+}
+
+/* Section Header */
+.contact-info h2 {
+  color: #FFD700; /* Gold */
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; /* Glow effect */
+  animation: fadeInSection 1.5s ease-out;
+}
+
+/* List Styling */
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #d1d1d1; /* Light gray text */
+  animation: fadeInSection 1.8s ease-out;
+}
+
+/* Emphasized Notes */
+.contact-info em {
+  font-style: italic;
+  color: #FFD700; /* Gold */
+  font-weight: bold;
+  animation: fadeInSection 2s ease-out;
+}
+
+/* Contact Information Link Styles */
+.contact-info a {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  color: #FFD700; /* Gold text for links */
+  background: linear-gradient(90deg, #001f54, #002b6b); /* Gradient background */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #FFD700; /* Gold border */
+  transition: all 0.3s ease-in-out;
+  animation: linkGlow 3s infinite alternate;
+}
+
+/* Link Hover and Active Effects */
+.contact-info a:hover {
+  background: linear-gradient(90deg, #002b6b, #001f54); /* Reverse gradient on hover */
+  color: #ffffff; /* White text on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.contact-info a:active {
+  background-color: #00294d; /* Darker blue */
+  color: #FFD700;
+  transform: scale(1); /* Reset scale */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4); /* Pressed effect */
+}
