@@ -31,7 +31,52 @@ body {
   text-decoration: underline;
 }
 
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center;
+    background-color: #001f54; /* Dark Blue background */
+    padding: 1rem; /* Padding for spacing */
+    position: sticky;
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure navbar stays on top */
+}
 
+/* Navigation Links */
+.navbar .nav-links {
+    display: flex; /* Ensures horizontal layout */
+    flex-direction: row; /* Explicitly set row layout */
+    list-style: none; /* Remove default list styling */
+    gap: 2rem; /* Spacing between navigation links */
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual Link Styling */
+.navbar a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #FFD700; /* Gold buttons */
+    color: #001f54; /* Dark Blue text */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded edges */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effects */
+.navbar a:hover {
+    background-color: #FFC107; /* Slightly lighter gold */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Active Link */
+.navbar a.active {
+    background-color: #E6AC00; /* Darker gold for active link */
+    color: #001f54; /* Dark Blue text */
+}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -51,23 +96,118 @@ body {
     }
 }
 
- /* Hero Section */
+ 
+/* Hero Section */
 .hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: #001f54; /* Dark Blue */
-  color: #fff;
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #001f54; /* Dark Blue Background */
+    color: #ffffff; /* White Text */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out; /* Apply Keyframe Animation */
 }
 
+/* Hero Title */
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #FFD700; /* Gold Text */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    animation: fadeInTitle 1.5s ease-in-out, glowEffect 2s infinite alternate ease-in-out;
 }
 
+/* Hero Subtitle */
 .hero p {
-  font-size: 1.2rem;
-  color: #d1d1d1; /* Light Gray */
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #d1d1d1; /* Light Gray */
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInSubtitle 2s ease-in-out forwards 0.5s;
 }
+
+/* Keyframe Animation for Title Fade-In */
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe Animation for Subtitle Fade-In */
+@keyframes fadeInSubtitle {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe Animation for Gold Glow Effect */
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700;
+    }
+    100% {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    }
+}
+
+/* Hero Title */
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #FFD700; /* Gold Text */
+    text-shadow: 0 0 10px #FFD700; /* Gold Glow Effect */
+    animation: glowEffect 2s infinite alternate ease-in-out; /* Glow Animation */
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #d1d1d1; /* Light Gray */
+}
+
+/* Keyframe Animation for Fade-In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe Animation for Glow Effect */
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700;
+    }
+    100% {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    }
+}
+
+
 
 
 
