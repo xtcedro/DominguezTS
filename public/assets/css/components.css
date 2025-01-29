@@ -89,3 +89,56 @@ header .logo img {
   }
 }
 
+/* Response Message Styling */
+.response-message {
+  display: none; /* Hidden by default */
+  padding: 1rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  animation: fadeInMessage 0.5s ease-in-out;
+}
+
+/* Success Message */
+.response-message.success {
+  background-color: #008000; /* Green */
+  color: #ffffff;
+  border: 2px solid #00cc00; /* Lighter green */
+  text-shadow: 0 0 5px #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Error Message */
+.response-message.error {
+  background-color: #8B0000; /* Dark Red */
+  color: #ffffff;
+  border: 2px solid #FF0000; /* Lighter Red */
+  text-shadow: 0 0 5px #ffffff;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Warning Message */
+.response-message.warning {
+  background-color: #FFD700; /* Gold */
+  color: #000000;
+  border: 2px solid #FFC107; /* Slightly darker gold */
+  text-shadow: 0 0 5px #000000;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Keyframe Animation for Fade In */
+@keyframes fadeInMessage {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
