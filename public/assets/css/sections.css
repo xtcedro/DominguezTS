@@ -133,33 +133,6 @@
 }
 
 
-.services-list {
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 800px;
-  background-color: #001f54;
-  border: 2px solid gold;
-  border-radius: 8px;
-  text-align: left;
-}
-
-.services-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-.services-list li {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-}
-
-.services-list li::before {
-  content: "✔️";
-  margin-right: 0.5rem;
-  color: gold;
-}
 
 
 /* Sales Pitch Section */
