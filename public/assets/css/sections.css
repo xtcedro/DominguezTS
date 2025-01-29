@@ -1,3 +1,87 @@
+/* About Section */
+.about-section {
+    background-color: #001f54; /* Dark Blue Background */
+    color: #ffffff; /* White Text */
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Apply animation */
+}
+
+/* Section Title */
+.about-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFD700; /* Gold for Title */
+    text-shadow: 0 0 10px #FFD700; /* Glow Effect */
+    margin-bottom: 1rem;
+    animation: glowEffect 2s infinite alternate ease-in-out; /* Glow Animation */
+}
+
+/* Section Text */
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #d1d1d1; /* Light Gray */
+    margin-bottom: 1.5rem;
+}
+
+/* Contact List */
+.about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* List Items */
+.about-section li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Contact Links */
+.about-section a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #FFD700; /* Gold for Links */
+    background-color: #002b80; /* Darker Blue Background */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about-section a:hover {
+    background-color: #0047b3; /* Brighter Blue on Hover */
+    transform: scale(1.05); /* Slight Zoom Effect */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700;
+    }
+    100% {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    }
+}
 /* Keyframe Animations */
 
 /* Fade-in animation for the entire section */
