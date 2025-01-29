@@ -20,16 +20,12 @@ export function setupNavigation() {
     const menuButton = document.getElementById("menu-toggle");
     const navMenu = document.getElementById("nav-menu");
 
-    // Ensure menu starts hidden on mobile
-    navMenu.style.display = "none";
+    // Start with the menu hidden
+    navMenu.classList.add("hidden");
 
     // Toggle menu visibility when clicking the hamburger button
     menuButton.addEventListener("click", () => {
-        if (navMenu.style.display === "none") {
-            navMenu.style.display = "flex";
-        } else {
-            navMenu.style.display = "none";
-        }
+        navMenu.classList.toggle("hidden");
     });
 
     // Highlight the active tab based on the current page
