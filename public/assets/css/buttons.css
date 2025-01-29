@@ -1,0 +1,24 @@
+.view-appointments {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #FFD700; /* Gold */
+  color: #001f54; /* Dark Blue Text */
+  border: 2px solid #FFD700;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-appointments:hover {
+  background-color: #FFC107; /* Slightly lighter gold on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.view-appointments:active {
+  background-color: #E6AC00; /* Darker gold when clicked */
+  transform: scale(1);
+}
