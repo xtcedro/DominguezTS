@@ -1,5 +1,6 @@
 import { loadHeader, loadFooter } from './load-components.js';
 import { setupNavigation } from './navigation.js';
+import './appointments.js'; // Import appointment booking functionality
 
 // Initialize the components and navigation bar
 document.addEventListener("DOMContentLoaded", () => {
