@@ -434,35 +434,7 @@
     color: #001f54; /* Dark Blue text */
 }
 
-/* Founder Section */
-.founder {
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 900px;
-  background-color: #001f54; /* Dark Blue Background */
-  color: #ffffff; /* White Text */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
 
-/* Founder Details Layout */
-.founder-details {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-
-/* Founder Image */
-.founder-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* Circular photo */
-  border: 3px solid #FFD700; /* Gold border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  object-fit: cover;
-}
 
 /* Social Buttons */
 .social-buttons {
