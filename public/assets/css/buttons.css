@@ -73,3 +73,33 @@
         box-shadow: 0 0 15px #FFD700, 0 0 25px #FFD700;
     }
 }
+
+.pricing-button-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.pricing-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #FFD700; /* Gold */
+    color: #001f54; /* Dark Blue Text */
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pricing-button:hover {
+    background-color: #FFC107; /* Lighter Gold on Hover */
+    transform: scale(1.05);
+}
+
+.pricing-button:active {
+    background-color: #E6AC00; /* Darker Gold on Click */
+    transform: scale(1);
+}
