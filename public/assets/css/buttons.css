@@ -22,3 +22,54 @@
   background-color: #E6AC00; /* Darker gold when clicked */
   transform: scale(1);
 }
+
+/* Center Button Wrapper */
+.center-btn {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Gold Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #FFD700; /* Gold */
+    color: #001f54; /* Dark Blue Text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: buttonGlow 2s infinite alternate; /* Continuous glow effect */
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #FFC107; /* Slightly lighter gold */
+    transform: scale(1.05);
+}
+
+/* Button Active Click Effect */
+.btn:active {
+    background-color: #E6AC00; /* Darker gold */
+    transform: scale(1);
+}
+
+/* Back to Booking Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+/* Button Glow Animation */
+@keyframes buttonGlow {
+    from {
+        box-shadow: 0 0 5px #FFD700;
+    }
+    to {
+        box-shadow: 0 0 15px #FFD700, 0 0 25px #FFD700;
+    }
+}
