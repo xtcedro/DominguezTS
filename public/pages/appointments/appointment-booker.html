@@ -38,6 +38,16 @@
           <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
         </div>
         <div class="form-group">
+          <label for="service">🛠️ Select a Service</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Choose a service...</option>
+            <option value="website-development">🌐 Website Development</option>
+            <option value="iphone-repair">📱 iPhone Repair</option>
+            <option value="computer-repair">💻 Computer Repair</option>
+            <option value="custom-web-application">⚙️ Custom Web Application</option>
+          </select>
+        </div>
+        <div class="form-group">
           <label for="date">📅 Appointment Date</label>
           <input type="date" id="date" name="date" required>
         </div>
