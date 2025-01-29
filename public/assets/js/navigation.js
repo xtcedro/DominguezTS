@@ -4,10 +4,10 @@ export function setupNavigation() {
     // Set the navigation bar HTML with a hamburger menu
     navbar.innerHTML = `
         <div class="menu-container">
-            <button class="hamburger-menu" aria-label="Toggle navigation">
+            <button class="hamburger-menu" id="menu-toggle" aria-label="Toggle navigation">
                 ☰
             </button>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-menu">
                 <li><a href="index.html">🏠 Home</a></li>
                 <li><a href="about.html">📖 About Us</a></li>
                 <li><a href="services.html">🛠️ Services</a></li>
@@ -16,12 +16,20 @@ export function setupNavigation() {
         </div>
     `;
 
-    const menuButton = document.querySelector(".hamburger-menu");
-    const navLinks = document.querySelector(".nav-links");
+    // Get elements
+    const menuButton = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
 
-    // Toggle menu visibility when the hamburger button is clicked
+    // Ensure menu starts hidden on mobile
+    navMenu.style.display = "none";
+
+    // Toggle menu visibility when clicking the hamburger button
     menuButton.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
+        if (navMenu.style.display === "none") {
+            navMenu.style.display = "flex";
+        } else {
+            navMenu.style.display = "none";
+        }
     });
 
     // Highlight the active tab based on the current page
