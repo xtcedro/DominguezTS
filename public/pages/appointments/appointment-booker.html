@@ -24,19 +24,33 @@
       <p>
         💡 Schedule your appointment without the hassle of signing up or logging in. Once submitted, your appointment is locked 🔒 and cannot be deleted 🛑 or modified. 📝
       </p>
-      <form action="/submit-appointment" method="POST" class="appointment-form">
+      <form id="appointmentForm" action="/submit-appointment" method="POST" class="appointment-form">
+        
         <div class="form-group">
           <label for="name">👤 Your Name</label>
           <input type="text" id="name" name="name" placeholder="Enter your full name" required>
         </div>
-        <div class="form-group">
-          <label for="email">📧 Your Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-        </div>
+
         <div class="form-group">
           <label for="phone">📞 Your Phone</label>
           <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
         </div>
+
+        <div class="form-group">
+          <label for="email">📧 Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="appointment_date">📅 Appointment Date</label>
+          <input type="date" id="appointment_date" name="appointment_date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="appointment_time">⏰ Appointment Time</label>
+          <input type="time" id="appointment_time" name="appointment_time" required>
+        </div>
+
         <div class="form-group">
           <label for="service">🛠️ Select a Service</label>
           <select id="service" name="service" required>
@@ -47,18 +61,15 @@
             <option value="custom-web-application">⚙️ Custom Web Application</option>
           </select>
         </div>
+
         <div class="form-group">
-          <label for="date">📅 Appointment Date</label>
-          <input type="date" id="date" name="date" required>
+          <label for="message">📝 Additional Details</label>
+          <textarea id="message" name="message" rows="4" placeholder="Provide additional details about your appointment" required></textarea>
         </div>
-        <div class="form-group">
-          <label for="time">⏰ Appointment Time</label>
-          <input type="time" id="time" name="time" required>
-        </div>
-        <div class="form-group">
-          <label for="details">📝 Appointment Details</label>
-          <textarea id="details" name="details" rows="4" placeholder="Provide additional details about your appointment" required></textarea>
-        </div>
+
+        <!-- Response Message Display -->
+        <div id="responseMessage" class="response-message" style="display: none;"></div>
+
         <button type="submit" class="btn">🚀 Book Appointment 🚀</button>
       </form>
     </section>
