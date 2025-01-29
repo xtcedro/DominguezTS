@@ -96,23 +96,58 @@ body {
     }
 }
 
- /* Hero Section */
+ 
+/* Hero Section */
 .hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: #001f54; /* Dark Blue */
-  color: #fff;
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #001f54; /* Dark Blue Background */
+    color: #ffffff; /* White Text */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out; /* Apply Keyframe Animation */
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+/* Hero Title */
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #FFD700; /* Gold Text */
+    text-shadow: 0 0 10px #FFD700; /* Gold Glow Effect */
+    animation: glowEffect 2s infinite alternate ease-in-out; /* Glow Animation */
 }
 
-.hero p {
-  font-size: 1.2rem;
-  color: #d1d1d1; /* Light Gray */
+/* Hero Subtitle */
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #d1d1d1; /* Light Gray */
 }
+
+/* Keyframe Animation for Fade-In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe Animation for Glow Effect */
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700;
+    }
+    100% {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    }
+}
+
+
 
 
 
