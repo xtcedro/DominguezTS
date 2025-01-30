@@ -18,12 +18,14 @@
   </header>
 
   <!-- Chatbot Widget -->
-  <div class="chat-container">
-    <div id="chatbox">
-        <p class="bot-text">🤖 Hello! How can I assist you today?</p>
+  <div id="chatbot-container">
+    <div class="chat-container">
+      <div id="chatbox">
+          <p class="bot-text">🤖 Hello! How can I assist you today?</p>
+      </div>
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button id="send-btn">Send</button>
     </div>
-    <input type="text" id="user-input" placeholder="Type your message..." />
-    <button id="send-btn">Send</button>
   </div>
 
   <!-- Main Content -->
@@ -59,7 +61,7 @@
 
   <!-- Scripts -->
   <script type="module" src="assets/js/script.js"></script>
-  <script defer src="assets/js/chatbotClient.js"></script>
+  <script async src="assets/js/chatbotClient.js"></script>
 
 </body>
 </html>
