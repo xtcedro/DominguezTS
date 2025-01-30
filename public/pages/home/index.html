@@ -6,6 +6,7 @@
   <meta name="description" content="Dominguez Tech Solutions - Fast, Affordable Tech Solutions for Your Business and Life!">
   <title>Dominguez Tech Solutions</title>
   <link rel="stylesheet" href="assets/css/style.css">
+
   <script type="module" src="assets/js/script.js"></script>
 </head>
 <body>
@@ -54,5 +55,32 @@
   <!-- Footer Section -->
   <div id="footer"></div>
 
+
+
+<script>
+async function sendMessage() {
+    const inputField = document.getElementById("user-input");
+    const chatbox = document.getElementById("chatbox");
+
+    const userText = inputField.value;
+    if (!userText) return;
+
+    chatbox.innerHTML += `<p class="user-text">${userText}</p>`;
+    inputField.value = "";
+
+    try {
+        const response = await fetch("https://www.domingueztechsolutions.com/api/chat", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: userText }),
+        });
+
+        const data = await response.json();
+        chatbox.innerHTML += `<p class="bot-text">${data.reply}</p>`;
+    } catch (error) {
+        chatbox.innerHTML += `<p class="bot-text">⚠️ Error: Unable to connect.</p>`;
+    }
+}
+</script>
 </body>
 </html>
