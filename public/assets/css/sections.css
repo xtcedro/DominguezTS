@@ -1,3 +1,75 @@
+/* Founder Section */
+.founder {
+  padding: 2.5rem;
+  margin: 2rem auto;
+  max-width: 950px;
+  background-color: #001a3d; /* Darker Blue Background */
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.3); /* Gold glow effect */
+}
+
+/* Founder Details Layout */
+.founder-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05); /* Subtle background overlay */
+  box-shadow: inset 0 2px 6px rgba(255, 215, 0, 0.1);
+}
+
+/* Founder Image */
+.founder-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #FFD700; /* Gold Border */
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(255, 215, 0, 0.5);
+}
+
+/* Founder Title */
+.founder h2 {
+  font-size: 2rem;
+  color: #FFD700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  margin-bottom: 1rem;
+}
+
+/* Founder Name */
+.founder-details h3 {
+  font-size: 1.6rem;
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+
+/* Founder Description */
+.founder-details p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+  text-align: left;
+  max-width: 500px;
+}
+
 /* Pricing Comparison Section */
 .pricing-comparison {
   padding: 3rem 2rem;
@@ -434,35 +506,7 @@
     color: #001f54; /* Dark Blue text */
 }
 
-/* Founder Section */
-.founder {
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 900px;
-  background-color: #001f54; /* Dark Blue Background */
-  color: #ffffff; /* White Text */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
 
-/* Founder Details Layout */
-.founder-details {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-
-/* Founder Image */
-.founder-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* Circular photo */
-  border: 3px solid #FFD700; /* Gold border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  object-fit: cover;
-}
 
 /* Social Buttons */
 .social-buttons {
