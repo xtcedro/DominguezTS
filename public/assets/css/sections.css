@@ -463,7 +463,6 @@
 /* Navbar Styling */
 .navbar {
     display: flex;
-	flex-direction: row;
     justify-content: center; /* Center the navigation */
     align-items: center;
     background-color: #001f54; /* Dark Blue */
