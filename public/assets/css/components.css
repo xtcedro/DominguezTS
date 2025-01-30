@@ -1,4 +1,123 @@
+/* Chat Container - Always Visible & Professional Look */
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    background: #001a3d; /* Darker Blue */
+    border: 2px solid #FFD700; /* Gold Border */
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.4);
+    font-family: 'Arial', sans-serif;
+    z-index: 9999; /* Ensures it stays above everything */
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
+/* Chatbox - Scrollable with Smooth Scrolling */
+#chatbox {
+    height: 300px;
+    overflow-y: auto;
+    padding: 12px;
+    font-size: 15px;
+    background: #002b80; /* Darker blue */
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+    scrollbar-width: thin;
+    scrollbar-color: #FFD700 #001a3d;
+}
+
+/* Bot and User Message Bubbles */
+.bot-text, .user-text {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    max-width: 85%;
+    word-wrap: break-word;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Bot Message */
+.bot-text {
+    background: #FFD700; /* Gold */
+    color: #001a3d; /* Dark Blue */
+    font-weight: bold;
+    border-left: 4px solid #ffcc00;
+    align-self: flex-start;
+}
+
+/* User Message */
+.user-text {
+    background: #0047b3; /* Vibrant Blue */
+    color: #ffffff; /* White */
+    font-weight: bold;
+    border-right: 4px solid #FFD700;
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Input Field */
+.chat-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    background: #f1f1f1;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Send Button */
+button {
+    padding: 10px;
+    background: #FFD700;
+    color: #001a3d;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-left: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover & Active Effects */
+button:hover {
+    background: #ffcc00;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Smooth Message Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .chat-container {
+        width: 90%;
+        right: 5%;
+        bottom: 10px;
+    }
+}
 
 .hero-banner {
   max-width: 100%;
