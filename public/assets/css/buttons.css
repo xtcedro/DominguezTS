@@ -1,3 +1,33 @@
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #FFD700; /* Gold */
+  color: #001f54; /* Dark Blue */
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  animation: glowEffect 1.5s infinite alternate; /* Glow Animation */
+}
+
+/* CTA Button Hover Effect */
+.cta-button:hover {
+  background-color: #FFC107; /* Brighter Gold */
+  transform: scale(1.05);
+}
+
+/* CTA Button Click Effect */
+.cta-button:active {
+  background-color: #E6AC00; /* Slightly Darker Gold */
+  transform: scale(1);
+}
+
 .view-appointments {
   display: inline-block;
   padding: 0.8rem 1.5rem;
@@ -62,16 +92,6 @@
 .back-btn {
     display: inline-block;
     margin-top: 1.5rem;
-}
-
-/* Button Glow Animation */
-@keyframes buttonGlow {
-    from {
-        box-shadow: 0 0 5px #FFD700;
-    }
-    to {
-        box-shadow: 0 0 15px #FFD700, 0 0 25px #FFD700;
-    }
 }
 
 .pricing-button-container {

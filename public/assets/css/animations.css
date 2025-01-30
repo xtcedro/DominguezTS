@@ -1,0 +1,197 @@
+/* Button Glow Animation */
+@keyframes buttonGlow {
+    from {
+        box-shadow: 0 0 5px #FFD700;
+    }
+    to {
+        box-shadow: 0 0 15px #FFD700, 0 0 25px #FFD700;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Keyframe Animations */
+@keyframes fadeInSection {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes linkGlow {
+  0% {
+    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700;
+  }
+  100% {
+    box-shadow: 0 0 15px #FFD700, 0 0 30px #FFD700;
+  }
+}
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700;
+    }
+    100% {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    }
+}
+/* Keyframe Animations */
+
+/* Fade-in animation for the entire section */
+@keyframes fadeInSection {
+  0% {
+    opacity: 0; /* Fully transparent */
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Set in place */
+  }
+}
+
+/* Glow animation for links */
+@keyframes linkGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px #FFD700; /* Subtle glow */
+  }
+  50% {
+    box-shadow: 0 0 20px #FFD700; /* Intense glow */
+  }
+}
+
+/* Animated Checkmark */
+@keyframes checkmarkPulse {
+  0% {
+    transform: scale(1);
+    color: gold;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #ffd700;
+  }
+  100% {
+    transform: scale(1);
+    color: gold;
+  }
+}
+
+@keyframes fadeInServices {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowEffect {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.9);
+  }
+}
+/* Keyframe Animation for Fade In */
+@keyframes fadeInMessage {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframe Animation */
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0; /* Fully transparent */
+    transform: translateY(20px); /* Slide in from below */
+  }
+  50% {
+    opacity: 0.5; /* Semi-transparent */
+    transform: translateY(10px); /* Midway position */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Final position */
+  }
+}
+
+/* Keyframe Animation for Logo */
+@keyframes fadeInLogo {
+  0% {
+    opacity: 0; /* Fully transparent */
+    transform: translateY(-10px); /* Slide down effect */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Back to position */
+  }
+}
+
+/* Keyframe for Header Animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0; /* Fully transparent */
+  }
+  100% {
+    transform: translateX(0); /* Slide into position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Keyframe for Logo Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Fully transparent */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+  }
+}

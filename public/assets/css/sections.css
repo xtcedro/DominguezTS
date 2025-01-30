@@ -1,3 +1,29 @@
+/* Header Section */
+header {
+  display: flex;
+  justify-content: flex-start; /* Align logo to the left */
+  align-items: center; /* Vertically center the content */
+  padding: 0.5rem 2rem; /* Reduced padding for compact design */
+  background-color: #001f54; /* Dark Blue background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  height: 60px; /* Fixed height for consistency */
+  position: sticky; /* Sticks the header to the top while scrolling */
+  top: 0; /* Ensures it stays at the very top */
+  z-index: 1000; /* Ensures the header stays above other elements */
+}
+
+/* Logo Container */
+header .logo {
+  display: flex;
+  align-items: center; /* Center the logo vertically */
+}
+
+header .logo img {
+  max-height: 50px; /* Set logo height */
+  object-fit: contain; /* Maintain aspect ratio */
+  animation: fadeInLogo 1.5s ease-out; /* Smooth fade-in animation */
+}
+
 /* Founder Section */
 .founder {
   padding: 2.5rem;
@@ -90,113 +116,6 @@
   margin-bottom: 1.5rem;
 }
 
-/* Pricing Table */
-.pricing-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #ffffff; /* White Background */
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle Shadow */
-}
-
-.pricing-table th,
-.pricing-table td {
-  padding: 1rem;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  font-size: 1.1rem;
-}
-
-.pricing-table th {
-  background-color: #FFD700; /* Gold */
-  color: #001f54; /* Dark Blue */
-  font-weight: bold;
-}
-
-.pricing-table tr:nth-child(even) {
-  background-color: #f8f8f8; /* Light Gray Background for Alternating Rows */
-}
-
-.pricing-table td {
-  font-weight: bold;
-  color: #001f54; /* Dark Blue */
-}
-
-/* Last Row CTA */
-.table-cta {
-  padding: 1.5rem;
-  background-color: #001f54;
-}
-
-.table-cta a {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #FFD700; /* Gold */
-  color: #001f54; /* Dark Blue */
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.table-cta a:hover {
-  background-color: #FFC107; /* Slightly Brighter Gold */
-  transform: scale(1.05); /* Button Enlargement Effect */
-}
-
-/* CTA Button */
-.cta-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #FFD700; /* Gold */
-  color: #001f54; /* Dark Blue */
-  border: 2px solid #FFD700;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  animation: glowEffect 1.5s infinite alternate; /* Glow Animation */
-}
-
-/* CTA Button Hover Effect */
-.cta-button:hover {
-  background-color: #FFC107; /* Brighter Gold */
-  transform: scale(1.05);
-}
-
-/* CTA Button Click Effect */
-.cta-button:active {
-  background-color: #E6AC00; /* Slightly Darker Gold */
-  transform: scale(1);
-}
-
-/* Keyframe Animations */
-@keyframes fadeInSection {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes glowEffect {
-  0% {
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
-  }
-  100% {
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.9);
-  }
-}
 /* About Section */
 .about-section {
     background-color: #001f54; /* Dark Blue Background */
@@ -242,17 +161,6 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-}
-
-@keyframes fadeInServices {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Services List Container */
@@ -301,22 +209,6 @@
   background: rgba(255, 215, 0, 0.1); /* Light gold highlight */
 }
 
-/* Animated Checkmark */
-@keyframes checkmarkPulse {
-  0% {
-    transform: scale(1);
-    color: gold;
-  }
-  50% {
-    transform: scale(1.2);
-    color: #ffd700;
-  }
-  100% {
-    transform: scale(1);
-    color: gold;
-  }
-}
-
 /* Checkmark Styling */
 .services-list li::before {
   content: "✔️";
@@ -341,50 +233,6 @@
 .about-section a:hover {
     background-color: #0047b3; /* Brighter Blue on Hover */
     transform: scale(1.05); /* Slight Zoom Effect */
-}
-
-/* Keyframe Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes glowEffect {
-    0% {
-        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700;
-    }
-    100% {
-        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
-    }
-}
-/* Keyframe Animations */
-
-/* Fade-in animation for the entire section */
-@keyframes fadeInSection {
-  0% {
-    opacity: 0; /* Fully transparent */
-    transform: translateY(20px); /* Start slightly lower */
-  }
-  100% {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Set in place */
-  }
-}
-
-/* Glow animation for links */
-@keyframes linkGlow {
-  0%, 100% {
-    box-shadow: 0 0 5px #FFD700; /* Subtle glow */
-  }
-  50% {
-    box-shadow: 0 0 20px #FFD700; /* Intense glow */
-  }
 }
 
 
@@ -566,30 +414,6 @@
   box-shadow: 0 4px 8px rgba(36, 41, 46, 0.3);
 }
 
-/* Keyframe Animations */
-@keyframes fadeInSection {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes linkGlow {
-  0% {
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700;
-  }
-  100% {
-    box-shadow: 0 0 15px #FFD700, 0 0 30px #FFD700;
-  }
-}
 
 /* Contact Information Section */
 .contact-info {
@@ -712,16 +536,4 @@
     color: #FFD700; /* Gold */
     font-size: 1.2rem;
     font-style: italic;
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
