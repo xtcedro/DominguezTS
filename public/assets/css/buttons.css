@@ -1,125 +1,31 @@
-/* CTA Button */
-.cta-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #FFD700; /* Gold */
-  color: #001f54; /* Dark Blue */
-  border: 2px solid #FFD700;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  animation: glowEffect 1.5s infinite alternate; /* Glow Animation */
-}
-
-/* CTA Button Hover Effect */
-.cta-button:hover {
-  background-color: #FFC107; /* Brighter Gold */
-  transform: scale(1.05);
-}
-
-/* CTA Button Click Effect */
-.cta-button:active {
-  background-color: #E6AC00; /* Slightly Darker Gold */
-  transform: scale(1);
-}
-
-.view-appointments {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #FFD700; /* Gold */
-  color: #001f54; /* Dark Blue Text */
-  border: 2px solid #FFD700;
-  border-radius: 5px;
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.view-appointments:hover {
-  background-color: #FFC107; /* Slightly lighter gold on hover */
-  transform: scale(1.05); /* Slight zoom effect */
-}
-
-.view-appointments:active {
-  background-color: #E6AC00; /* Darker gold when clicked */
-  transform: scale(1);
-}
-
-/* Center Button Wrapper */
-.center-btn {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-/* Gold Buttons */
-.btn {
+/* Primary Button */
+.hero-btn, .cta-btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
-    background-color: #FFD700; /* Gold */
-    color: #001f54; /* Dark Blue Text */
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    background-color: #FFD700;
+    color: #001a3d;
     font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none; /* Remove underline from links */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    animation: buttonGlow 2s infinite alternate; /* Continuous glow effect */
-}
-
-/* Button Hover Effect */
-.btn:hover {
-    background-color: #FFC107; /* Slightly lighter gold */
-    transform: scale(1.05);
-}
-
-/* Button Active Click Effect */
-.btn:active {
-    background-color: #E6AC00; /* Darker gold */
-    transform: scale(1);
-}
-
-/* Back to Booking Button */
-.back-btn {
-    display: inline-block;
-    margin-top: 1.5rem;
-}
-
-.pricing-button-container {
-    text-align: center;
-    margin-top: 1.5rem;
-}
-
-.pricing-button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #FFD700; /* Gold */
-    color: #001f54; /* Dark Blue Text */
     border: 2px solid #FFD700;
     border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
     text-align: center;
-    cursor: pointer;
     text-decoration: none;
+    font-size: 1rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.pricing-button:hover {
-    background-color: #FFC107; /* Lighter Gold on Hover */
+.hero-btn:hover, .cta-btn:hover {
+    background-color: #ffcc00;
     transform: scale(1.05);
 }
 
-.pricing-button:active {
-    background-color: #E6AC00; /* Darker Gold on Click */
-    transform: scale(1);
+/* Secondary Button */
+.secondary-btn {
+    background-color: transparent;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+}
+
+.secondary-btn:hover {
+    background-color: #FFD700;
+    color: #001a3d;
 }
