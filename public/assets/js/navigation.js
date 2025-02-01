@@ -9,8 +9,8 @@ export function setupNavigation() {
             </button>
             <ul class="nav-links hidden" id="nav-menu">
                 <li><a href="index.html">🏠 Home</a></li>
-                <li><a href="about.html">📖 About Us</a></li>
-                <li><a href="letter.html">📜 Open Letter</a></li>
+                <li><a href="about.html">🧑‍💻 About Us</a></li>
+                <li><a href="services.html">⌨️ Services</a></li>
                 <li><a href="contact.html">📬 Contact Us</a></li>
             </ul>
         </div>
