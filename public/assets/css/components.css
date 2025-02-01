@@ -35,3 +35,71 @@
     color: #FFD700;
     display: block;
 }
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #001a3d; /* Dark Blue */
+    border-bottom: 3px solid #FFD700; /* Gold Border */
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    background: transparent;
+    border: 2px solid #FFD700; /* Gold Border */
+    color: #FFD700; /* Gold Icon */
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.hamburger-menu:hover {
+    background: rgba(255, 215, 0, 0.2); /* Light Gold Glow */
+    box-shadow: 0 0 10px #FFD700;
+    transform: scale(1.1);
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFD700; /* Gold */
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 8px #FFD700;
+}
+
+/* Hide Menu on Small Screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #001a3d;
+        border: 2px solid #FFD700;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
