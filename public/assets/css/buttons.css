@@ -1,7 +1,7 @@
 /* Buttons */
 .cta-button {
   display: inline-block;
-  padding: 0.5rem 1rem; /* Reduced padding for smaller size */
+  padding: 1.5rem 2rem; /* Reduced padding for smaller size */
   background-color: #FFD700; /* Gold */
   color: #001a3d; /* Darker Blue */
   font-weight: bold;

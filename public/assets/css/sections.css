@@ -374,3 +374,95 @@ header {
     text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700;
   }
 }
+
+/* Sales Pitch Section */
+.sales-pitch {
+    background-color: #001a3d; /* Darker Blue Background */
+    color: #ffffff; /* White Text */
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); /* Gold Glow Effect */
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    border: 2px solid #FFD700; /* Gold Border */
+}
+
+/* Sales Pitch Title */
+.sales-pitch h2 {
+    font-size: 2rem;
+    color: #FFD700; /* Gold */
+    text-shadow: 0 0 12px #FFD700; /* Glowing Effect */
+    margin-bottom: 1rem;
+}
+
+/* Sales Pitch Paragraphs */
+.sales-pitch p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Sales Pitch List */
+.sales-pitch ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    margin: 1rem auto;
+}
+
+.sales-pitch li {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #FFD700; /* Gold */
+    font-weight: bold;
+}
+
+.sales-pitch li b {
+    color: #ffffff; /* White for Important Text */
+}
+
+/* CTA Button */
+.sales-pitch .cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #FFD700; /* Gold */
+    color: #001a3d; /* Darker Blue */
+    font-weight: bold;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.sales-pitch .cta-button:hover {
+    background-color: #ffcc00; /* Lighter Gold */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sales-pitch {
+        padding: 2rem;
+        max-width: 90%;
+    }
+
+    .sales-pitch h2 {
+        font-size: 1.8rem;
+    }
+
+    .sales-pitch p,
+    .sales-pitch li {
+        font-size: 1.1rem;
+    }
+
+    .sales-pitch .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}

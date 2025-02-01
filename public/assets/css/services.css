@@ -1,0 +1,85 @@
+/* Services List Section */
+.services-list {
+    background-color: #001a3d; /* Darker Blue */
+    color: #ffffff;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #FFD700; /* Gold Border */
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); /* Soft Gold Glow */
+}
+
+/* Section Heading */
+.services-list h2 {
+    font-size: 2rem;
+    color: #FFD700; /* Gold */
+    text-shadow: 0 0 12px #FFD700; /* Glowing Effect */
+    margin-bottom: 1.5rem;
+}
+
+/* Services List */
+.services-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #002b55; /* Slightly lighter blue */
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.services-list li:hover {
+    background-color: #003366; /* Slightly brighter blue */
+    transform: scale(1.05);
+}
+
+/* Pricing Button Container */
+.pricing-button-container {
+    margin-top: 2rem;
+}
+
+/* Pricing Button */
+.pricing-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #FFD700; /* Gold */
+    color: #001a3d; /* Dark Blue */
+    font-weight: bold;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pricing-button:hover {
+    background-color: #ffcc00; /* Lighter Gold */
+    transform: scale(1.08);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-list {
+        padding: 2rem;
+        max-width: 90%;
+    }
+
+    .services-list li {
+        font-size: 1.1rem;
+    }
+
+    .pricing-button {
+        width: 100%;
+        text-align: center;
+    }
+}

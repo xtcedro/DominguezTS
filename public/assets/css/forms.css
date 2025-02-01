@@ -1,1 +1,132 @@
+/* Appointment Booker Section */
+.appointment-booker {
+    background-color: #001a3d; /* Darker Blue */
+    color: #ffffff;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); /* Gold Glow Effect */
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    border: 2px solid #FFD700; /* Gold Border */
+}
 
+/* Section Heading */
+.appointment-booker h2 {
+    font-size: 2rem;
+    color: #FFD700; /* Gold */
+    text-shadow: 0 0 12px #FFD700; /* Glowing Effect */
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+.appointment-booker p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Appointment Form */
+.appointment-form {
+    background-color: #002b55; /* Dark Blue */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Labels */
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #FFD700; /* Gold */
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Input Fields & Textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    background-color: #001f54; /* Dark Blue */
+    color: #ffffff;
+    outline: none;
+}
+
+/* Input Focus */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ffcc00; /* Lighter Gold */
+    box-shadow: 0 0 10px #FFD700;
+}
+
+/* Response Message */
+.response-message {
+    font-size: 1.2rem;
+    color: #FFD700;
+    background: #002b55;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: none;
+}
+
+/* Book Appointment Button */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #FFD700; /* Gold */
+    color: #001a3d; /* Dark Blue */
+    font-weight: bold;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #ffcc00; /* Lighter Gold */
+    transform: scale(1.05);
+}
+
+/* View Appointments Button */
+.view-appointments {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .appointment-booker {
+        padding: 2rem;
+        max-width: 90%;
+    }
+
+    .appointment-form {
+        padding: 1.5rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
