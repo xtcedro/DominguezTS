@@ -1,235 +1,37 @@
-/* Chat Container - Always Visible & Professional Look */
-.chat-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 350px;
-    background: #001a3d; /* Darker Blue */
-    border: 2px solid #FFD700; /* Gold Border */
-    border-radius: 12px;
-    padding: 15px;
-    color: white;
-    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.4);
-    font-family: 'Arial', sans-serif;
-    z-index: 9999; /* Ensures it stays above everything */
-    overflow: hidden;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #002b55; /* Slightly lighter Dark Blue */
+    color: #FFD700;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
 }
 
-/* Chatbox - Scrollable with Smooth Scrolling */
-#chatbox {
-    height: 300px;
-    overflow-y: auto;
-    padding: 12px;
-    font-size: 15px;
-    background: #002b80; /* Darker blue */
-    border-radius: 8px;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
-    scrollbar-width: thin;
-    scrollbar-color: #FFD700 #001a3d;
+.hero h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 15px #FFD700, 0 0 30px #FFD700;
+    animation: glowText 2s infinite alternate;
 }
 
-/* Bot and User Message Bubbles */
-.bot-text, .user-text {
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 6px;
-    max-width: 85%;
-    word-wrap: break-word;
-    animation: fadeIn 0.4s ease-in-out;
-}
-
-/* Bot Message */
-.bot-text {
-    background: #FFD700; /* Gold */
-    color: #001a3d; /* Dark Blue */
-    font-weight: bold;
-    border-left: 4px solid #ffcc00;
-    align-self: flex-start;
-}
-
-/* User Message */
-.user-text {
-    background: #0047b3; /* Vibrant Blue */
-    color: #ffffff; /* White */
-    font-weight: bold;
-    border-right: 4px solid #FFD700;
-    align-self: flex-end;
-    text-align: right;
-}
-
-/* Input Field */
-.chat-input {
+/* Steps Section */
+.steps {
     display: flex;
-    margin-top: 10px;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-input {
-    flex: 1;
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-    font-size: 14px;
-    background: #f1f1f1;
-    outline: none;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+.step {
+    text-align: center;
+    background: #002b55;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid #FFD700;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
 }
 
-/* Send Button */
-button {
-    padding: 10px;
-    background: #FFD700;
-    color: #001a3d;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    border-radius: 6px;
-    margin-left: 5px;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-/* Hover & Active Effects */
-button:hover {
-    background: #ffcc00;
-    transform: scale(1.05);
-}
-
-button:active {
-    transform: scale(0.95);
-}
-
-/* Smooth Message Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-    .chat-container {
-        width: 90%;
-        right: 5%;
-        bottom: 10px;
-    }
-}
-
-.hero-banner {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: fadeInSlideUp 1.5s ease-in-out; /* Apply keyframe animation */
-  transform: scale(1); /* Default scale */
-  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
-}
-
-.hero-banner:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-/* Pricing Table */
-.pricing-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #ffffff; /* White Background */
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle Shadow */
-}
-
-.pricing-table th,
-.pricing-table td {
-  padding: 1rem;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  font-size: 1.1rem;
-}
-
-.pricing-table th {
-  background-color: #FFD700; /* Gold */
-  color: #001f54; /* Dark Blue */
-  font-weight: bold;
-}
-
-.pricing-table tr:nth-child(even) {
-  background-color: #f8f8f8; /* Light Gray Background for Alternating Rows */
-}
-
-.pricing-table td {
-  font-weight: bold;
-  color: #001f54; /* Dark Blue */
-}
-
-/* Last Row CTA */
-.table-cta {
-  padding: 1.5rem;
-  background-color: #001f54;
-}
-
-
-.table-cta a {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #FFD700; /* Gold */
-  color: #001f54; /* Dark Blue */
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.table-cta a:hover {
-  background-color: #FFC107; /* Slightly Brighter Gold */
-  transform: scale(1.05); /* Button Enlargement Effect */
-}
-
-/* Response Message Styling */
-.response-message {
-  display: none; /* Hidden by default */
-  padding: 1rem;
-  margin: 1.5rem auto;
-  max-width: 600px;
-  font-size: 1.2rem;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-  animation: fadeInMessage 0.5s ease-in-out;
-}
-
-/* Success Message */
-.response-message.success {
-  background-color: #008000; /* Green */
-  color: #ffffff;
-  border: 2px solid #00cc00; /* Lighter green */
-  text-shadow: 0 0 5px #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
-}
-
-/* Error Message */
-.response-message.error {
-  background-color: #8B0000; /* Dark Red */
-  color: #ffffff;
-  border: 2px solid #FF0000; /* Lighter Red */
-  text-shadow: 0 0 5px #ffffff;
-  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
-}
-
-/* Warning Message */
-.response-message.warning {
-  background-color: #FFD700; /* Gold */
-  color: #000000;
-  border: 2px solid #FFC107; /* Slightly darker gold */
-  text-shadow: 0 0 5px #000000;
-  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+.step span {
+    font-size: 2rem;
+    color: #FFD700;
+    display: block;
 }
