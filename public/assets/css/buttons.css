@@ -96,3 +96,35 @@
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(36, 41, 46, 0.3);
 }
+
+/* General Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #001a3d; /* Dark Blue Text */
+    background-color: #FFD700; /* Gold Background */
+    border: 2px solid #FFD700; /* Gold Border */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.btn:hover {
+    background-color: #ffcc00; /* Lighter Gold */
+    color: #001a3d; /* Dark Blue */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); /* Intense Glow Effect */
+}
+
+/* Responsive Full-Width Button */
+@media (max-width: 768px) {
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
