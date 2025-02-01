@@ -1,0 +1,109 @@
+/* Pricing Page - General Styling */
+.pricing-comparison {
+    background-color: #001a3d; /* Darker Blue */
+    color: #ffffff;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); /* Gold Glow Effect */
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    border: 2px solid #FFD700; /* Gold Border */
+}
+
+/* Section Heading */
+.pricing-comparison h2 {
+    font-size: 2rem;
+    color: #FFD700; /* Gold */
+    text-shadow: 0 0 12px #FFD700; /* Glowing Effect */
+    margin-bottom: 1rem;
+}
+
+/* Pricing Table */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #002b55; /* Dark Blue */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+}
+
+/* Table Headers */
+.pricing-table thead {
+    background-color: #FFD700; /* Gold */
+    color: #001a3d; /* Dark Blue */
+}
+
+.pricing-table th {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid #FFD700;
+}
+
+/* Table Body */
+.pricing-table td {
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 1px solid #FFD700;
+    text-align: center;
+}
+
+/* Table Row Alternating Colors */
+.pricing-table tbody tr:nth-child(even) {
+    background-color: #003366; /* Slightly Lighter Dark Blue */
+}
+
+.pricing-table tbody tr:nth-child(odd) {
+    background-color: #002b55; /* Dark Blue */
+}
+
+/* Table CTA Button Row */
+.table-cta {
+    background-color: #FFD700; /* Gold */
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #FFD700; /* Gold */
+    color: #001a3d; /* Dark Blue */
+    font-weight: bold;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00; /* Lighter Gold */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-comparison {
+        padding: 2rem;
+        max-width: 90%;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
