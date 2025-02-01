@@ -536,3 +536,32 @@ header .logo img {
     font-size: 1.2rem;
     font-style: italic;
 }
+
+/* Centering the Appointment Booker Section */
+.appointment-booker {
+    text-align: center; /* Centers text inside */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #FFD700; /* Gold */
+    color: #001a3d; /* Darker Blue */
+    font-weight: bold;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background: #ffcc00;
+    transform: scale(1.05);
+}
