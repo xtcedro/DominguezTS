@@ -155,4 +155,24 @@
     }
 }
 
+/* Contact Links */
+.contact-info a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #FFD700; /* Gold Text */
+    background-color: #001a3d; /* Dark Blue Background */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #FFD700; /* Gold Border */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.contact-info a:hover {
+    background-color: #FFD700; /* Gold Background */
+    color: #001a3d; /* Dark Blue Text */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); /* Intense Glow Effect */
+}
 
