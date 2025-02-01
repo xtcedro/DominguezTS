@@ -7,10 +7,10 @@ export function setupNavigation() {
             <button class="hamburger-menu" id="menu-toggle" aria-label="Toggle navigation">
                 ☰
             </button>
-            <ul class="nav-links" id="nav-menu">
+            <ul class="nav-links hidden" id="nav-menu">
                 <li><a href="index.html">🏠 Home</a></li>
                 <li><a href="about.html">📖 About Us</a></li>
-                <li><a href="services.html">🛠️ Services</a></li>
+                <li><a href="letter.html">📜 Open Letter</a></li>
                 <li><a href="contact.html">📬 Contact Us</a></li>
             </ul>
         </div>
@@ -20,12 +20,10 @@ export function setupNavigation() {
     const menuButton = document.getElementById("menu-toggle");
     const navMenu = document.getElementById("nav-menu");
 
-    // Start with the menu hidden
-    navMenu.classList.add("hidden");
-
-    // Toggle menu visibility when clicking the hamburger button
+    // Event Listener for Hamburger Menu Toggle
     menuButton.addEventListener("click", () => {
         navMenu.classList.toggle("hidden");
+        navMenu.classList.toggle("visible");
     });
 
     // Highlight the active tab based on the current page
