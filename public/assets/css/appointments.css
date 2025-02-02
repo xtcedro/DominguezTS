@@ -28,8 +28,44 @@
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Gold Glow */
   text-align: left;
-  max-height: 400px;
+  max-height: 450px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Ensures spacing between appointments */
+}
+
+/* Individual Appointment Card */
+.appointment-item {
+  background-color: rgba(255, 215, 0, 0.15); /* Subtle Gold Background */
+  color: white;
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #FFD700; /* Gold Border */
+  box-shadow: 0 5px 12px rgba(255, 215, 0, 0.3);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Appointment Details */
+.appointment-item p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Highlight Important Details */
+.appointment-item span {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* Hover Effect */
+.appointment-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
 }
 
 /* Loading Message */
@@ -37,22 +73,6 @@
   font-size: 1.2rem;
   color: #FFD700;
   text-align: center;
-}
-
-/* Individual Appointment Items */
-.appointment-item {
-  background-color: rgba(255, 215, 0, 0.1); /* Light Gold Background */
-  color: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border-left: 4px solid #FFD700;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.appointment-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
 }
 
 /* Back to Booking Button */
@@ -96,6 +116,11 @@
     padding: 1rem;
   }
 
+  .appointment-item {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
   .back-btn {
     font-size: 1rem;
     padding: 10px 16px;
@@ -110,6 +135,11 @@
 
   .appointments-list h2 {
     font-size: 1.5rem;
+  }
+
+  .appointment-item {
+    padding: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .back-btn {
