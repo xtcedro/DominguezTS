@@ -80,3 +80,29 @@
         text-align: center;
     }
 }
+
+/* Reduce font size for links in About Section */
+.about-section a {
+    font-size: 1rem; /* Adjust as needed */
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+    .about-section a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .about-section a {
+        font-size: 0.85rem;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+    .about-section a {
+        font-size: 0.8rem; /* Further reduced */
+    }
+}
