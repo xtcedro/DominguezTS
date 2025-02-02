@@ -89,3 +89,69 @@
     transform: scale(1.05);
 }
 
+/* Responsive Design for Tablets */
+@media (max-width: 1024px) {
+    .pricing-comparison {
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsive Design for Mobile Phones */
+@media (max-width: 768px) {
+    .pricing-comparison {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .pricing-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        border-collapse: collapse;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+/* Additional Styling for Small Mobile Devices */
+@media (max-width: 480px) {
+    .pricing-comparison h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
