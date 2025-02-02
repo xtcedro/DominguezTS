@@ -89,21 +89,3 @@
     transform: scale(1.05);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .pricing-comparison {
-        padding: 2rem;
-        max-width: 90%;
-    }
-
-    .pricing-table th,
-    .pricing-table td {
-        font-size: 1rem;
-        padding: 0.8rem;
-    }
-
-    .cta-button {
-        width: 100%;
-        text-align: center;
-    }
-}
