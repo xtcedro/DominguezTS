@@ -1,0 +1,119 @@
+/* Appointments List Section */
+.appointments-list {
+  background-color: #001a3d; /* Dark Blue Background */
+  color: #FFD700; /* Gold Text */
+  padding: 2.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3); /* Gold Glow Effect */
+  text-align: center;
+  border: 2px solid #FFD700; /* Gold Border */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Section Title */
+.appointments-list h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+  animation: glowEffect 2s infinite alternate ease-in-out; /* Glow Animation */
+}
+
+/* Appointments Container */
+#appointments-container {
+  background-color: #002b5e; /* Slightly Lighter Dark Blue */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Gold Glow */
+  text-align: left;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Loading Message */
+.loading-message {
+  font-size: 1.2rem;
+  color: #FFD700;
+  text-align: center;
+}
+
+/* Individual Appointment Items */
+.appointment-item {
+  background-color: rgba(255, 215, 0, 0.1); /* Light Gold Background */
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border-left: 4px solid #FFD700;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.appointment-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+/* Back to Booking Button */
+.center-btn {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #001a3d; /* Dark Blue Text */
+  background-color: #FFD700; /* Gold Background */
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+.back-btn:hover {
+  background-color: #e6c200;
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.8);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .appointments-list {
+    padding: 2rem;
+    max-width: 95%;
+  }
+
+  .appointments-list h2 {
+    font-size: 1.8rem;
+  }
+
+  #appointments-container {
+    padding: 1rem;
+  }
+
+  .back-btn {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .appointments-list {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .appointments-list h2 {
+    font-size: 1.5rem;
+  }
+
+  .back-btn {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
