@@ -118,6 +118,166 @@ header {
     }
 }
 
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #001f54, #000d26);
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background: rgba(0, 31, 84, 0.8); /* Semi-transparent Dark Blue */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    text-align: center;
+    border: 2px solid #FFD700;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #d1d1d1;
+    margin-bottom: 1rem;
+}
+
+/* Sales Pitch Section */
+.sales-pitch {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background: rgba(0, 15, 50, 0.9); /* Slightly Darker Blue */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    text-align: center;
+    border: 2px solid #FFD700;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.sales-pitch h2 {
+    font-size: 2rem;
+    color: #FFD700;
+    text-shadow: 0 0 15px #FFD700, 0 0 25px #FFD700;
+}
+
+.sales-pitch p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #d1d1d1;
+    margin-bottom: 1rem;
+}
+
+.sales-pitch ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.2rem;
+}
+
+.sales-pitch li {
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #001f54;
+    background: linear-gradient(145deg, #FFD700, #e6c200);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.8);
+    border: none;
+}
+
+.cta-button:hover {
+    background: #ffcc00;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero,
+    .sales-pitch {
+        max-width: 90%;
+        padding: 2rem;
+    }
+
+    .hero h1,
+    .sales-pitch h2 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero,
+    .sales-pitch {
+        max-width: 95%;
+        padding: 1.8rem;
+    }
+
+    .hero h1,
+    .sales-pitch h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}
 /* Logo Styling */
 .logo img {
     height: 60px; /* Adjust logo size */
