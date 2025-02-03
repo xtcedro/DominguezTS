@@ -49,6 +49,17 @@ body {
     animation: fadeInUp 1s ease-out forwards 0.3s;
 }
 
+/* Hero Banner (Image) */
+.hero-banner {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
 /* CTA Button */
 .cta-button {
     display: inline-block;
