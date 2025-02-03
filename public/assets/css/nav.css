@@ -1,131 +1,104 @@
-/* Navbar Styling */
-.navbar {
-    background-color: #001a3d; /* Dark Blue */
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: flex-start; /* Aligns hamburger menu to the left */
-    align-items: center;
-    border-bottom: 4px solid #FFD700; /* Gold Border */
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
-    z-index: 1000;
+/* Color Variables */
+:root {
+    --primary-color: #00274D; /* Dark Blue */
+    --secondary-color: #FFD700; /* Gold */
+    --text-light: #ffffff;
+    --text-dark: #222222;
+}
+
+/* Menu Container */
+.menu-container {
+    position: relative;
 }
 
 /* Hamburger Menu Button */
 .hamburger-menu {
+    font-size: 2rem;
     background: none;
-    border: 2px solid #FFD700; /* Gold Border */
-    color: #FFD700; /* Gold Icon */
-    font-size: 28px;
+    border: none;
+    color: var(--secondary-color);
     cursor: pointer;
     padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s;
 }
 
-/* Hover Effect for Hamburger Menu */
 .hamburger-menu:hover {
-    background: #FFD700; /* Gold Background */
-    color: #001a3d; /* Dark Blue Icon */
-    box-shadow: 0 0 15px #FFD700;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px var(--secondary-color);
 }
 
 /* Sidebar Navigation */
 .sidebar {
     position: fixed;
     top: 0;
-    left: -280px; /* Initially hidden */
-    width: 280px;
-    height: 100%;
-    background-color: #001a3d; /* Dark Blue */
-    border-right: 4px solid #FFD700;
-    box-shadow: 4px 0 12px rgba(255, 215, 0, 0.3);
-    padding-top: 60px;
+    left: -250px; /* Initially hidden */
+    width: 250px;
+    height: 100vh;
+    background-color: var(--primary-color);
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
     transition: left 0.4s ease-in-out;
     z-index: 1000;
 }
 
-/* Sidebar - When Visible */
+/* Show Sidebar */
 .sidebar.visible {
-    left: 0; /* Slide in */
+    left: 0;
 }
 
-/* Close Button */
+/* Close Menu Button */
 .close-menu {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+    font-size: 1.8rem;
     background: none;
     border: none;
-    color: #FFD700;
-    font-size: 26px;
+    color: var(--secondary-color);
+    align-self: flex-end;
     cursor: pointer;
-    transition: color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s;
 }
 
-/* Hover Effect for Close Button */
 .close-menu:hover {
-    color: #ffcc00; /* Brighter Gold */
+    transform: scale(1.1);
+    text-shadow: 0 0 10px var(--secondary-color);
 }
 
 /* Navigation Links */
 .nav-links {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-top: 2rem;
 }
 
 .nav-links li {
-    text-align: center;
-    margin-bottom: 20px;
+    margin: 1rem 0;
 }
 
-/* Navigation Links - Styling */
 .nav-links a {
     display: block;
-    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: var(--text-light);
     text-decoration: none;
-    color: #FFD700; /* Gold */
-    font-size: 18px;
-    font-weight: bold;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 10px;
     border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
 }
 
-/* Hover Effect */
 .nav-links a:hover {
-    background: #FFD700;
-    color: #001a3d;
-    box-shadow: 0 0 15px #FFD700;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateX(5px);
 }
 
-/* Active Page Highlight */
+/* Active Link Highlight */
 .nav-links a.active {
-    background: #FFD700;
-    color: #001a3d;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     font-weight: bold;
-    text-decoration: underline;
 }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px 15px;
-    }
-
-    .hamburger-menu {
-        font-size: 24px;
-        padding: 8px 12px;
-    }
-
-    .sidebar {
-        width: 250px;
-    }
-
-    .nav-links a {
-        font-size: 16px;
-        padding: 10px 15px;
-    }
+/* Hide Sidebar */
+.sidebar.hidden {
+    left: -250px;
 }
