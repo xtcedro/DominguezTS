@@ -1,101 +1,85 @@
-/* Hero Section with Moving Gradient Background */
-.hero {
-    background: linear-gradient(45deg, #0A1931, #FFD700, #0A1931, #FFD700);
-    background-size: 400% 400%; /* Ensure the gradient covers a larger area */
-    animation: gradientMove 10s ease infinite; /* Animate the gradient */
-    color: #FFD700; /* Gold */
+/* General Section Styling */
+section {
+    padding: 50px 20px;
     text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0A1931; /* Dark Blue */
+    color: #FFD700; /* Gold */
     padding: 60px 20px;
-    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Glowing Hero Title */
 .hero h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    animation: glow 2s infinite alternate, fadeIn 2s ease-in-out;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-/* Hero Description Fade-In */
 .hero p {
     font-size: 18px;
+    font-weight: bold;
     margin-bottom: 20px;
-    animation: fadeIn 2s ease-in-out;
+}
+
+/* Services Overview */
+.services-overview {
+    background-color: #f5f5f5;
+    color: #0A1931;
+    padding: 50px 20px;
+}
+
+.services-overview h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.services-overview ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.services-overview ul li {
+    margin-bottom: 10px;
+}
+
+/* Sales Pitch Section */
+.sales-pitch {
+    background-color: #0A1931;
+    color: #FFD700;
+    padding: 50px 20px;
+}
+
+.sales-pitch h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.sales-pitch p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 /* CTA Buttons */
 .cta-button {
     display: inline-block;
-    background-color: #FFD700; /* Gold */
-    color: #0A1931; /* Dark Blue */
+    background-color: #FFD700;
+    color: #0A1931;
+    font-size: 18px;
     padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s ease-in-out, transform 0.2s;
-    animation: fadeIn 2s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #FFF5B1; /* Lighter Gold */
-    transform: scale(1.05);
-}
-
-/* Services Overview */
-.services-overview {
-    background-color: #FFFFFF;
-    text-align: center;
-    padding: 50px 20px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.services-overview h2 {
-    font-size: 30px;
+    background-color: #FFC107;
     color: #0A1931;
-    margin-bottom: 20px;
-}
-
-/* Appointment Booker Highlight */
-.sales-pitch {
-    background-color: #F4F4F4;
-    text-align: center;
-    padding: 50px 20px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-/* Keyframe Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
-    }
-    to {
-        text-shadow: 0 0 20px #FFF5B1, 0 0 30px #FFF5B1;
-    }
-}
-
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 /* Responsive Design */
@@ -104,12 +88,14 @@
         font-size: 28px;
     }
 
-    .services-overview h2, .sales-pitch h2 {
-        font-size: 24px;
+    .hero p,
+    .services-overview ul,
+    .sales-pitch p {
+        font-size: 16px;
     }
 
     .cta-button {
-        font-size: 14px;
-        padding: 10px 16px;
+        font-size: 16px;
+        padding: 10px 18px;
     }
 }
