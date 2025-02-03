@@ -1,12 +1,16 @@
 /* Navbar Styling */
 .navbar {
     background-color: #001a3d; /* Dark Blue */
-	position: sticky;
+    position: sticky;
+    top: 0; /* Sticks to the top */
+    width: 100%;
     padding: 15px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 5px solid #FFD700; /* Gold Border */
+    z-index: 1000; /* Ensures it's always on top */
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
 }
 
 /* Menu Container */
