@@ -1,85 +1,103 @@
 /* Services List Section */
 .services-list {
-    background-color: #001a3d; /* Darker Blue */
-    color: #ffffff;
-    padding: 2.5rem;
+    background-color: #001a3d; /* Dark Blue Background */
+    color: #ffffff; /* White Text */
+    padding: 3rem;
     margin: 2rem auto;
     max-width: 900px;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3); /* Gold Glow Effect */
     text-align: center;
     border: 2px solid #FFD700; /* Gold Border */
-    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); /* Soft Gold Glow */
+    animation: fadeIn 1.2s ease-in-out;
 }
 
-/* Section Heading */
+/* Section Title */
 .services-list h2 {
     font-size: 2rem;
-    color: #FFD700; /* Gold */
-    text-shadow: 0 0 12px #FFD700; /* Glowing Effect */
+    font-weight: bold;
+    color: #FFD700; /* Gold Text */
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; /* Glowing Effect */
     margin-bottom: 1.5rem;
 }
 
-/* Services List */
-.services-list ul {
-    list-style: none;
-    padding: 0;
-}
-
-.services-list li {
-    font-size: 1.3rem;
+/* Service Items */
+.service {
+    background: rgba(255, 215, 0, 0.1); /* Subtle Gold Background */
+    padding: 1.5rem;
     margin: 1rem 0;
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #002b55; /* Slightly lighter blue */
     border-radius: 8px;
-    transition: transform 0.2s ease-in-out;
+    border: 1px solid #FFD700;
+    box-shadow: 0 3px 10px rgba(255, 215, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Hover Effect */
-.services-list li:hover {
-    background-color: #003366; /* Slightly brighter blue */
+/* Service Hover Effect */
+.service:hover {
     transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Service Headings */
+.service h3 {
+    font-size: 1.5rem;
+    color: #FFD700; /* Gold Text */
+    text-shadow: 0 0 8px #FFD700;
+    margin-bottom: 0.5rem;
+}
+
+/* Service Descriptions */
+.service p {
+    font-size: 1.1rem;
+    color: #d1d1d1;
+    line-height: 1.6;
 }
 
 /* Pricing Button Container */
 .pricing-button-container {
     margin-top: 2rem;
+    text-align: center;
 }
 
 /* Pricing Button */
 .pricing-button {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #FFD700; /* Gold */
-    color: #001a3d; /* Dark Blue */
-    font-weight: bold;
-    border: 2px solid #FFD700;
-    border-radius: 5px;
-    text-decoration: none;
+    background: linear-gradient(145deg, #FFD700, #e6c200);
+    color: #001a3d; /* Dark Blue Text */
     font-size: 1.2rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.5);
+    border: none;
 }
 
+/* Pricing Button Hover Effect */
 .pricing-button:hover {
-    background-color: #ffcc00; /* Lighter Gold */
+    background: #ffcc00;
     transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.7);
 }
 
-/* Responsive Design */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .services-list {
         padding: 2rem;
-        max-width: 90%;
+        max-width: 95%;
     }
 
-    .services-list li {
-        font-size: 1.1rem;
+    .services-list h2 {
+        font-size: 1.8rem;
+    }
+
+    .service {
+        padding: 1.2rem;
     }
 
     .pricing-button {
-        width: 100%;
-        text-align: center;
+        font-size: 1rem;
+        padding: 10px 20px;
     }
 }
