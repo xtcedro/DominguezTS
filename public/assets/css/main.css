@@ -19,10 +19,11 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Hero Section */
+/* Hero Section (Reduced Padding) */
 .hero {
     position: relative;
-    height: 100vh;
+    height: 80vh; /* Reduced from 100vh */
+    padding: 3rem 1rem; /* Reduced padding */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,27 +31,26 @@ body {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--text-light);
-    padding: 6rem 1rem;
 }
 
 /* Hero Banner (Image) */
 .hero-banner {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     height: auto;
     object-fit: cover;
-    filter: brightness(80%); /* Darkens the image slightly for better text visibility */
+    filter: brightness(85%); /* Slightly darkened for contrast */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    animation: fadeIn 1.5s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
 }
 
 /* Hero Text Styling */
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Slightly smaller for better spacing */
     color: var(--secondary-color);
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 10px 20px;
+    padding: 8px 15px; /* Reduced padding */
     border-radius: 8px;
     display: inline-block;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
@@ -59,11 +59,11 @@ body {
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     max-width: 600px;
-    margin: 10px auto;
+    margin: 8px auto;
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 8px 15px;
+    padding: 6px 12px; /* Reduced padding */
     border-radius: 8px;
     line-height: 1.5;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -76,8 +76,8 @@ body {
     display: inline-block;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    font-size: 1.2rem;
-    padding: 12px 24px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -94,7 +94,7 @@ body {
 /* Services Overview */
 .services-overview {
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 3.5rem 1rem;
     background-color: #013A63; /* Slightly lighter blue */
     opacity: 0;
     transform: translateY(30px);
@@ -125,7 +125,7 @@ body {
 /* Sales Pitch (Appointment Booker) */
 .sales-pitch {
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 3.5rem 1rem;
     background-color: var(--primary-color);
     opacity: 0;
     transform: translateY(30px);
@@ -138,7 +138,7 @@ body {
 }
 
 .sales-pitch p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto 1.5rem;
 }
