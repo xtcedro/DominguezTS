@@ -1,4 +1,4 @@
-/* Global Styles */
+/* === Global Styles === */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #001a3d; /* Dark Blue */
@@ -6,102 +6,145 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-/* Hero Section */
+/* === Hero Section === */
 .hero {
     background: linear-gradient(135deg, #001a3d, #002b55); /* Dark Blue Gradient */
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
     text-align: center;
     border-bottom: 4px solid #FFD700; /* Gold Border */
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero-banner {
     max-width: 100%;
     height: auto;
-    margin-bottom: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.4);
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #FFD700; /* Gold */
-    text-shadow: 0 0 12px #FFD700;
-    margin-bottom: 1rem;
+    text-shadow: 0 0 15px #FFD700;
+    margin-bottom: 1.2rem;
+    animation: glow 2s infinite alternate;
 }
 
 .hero p {
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
 }
 
-/* CTA Buttons */
+/* === CTA Buttons === */
 .cta-button {
     display: inline-block;
-    padding: 12px 24px;
-    background-color: #FFD700; /* Gold */
+    padding: 14px 28px;
+    background: linear-gradient(145deg, #FFD700, #e6c200);
     color: #001a3d; /* Dark Blue */
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 2px solid #FFD700;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
 }
 
+/* CTA Button - Hover Effect */
 .cta-button:hover {
     background-color: #ffcc00;
     transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
 }
 
-/* Services Overview */
+/* === Services Overview === */
 .services-overview {
     background: #002b55; /* Slightly lighter Dark Blue */
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
     border-bottom: 4px solid #FFD700;
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
 .services-overview h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #FFD700;
-    text-shadow: 0 0 10px #FFD700;
-    margin-bottom: 1.5rem;
+    text-shadow: 0 0 12px #FFD700;
+    margin-bottom: 2rem;
 }
 
 .services-overview ul {
     list-style: none;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 2;
+    margin-bottom: 2rem;
 }
 
 .services-overview li {
-    margin-bottom: 0.8rem;
-}
-
-/* Sales Pitch Section */
-.sales-pitch {
-    background: linear-gradient(135deg, #001a3d, #002b55);
-    padding: 3rem 2rem;
-    border-bottom: 4px solid #FFD700;
-}
-
-.sales-pitch h2 {
-    font-size: 2rem;
-    color: #FFD700;
-    text-shadow: 0 0 12px #FFD700;
     margin-bottom: 1rem;
 }
 
-.sales-pitch p {
-    font-size: 1.3rem;
+/* === Sales Pitch Section === */
+.sales-pitch {
+    background: linear-gradient(135deg, #001a3d, #002b55);
+    padding: 4rem 2rem;
+    border-bottom: 4px solid #FFD700;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.sales-pitch h2 {
+    font-size: 2.2rem;
+    color: #FFD700;
+    text-shadow: 0 0 15px #FFD700;
     margin-bottom: 1.5rem;
 }
 
-/* Responsive Design */
+.sales-pitch p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* === Keyframe Animations === */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #FFD700; }
+    to { text-shadow: 0 0 25px #FFD700, 0 0 35px #FFD700; }
+}
+
+/* === Responsive Design === */
+@media (max-width: 1024px) {
+    .hero h1,
+    .services-overview h2,
+    .sales-pitch h2 {
+        font-size: 2rem;
+    }
+
+    .hero p,
+    .sales-pitch p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 12px 24px;
+    }
+}
+
 @media (max-width: 768px) {
     .hero h1,
     .services-overview h2,
