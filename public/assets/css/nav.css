@@ -1,108 +1,71 @@
-/* Navbar Styling */
+/* Navbar Styles */
 .navbar {
-    position: fixed; /* Sticks to the top */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    background: linear-gradient(135deg, #001a3d, #002b55); /* Dark Blue Gradient */
-    color: #FFD700; /* Gold Text */
+    width: 250px;
+    height: 100vh;
+    background-color: #222;
+    padding-top: 60px; /* Space for the sticky hamburger menu */
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    border-bottom: 3px solid #FFD700; /* Gold Border */
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
-    text-align: center;
-    z-index: 1000; /* Ensures it stays above other elements */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Show the Navigation Menu */
+.navbar.show {
+    transform: translateX(0);
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #222;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+.hamburger-menu:hover {
+    background: #444;
 }
 
 /* Navigation Links */
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    flex-direction: column;
+    width: 100%;
 }
 
 .nav-links a {
-    color: #FFD700; /* Gold Text */
+    display: block;
+    padding: 15px;
     text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 0.8rem 1.2rem;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    transition: background 0.3s;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-    background: #FFD700; /* Gold Background */
-    color: #001a3d; /* Dark Blue Text */
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
-    transform: scale(1.1);
+.nav-links a:hover {
+    background-color: #444;
 }
 
-/* Hamburger Menu Button */
-.hamburger-menu {
-    display: none; /* Hidden on larger screens */
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #FFD700;
-    transition: transform 0.3s ease-in-out;
-}
-
-.hamburger-menu:hover {
-    transform: scale(1.2);
-}
-
-/* Mobile Menu (Hidden by Default) */
-.nav-links.hidden {
+/* Hidden Navigation */
+.hidden {
     display: none;
 }
 
-/* Show Mobile Menu */
-.nav-links.show {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #001a3d;
-    padding: 1rem;
-    border-bottom: 3px solid #FFD700;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide links in small screens */
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: #001a3d;
-        border-bottom: 3px solid #FFD700;
-        padding: 1rem 0;
-    }
-
-    .nav-links a {
-        padding: 1rem;
-        font-size: 1.2rem;
-    }
-
-    .hamburger-menu {
-        display: block; /* Show menu button */
-    }
-
-    .nav-links.show {
-        display: flex; /* Show menu when toggled */
-    }
-}
-
-/* Ensure content doesn’t hide behind the navbar */
-body {
-    padding-top: 70px; /* Adjust based on navbar height */
+/* Show Menu */
+.show {
+    display: block;
 }
