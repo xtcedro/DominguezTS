@@ -2,56 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dominguez Tech Solutions - Fast, Reliable, and Affordable Tech Services.">
-    <meta name="keywords" content="Tech Solutions, Web Development, IT Support, SEO, Consulting">
-    <meta name="author" content="Pedro Dominguez">
-    <meta property="og:title" content="Dominguez Tech Solutions">
-    <meta property="og:description" content="Fast, Reliable, and Affordable Tech Services for businesses and individuals.">
-    <meta property="og:image" content="assets/images/og-image.png">
-    <meta property="og:url" content="https://www.domingueztechsolutions.com">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dominguez Tech Solutions - Empowering Oklahoma City Businesses with Innovative IT Solutions">
+    <meta name="keywords" content="IT solutions, OKC tech, software development, cybersecurity, cloud services, Oklahoma City">
+    <meta name="author" content="Dominguez Tech Solutions">
+    <title>Dominguez Tech Solutions | Oklahoma City</title>
 
-    <title>Dominguez Tech Solutions</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script type="module" src="assets/js/script.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-
-    <!-- Navigation Bar -->
-    <nav class="navbar"></nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Dominguez Tech Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <img src="assets/images/banner.png" alt=" Dominguez Tech Solutions Banner" class="hero-banner">
-        <h1>🚀 Dominguez Tech Solutions</h1>
-        <p><b>Fast, reliable, and affordable tech services</b> tailored for businesses and individuals.</p>
-        <a href="services.html" class="cta-button">💻 Get Started</a>
+    <header id="home" class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Tech Solutions for Oklahoma City</h1>
+            <p class="lead">Helping OKC businesses innovate with software, cloud, and security solutions.</p>
+            <a href="#services" class="btn btn-light btn-lg">Explore Services</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <i class="fas fa-code fa-3x text-primary"></i>
+                    <h4 class="mt-3">Software Development</h4>
+                    <p>Custom applications built for Oklahoma City's startups and enterprises.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-cloud fa-3x text-primary"></i>
+                    <h4 class="mt-3">Cloud Solutions</h4>
+                    <p>Secure and scalable cloud services for OKC businesses.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-lock fa-3x text-primary"></i>
+                    <h4 class="mt-3">Cybersecurity</h4>
+                    <p>Protecting local businesses from cyber threats with advanced security solutions.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Services Overview -->
-    <section class="services-overview">
-        <h2>💡 What We Offer</h2>
-        <ul>
-            <li>🌐 Custom Web Development</li>
-            <li>📱 Mobile & Web App Solutions</li>
-            <li>🛠️ IT Support & Consulting</li>
-            <li>📈 SEO & Digital Marketing</li>
-        </ul>
-        <a href="services.html" class="cta-button">Explore Services 🔍</a>
+    <!-- About Section -->
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">Based in Oklahoma City, Dominguez Tech Solutions specializes in IT services that help local businesses thrive in a digital world.</p>
+        </div>
     </section>
 
-    <!-- Appointment Booker Highlight -->
-    <section class="sales-pitch">
-        <h2>📅 Book Appointments with Ease!</h2>
-        <p><b>No sign-ups required.</b> Schedule a consultation in seconds.</p>
-        <a href="appointment-booker.html" class="cta-button">📅 Book Now</a>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center">We proudly serve businesses across Oklahoma City.</p>
+            <div class="text-center mt-3">
+                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Oklahoma City, OK</p>
+                <p><i class="fas fa-phone"></i> (405) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> contact@domingueztech.com</p>
+            </div>
+            <div class="text-center mt-4">
+                <!-- Google Maps Embed (Replace with actual location) -->
+                <iframe 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    loading="lazy" 
+                    allowfullscreen 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Oklahoma+City">
+                </iframe>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer Section -->
-    <div id="footer"></div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 Dominguez Tech Solutions - Oklahoma City</p>
+    </footer>
 
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
