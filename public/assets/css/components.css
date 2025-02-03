@@ -1,3 +1,67 @@
+/* Contact Links - Gold Border with Glow Effect */
+.about-section a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #FFD700; /* Gold Text */
+    background-color: #002b80; /* Darker Blue Background */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #FFD700; /* Gold Border */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect: Brighter Background + Glow */
+.about-section a:hover {
+    background-color: #0047b3; /* Brighter Blue on Hover */
+    transform: scale(1.05); /* Slight Zoom Effect */
+    box-shadow: 0 0 15px #FFD700, 0 0 30px #FFD700; /* Gold Glow Effect */
+}
+
+/* Active State: Slight Click Effect */
+.about-section a:active {
+    transform: scale(0.98); /* Slight Shrink on Click */
+    box-shadow: 0 0 10px #FFD700; /* Reduced Glow */
+}
+
+/* Hero Banner */
+.hero-banner {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1.5rem; /* Centering and spacing */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(255, 215, 0, 0.3); /* Gold glow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInBanner 1.5s ease-in-out;
+}
+
+/* Hover Effect */
+.hero-banner:hover {
+  transform: scale(1.03); /* Subtle zoom */
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.5); /* Enhanced glow on hover */
+}
+
+/* Keyframe Animation */
+@keyframes fadeInBanner {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-banner {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+  }
+}
+
 /* Navbar Styles */
 .navbar {
     background-color: #00122b; /* Darker Blue */
