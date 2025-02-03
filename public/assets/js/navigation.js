@@ -1,7 +1,7 @@
 export function setupNavigation() {
     const navbar = document.querySelector(".navbar");
 
-    // Insert HTML for the navigation bar
+    // Insert HTML for the sticky navigation bar
     navbar.innerHTML = `
         <div class="menu-container">
             <button class="hamburger-menu" id="menu-toggle" aria-label="Open navigation">
@@ -34,7 +34,7 @@ export function setupNavigation() {
         sidebarMenu.classList.add("visible");
         sidebarMenu.classList.remove("hidden");
         overlay.classList.remove("hidden");
-        document.body.classList.add("no-scroll"); // Prevent background scrolling
+        document.body.classList.add("no-scroll"); // Prevent scrolling
     }
 
     // Close Sidebar
