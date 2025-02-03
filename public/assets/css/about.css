@@ -1,48 +1,81 @@
-/* Founder Section */
+/* Founder Section - Enhanced */
 .founder {
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 900px;
-  background-color: #001a3d; /* Darker Blue Background */
-  color: #f1f1f1; /* Light Text */
-  border-radius: 10px;
-  box-shadow: 0 5px 12px rgba(255, 215, 0, 0.3); /* Gold glow effect */
+  padding: 2.5rem;
+  margin: 2.5rem auto;
+  max-width: 950px;
+  background: linear-gradient(145deg, #001a3d, #002b5e); /* Gradient Dark Blue */
+  color: #f1f1f1;
+  border-radius: 12px;
   text-align: center;
-  border: 2px solid #FFD700; /* Elegant Gold Border */
-  animation: fadeIn 1.5s ease-in-out;
+  border: 3px solid #FFD700; /* Gold Border */
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4); /* Stronger Glow Effect */
+  animation: fadeIn 1.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.founder:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.6);
 }
 
 /* Founder Header */
 .founder h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #FFD700; /* Gold Heading */
-  text-shadow: 0 0 15px #FFD700, 0 0 25px #FFD700; /* Glowing effect */
-  animation: glowEffect 2s infinite alternate ease-in-out; /* Glow Animation */
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: #FFD700;
+  text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700;
+  animation: glowEffect 2.5s infinite alternate ease-in-out;
 }
 
 /* Founder Details Layout */
 .founder-details {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
+  gap: 2.5rem;
+  margin-top: 1.8rem;
   justify-content: center;
 }
 
 /* Founder Image */
 .founder-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%; /* Circular photo */
-  border: 4px solid #FFD700; /* Thicker Gold Border */
-  box-shadow: 0 5px 12px rgba(255, 215, 0, 0.3); /* Softer shadow */
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 5px solid #FFD700;
+  box-shadow: 0 6px 15px rgba(255, 215, 0, 0.4);
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .founder-photo:hover {
-  transform: scale(1.05); /* Slight zoom effect */
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.5);
+}
+
+/* Founder Bio Text */
+.founder-text {
+  text-align: left;
+  max-width: 500px;
+}
+
+.founder-text h3 {
+  font-size: 1.8rem;
+  color: #FFD700;
+  margin-bottom: 0.8rem;
+}
+
+.founder-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
+
+/* Founder Social Buttons */
+.founder-socials {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 /* Founder Section - Responsive Design */
@@ -50,35 +83,39 @@
 /* Tablets and Medium Screens (Max Width: 1024px) */
 @media (max-width: 1024px) {
   .founder {
-    padding: 1.5rem;
+    padding: 2rem;
     max-width: 95%;
   }
 
   .founder h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .founder-details {
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     text-align: center;
   }
 
   .founder-photo {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .founder-text {
+    text-align: center;
   }
 }
 
 /* Mobile Devices (Max Width: 768px) */
 @media (max-width: 768px) {
   .founder {
-    padding: 1.2rem;
+    padding: 1.5rem;
     max-width: 100%;
-    margin: 1rem auto;
+    margin: 1.2rem auto;
   }
 
   .founder h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   .founder-details {
@@ -86,8 +123,8 @@
   }
 
   .founder-photo {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
   }
 }
 
@@ -96,7 +133,6 @@
   .founder {
     padding: 1rem;
     max-width: 100%;
-    text-align: center;
   }
 
   .founder h2 {
@@ -109,8 +145,8 @@
   }
 
   .founder-photo {
-    width: 100px;
-    height: 100px;
-    border: 3px solid #FFD700; /* Adjusted for smaller screens */
+    width: 110px;
+    height: 110px;
+    border: 3px solid #FFD700;
   }
 }
