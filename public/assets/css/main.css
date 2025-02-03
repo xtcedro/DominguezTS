@@ -19,7 +19,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Hero Section with Parallax Effect */
+/* Hero Section */
 .hero {
     position: relative;
     height: 100vh;
@@ -28,25 +28,9 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('../images/banner.png') center/cover no-repeat fixed; /* Parallax effect */
+    background-color: var(--primary-color);
     color: var(--text-light);
-    padding: 2rem;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    color: var(--secondary-color);
-    margin-bottom: 0.5rem;
-    opacity: 0;
-    animation: fadeInUp 1s ease-out forwards;
-}
-
-.hero p {
-    font-size: 1.3rem;
-    max-width: 600px;
-    margin: 0 auto 1.5rem;
-    opacity: 0;
-    animation: fadeInUp 1s ease-out forwards 0.3s;
+    padding: 6rem 1rem;
 }
 
 /* Hero Banner (Image) */
@@ -55,9 +39,36 @@ body {
     max-width: 1200px;
     height: auto;
     object-fit: cover;
+    filter: brightness(80%); /* Darkens the image slightly for better text visibility */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Hero Text Styling */
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 0.5s;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 10px auto;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 8px 15px;
+    border-radius: 8px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 0.7s;
 }
 
 /* CTA Button */
@@ -72,7 +83,7 @@ body {
     border-radius: 5px;
     transition: transform 0.3s ease, background-color 0.3s;
     opacity: 0;
-    animation: fadeInUp 1s ease-out forwards 0.6s;
+    animation: fadeInUp 1s ease-out forwards 0.9s;
 }
 
 .cta-button:hover {
@@ -132,14 +143,16 @@ body {
     margin: 0 auto 1.5rem;
 }
 
-/* Parallax Scroll Effect */
-.parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+/* Fade-in Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
