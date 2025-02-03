@@ -8,6 +8,48 @@ body {
     text-align: center;
 }
 
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #00122b; /* Darker Blue */
+  color: #FFD700; /* Gold */
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+  animation: glow 2s infinite alternate;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+/* Hero Animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #FFD700;
+  }
+  to {
+    text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Section Styling */
 section {
     max-width: 900px;
@@ -15,6 +57,44 @@ section {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+/* Hero Banner */
+.hero-banner {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1.5rem; /* Centering and spacing */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(255, 215, 0, 0.3); /* Gold glow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInBanner 1.5s ease-in-out;
+}
+
+/* Hover Effect */
+.hero-banner:hover {
+  transform: scale(1.03); /* Subtle zoom */
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.5); /* Enhanced glow on hover */
+}
+
+/* Keyframe Animation */
+@keyframes fadeInBanner {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-banner {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+  }
 }
 
 /* Services Overview Section */
