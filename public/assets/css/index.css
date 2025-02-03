@@ -1,0 +1,33 @@
+/* Header Section */
+header {
+    background: linear-gradient(90deg, #001f54, #000d26); /* Dark Blue Gradient */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3); /* Gold glow effect */
+    border-bottom: 3px solid #FFD700; /* Gold bottom border */
+}
+
+/* Logo Styling */
+.logo img {
+    height: 60px; /* Adjust logo size */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Hover effect for logo */
+.logo img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    filter: drop-shadow(0 0 10px #FFD700);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        height: 50px; /* Adjust for smaller screens */
+    }
+}
