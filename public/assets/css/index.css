@@ -156,6 +156,90 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Services Overview Section */
+.services-overview {
+    background: linear-gradient(135deg, #001a3d, #003366); /* Dark Blue Gradient */
+    color: #FFD700; /* Gold Text */
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Section Header */
+.services-overview h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+}
+
+/* Service List */
+.services-overview ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.services-overview li {
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+    color: #ffffff; /* White Text for Better Readability */
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.services-overview li:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 12px #FFD700;
+}
+
+/* CTA Button */
+.services-overview .cta-button {
+    display: inline-block;
+    background: #FFD700;
+    color: #001a3d;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+.services-overview .cta-button:hover {
+    background: #ffcc00;
+    color: #000d26;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(255, 215, 0, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-overview {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .services-overview h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-overview li {
+        font-size: 1.1rem;
+    }
+
+    .services-overview .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
 /* Sales Pitch Section */
 .sales-pitch {
     max-width: 800px;
