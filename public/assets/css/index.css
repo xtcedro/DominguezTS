@@ -9,6 +9,115 @@ header {
     border-bottom: 3px solid #FFD700; /* Gold bottom border */
 }
 
+/* Navbar Container */
+.navbar {
+    background: linear-gradient(90deg, #001f54, #000d26); /* Dark Blue Gradient */
+    border-bottom: 3px solid #FFD700; /* Gold Border */
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3); /* Subtle Gold Glow */
+    padding: 12px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    background: none;
+    border: none;
+    color: #FFD700; /* Gold Color */
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.hamburger-menu:hover {
+    color: white;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hide menu on mobile */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #001f54;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Navigation Links Styling */
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #FFD700; /* Gold Text */
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Hover and Active Link Effects */
+.nav-links a:hover, .nav-links a.active {
+    color: white;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #001f54;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    }
+
+    .nav-links.visible {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
 /* Logo Styling */
 .logo img {
     height: 60px; /* Adjust logo size */
