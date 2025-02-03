@@ -1,92 +1,123 @@
 /* Pricing Page - General Styling */
 .pricing-comparison {
-    background-color: #001a3d; /* Darker Blue */
+    background: linear-gradient(135deg, #001a3d, #002b55); /* Dark Blue Gradient */
     color: #ffffff;
-    padding: 2.5rem;
+    padding: 2rem;
     margin: 2rem auto;
     max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); /* Gold Glow Effect */
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(255, 215, 0, 0.4); /* Gold Glow Effect */
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.8;
-    border: 2px solid #FFD700; /* Gold Border */
+    border: 3px solid #FFD700; /* Gold Border */
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Section Heading */
 .pricing-comparison h2 {
     font-size: 2rem;
-    color: #FFD700; /* Gold */
-    text-shadow: 0 0 12px #FFD700; /* Glowing Effect */
+    color: #FFD700;
+    text-shadow: 0 0 12px #FFD700, 0 0 24px #FFD700; /* Enhanced Glow */
     margin-bottom: 1rem;
+    animation: glowEffect 2s infinite alternate ease-in-out;
 }
 
 /* Pricing Table */
 .pricing-table {
     width: 100%;
-    border-collapse: collapse;
-    background-color: #002b55; /* Dark Blue */
-    border-radius: 8px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(0, 26, 61, 0.8); /* Semi-transparent Dark Blue */
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
 }
 
 /* Table Headers */
 .pricing-table thead {
-    background-color: #FFD700; /* Gold */
-    color: #001a3d; /* Dark Blue */
+    background: linear-gradient(135deg, #FFD700, #ffcc00);
+    color: #001a3d;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
 }
 
 .pricing-table th {
     padding: 1rem;
     font-size: 1.2rem;
-    font-weight: bold;
-    border: 2px solid #FFD700;
+    border-bottom: 3px solid #FFD700;
+    text-transform: uppercase;
 }
 
 /* Table Body */
 .pricing-table td {
     padding: 1rem;
     font-size: 1.1rem;
-    border: 1px solid #FFD700;
+    border-bottom: 1px solid #FFD700;
     text-align: center;
 }
 
-/* Table Row Alternating Colors */
+/* Alternating Row Colors */
 .pricing-table tbody tr:nth-child(even) {
-    background-color: #003366; /* Slightly Lighter Dark Blue */
+    background-color: #003366;
 }
 
 .pricing-table tbody tr:nth-child(odd) {
-    background-color: #002b55; /* Dark Blue */
+    background-color: #002b55;
 }
 
 /* Table CTA Button Row */
 .table-cta {
-    background-color: #FFD700; /* Gold */
+    background: linear-gradient(135deg, #FFD700, #ffcc00);
     text-align: center;
-    padding: 1.5rem;
-    font-size: 1.3rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    border-radius: 0 0 8px 8px;
 }
 
 /* CTA Button */
 .cta-button {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #FFD700; /* Gold */
-    color: #001a3d; /* Dark Blue */
+    padding: 0.6rem 1.2rem; /* Reduced Padding */
+    background: linear-gradient(135deg, #FFD700, #ffcc00);
+    color: #001a3d;
     font-weight: bold;
     border: 2px solid #FFD700;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 0.9rem; /* Reduced Font Size */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 3px 8px rgba(255, 215, 0, 0.3);
 }
 
+/* CTA Button Hover */
 .cta-button:hover {
-    background-color: #ffcc00; /* Lighter Gold */
+    background: #ffcc00;
     transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(255, 215, 0, 0.5);
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glowing Effect Animation */
+@keyframes glowEffect {
+    from {
+        text-shadow: 0 0 12px #FFD700, 0 0 24px #FFD700;
+    }
+    to {
+        text-shadow: 0 0 16px #ffcc00, 0 0 28px #ffcc00;
+    }
 }
 
 /* Responsive Design for Tablets */
@@ -103,9 +134,9 @@
     }
 
     .cta-button {
-        width: 100%;
+        width: auto;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -130,10 +161,10 @@
     }
 
     .cta-button {
-        width: 100%;
+        width: auto;
         text-align: center;
-        font-size: 1rem;
-        padding: 12px;
+        font-size: 0.9rem;
+        padding: 10px;
     }
 }
 
@@ -151,7 +182,7 @@
     }
 
     .cta-button {
-        font-size: 0.9rem;
-        padding: 10px;
+        font-size: 0.85rem;
+        padding: 8px;
     }
 }
