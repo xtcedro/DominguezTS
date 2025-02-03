@@ -1,6 +1,7 @@
 /* Navbar Styling */
 .navbar {
     background-color: #001a3d; /* Dark Blue */
+	position: sticky;
     padding: 15px 20px;
     display: flex;
     justify-content: center;

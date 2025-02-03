@@ -1,6 +1,7 @@
 /* Header Section */
 header {
     background: linear-gradient(135deg, #001a3d, #002b55); /* Dark Blue Gradient */
+	position: sticky;
     color: #FFD700; /* Gold Text */
     display: flex;
     align-items: center;
