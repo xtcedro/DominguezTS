@@ -14,11 +14,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Custom Color Scheme */
+        :root {
+            --primary-color: #00274D; /* Dark Blue */
+            --secondary-color: #FFD700; /* Gold */
+            --text-light: #ffffff;
+        }
+        body {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+        }
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        .navbar-brand, .nav-link {
+            color: var(--secondary-color) !important;
+        }
+        .hero {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 5rem 0;
+            text-align: center;
+        }
+        .hero .btn {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+        .section-title {
+            color: var(--secondary-color);
+        }
+        .services {
+            background-color: #013A63;
+        }
+        .about {
+            background-color: var(--primary-color);
+        }
+        .contact-info {
+            color: var(--secondary-color);
+        }
+        footer {
+            background-color: #001F3F;
+            padding: 1rem;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">Dominguez Tech Solutions</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -36,31 +81,31 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="bg-primary text-white text-center py-5">
+    <header id="home" class="hero">
         <div class="container">
             <h1>Tech Solutions for Oklahoma City</h1>
             <p class="lead">Helping OKC businesses innovate with software, cloud, and security solutions.</p>
-            <a href="#services" class="btn btn-light btn-lg">Explore Services</a>
+            <a href="#services" class="btn btn-lg">Explore Services</a>
         </div>
     </header>
 
     <!-- Services Section -->
-    <section id="services" class="py-5">
+    <section id="services" class="services py-5">
         <div class="container">
-            <h2 class="text-center">Our Services</h2>
+            <h2 class="text-center section-title">Our Services</h2>
             <div class="row text-center mt-4">
                 <div class="col-md-4">
-                    <i class="fas fa-code fa-3x text-primary"></i>
+                    <i class="fas fa-code fa-3x text-secondary"></i>
                     <h4 class="mt-3">Software Development</h4>
                     <p>Custom applications built for Oklahoma City's startups and enterprises.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-cloud fa-3x text-primary"></i>
+                    <i class="fas fa-cloud fa-3x text-secondary"></i>
                     <h4 class="mt-3">Cloud Solutions</h4>
                     <p>Secure and scalable cloud services for OKC businesses.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-lock fa-3x text-primary"></i>
+                    <i class="fas fa-lock fa-3x text-secondary"></i>
                     <h4 class="mt-3">Cybersecurity</h4>
                     <p>Protecting local businesses from cyber threats with advanced security solutions.</p>
                 </div>
@@ -69,9 +114,9 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="bg-light py-5">
+    <section id="about" class="about py-5">
         <div class="container">
-            <h2 class="text-center">About Us</h2>
+            <h2 class="text-center section-title">About Us</h2>
             <p class="text-center">Based in Oklahoma City, Dominguez Tech Solutions specializes in IT services that help local businesses thrive in a digital world.</p>
         </div>
     </section>
@@ -79,30 +124,18 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="text-center">Contact Us</h2>
+            <h2 class="text-center section-title">Contact Us</h2>
             <p class="text-center">We proudly serve businesses across Oklahoma City.</p>
-            <div class="text-center mt-3">
+            <div class="text-center mt-3 contact-info">
                 <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Oklahoma City, OK</p>
                 <p><i class="fas fa-phone"></i> (405) 123-4567</p>
                 <p><i class="fas fa-envelope"></i> contact@domingueztech.com</p>
-            </div>
-            <div class="text-center mt-4">
-                <!-- Google Maps Embed (Replace with actual location) -->
-                <iframe 
-                    width="100%" 
-                    height="300" 
-                    style="border:0;" 
-                    loading="lazy" 
-                    allowfullscreen 
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Oklahoma+City">
-                </iframe>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="text-center">
         <p class="mb-0">© 2025 Dominguez Tech Solutions - Oklahoma City</p>
     </footer>
 
