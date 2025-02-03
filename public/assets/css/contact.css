@@ -1,0 +1,109 @@
+/* Contact Information Section */
+.contact-info {
+    background: linear-gradient(135deg, #001a3d, #002a5d); /* Dark Blue Gradient */
+    color: #ffffff;
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #FFD700; /* Gold Border */
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4); /* Gold Glow */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Contact Title */
+.contact-info h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #FFD700; /* Gold Text */
+    text-shadow: 0 0 12px #FFD700, 0 0 22px #FFD700; /* Glowing Effect */
+    margin-bottom: 1rem;
+    animation: glowEffect 2s infinite alternate ease-in-out;
+}
+
+/* Contact Text */
+.contact-info p {
+    font-size: 1.2rem;
+    color: #d1d1d1; /* Light Gray */
+    margin-bottom: 1.5rem;
+}
+
+/* Contact List */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Contact List Items */
+.contact-info li {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: rgba(255, 215, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #FFD700;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Contact Item Hover Effect */
+.contact-info li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(255, 215, 0, 0.5);
+}
+
+/* Contact Links */
+.contact-info a {
+    color: #FFD700; /* Gold */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect for Contact Links */
+.contact-info a:hover {
+    color: #fff; /* White */
+    text-shadow: 0 0 12px #FFD700, 0 0 20px #FFD700;
+}
+
+/* Animated Glow Effect */
+@keyframes glowEffect {
+    from {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+    }
+    to {
+        text-shadow: 0 0 15px #FFD700, 0 0 30px #FFD700;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design for Contact Section */
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 2rem;
+        max-width: 95%;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-info li {
+        font-size: 1.1rem;
+    }
+}
