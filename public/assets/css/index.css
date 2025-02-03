@@ -1,13 +1,4 @@
-/* Header Section */
-header {
-    background: linear-gradient(90deg, #001f54, #000d26); /* Dark Blue Gradient */
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3); /* Gold glow effect */
-    border-bottom: 3px solid #FFD700; /* Gold bottom border */
-}
+
 
 /* Navbar Container */
 .navbar {
