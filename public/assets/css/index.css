@@ -31,3 +31,58 @@ header {
         height: 50px; /* Adjust for smaller screens */
     }
 }
+
+/* Footer Section */
+footer {
+    background: linear-gradient(90deg, #001f54, #000d26); /* Dark Blue Gradient */
+    color: #FFD700; /* Gold Text */
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1rem;
+    border-top: 3px solid #FFD700; /* Gold Border on Top */
+    box-shadow: 0 -4px 10px rgba(255, 215, 0, 0.3); /* Subtle Gold Glow */
+}
+
+/* Footer Text */
+footer p {
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+/* Legal Links */
+.legal-links {
+    margin-top: 10px;
+}
+
+.legal-links a {
+    color: #FFD700; /* Gold Links */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect for Links */
+.legal-links a:hover {
+    color: #fff; /* White on Hover */
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.9rem;
+        padding: 15px 5px;
+    }
+
+    .legal-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .legal-links a {
+        margin: 5px 8px; /* Adjust spacing */
+        font-size: 0.9rem;
+    }
+}
