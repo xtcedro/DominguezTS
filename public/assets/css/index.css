@@ -8,6 +8,10 @@ body {
     padding: 0;
 }
 
+html {
+    overflow: hidden;
+}
+
 /* Hero Section */
 .hero {
     padding: 4rem 2rem;
