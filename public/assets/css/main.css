@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #001833; /* Darker Navy Blue */
+  color: #f1f1f1; /* Light Text */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #00122b; /* Darker Blue */
+  color: #FFD700; /* Gold */
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+  animation: glow 2s infinite alternate;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+/* Hero Animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #FFD700;
+  }
+  to {
+    text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Section */
+footer {
+    background-color: #00122b; /* Darker Blue */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); /* Subtle top shadow */
+}
+
+/* Copyright & Credits */
+footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Legal Links */
+.legal-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem; /* Spacing between links */
+    margin-top: 1rem;
+}
+
+.legal-links a {
+    color: #FFD700; /* Gold text */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.legal-links a:hover {
+    color: #FFA500; /* Lighter Gold */
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
