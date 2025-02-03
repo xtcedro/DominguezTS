@@ -7,12 +7,14 @@ export function setupNavigation() {
             <button class="hamburger-menu" id="menu-toggle" aria-label="Toggle navigation">
                 ☰
             </button>
-            <ul class="nav-links hidden" id="nav-menu">
-                <li><a href="index.html">🏠 Home</a></li>
-                <li><a href="about.html">🧑‍💻 About Us</a></li>
-                <li><a href="services.html">⌨️ Services</a></li>
-                <li><a href="contact.html">📬 Contact Us</a></li>
-            </ul>
+            <div class="sidebar hidden" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li><a href="about.html">🧑‍💻 About Us</a></li>
+                    <li><a href="services.html">⌨️ Services</a></li>
+                    <li><a href="contact.html">📬 Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     `;
 
@@ -22,6 +24,7 @@ export function setupNavigation() {
 
     // Event Listener for Hamburger Menu Toggle
     menuButton.addEventListener("click", () => {
-        navMenu.classList.toggle("show");
+        navMenu.classList.toggle("hidden");
+        navMenu.classList.toggle("visible");
     });
 }
