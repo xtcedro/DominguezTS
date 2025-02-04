@@ -1,0 +1,105 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Color Variables */
+:root {
+    --primary-color: #00274D; /* Dark Blue */
+    --secondary-color: #FFD700; /* Gold */
+    --text-light: #ffffff;
+    --text-dark: #222222;
+    --background-light: #f8f9fa; /* Light gray */
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+}
+
+/* Services List Section */
+.services-list {
+    text-align: center;
+    background: var(--background-light);
+    color: var(--text-dark);
+    padding: 4rem 1rem;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Header */
+.services-list h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Individual Service Boxes */
+.service {
+    background: #ffffff;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Services */
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Title */
+.service h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+/* Service Description */
+.service p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Pricing Button */
+.pricing-button-container {
+    margin-top: 20px;
+}
+
+.pricing-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+/* Hover Effect for Pricing Button */
+.pricing-button:hover {
+    background: #e6c300; /* Slightly darker gold */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-list {
+        max-width: 90%;
+        padding: 3rem 1rem;
+    }
+
+    .service {
+        max-width: 100%;
+    }
+}
