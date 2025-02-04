@@ -10,7 +10,7 @@
     --background-light: #f8f9fa; /* Light gray background */
 }
 
-/* General Styles */
+/* General Page Styling */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--primary-color);
@@ -19,35 +19,21 @@ body {
     padding: 0;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 4rem 1rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 /* Contact Info Section */
 .contact-info {
     background: var(--background-light);
     color: var(--text-dark);
     text-align: center;
-    padding: 3rem 1rem;
-    border-radius: 10px;
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
     max-width: 600px;
-    margin: 30px auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    word-break: break-word; /* Prevents text from overflowing */
+    border-left: 5px solid var(--secondary-color); /* Gold accent */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease-out forwards;
 }
 
 /* Section Header */
@@ -55,6 +41,10 @@ body {
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* Contact Details */
@@ -63,9 +53,14 @@ body {
     padding: 0;
 }
 
+/* Contact List Items */
 .contact-info li {
     font-size: 1.2rem;
-    margin: 10px 0;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 /* Contact Links */
@@ -73,9 +68,10 @@ body {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
+/* Hover Effect */
 .contact-info a:hover {
     color: var(--secondary-color);
     text-shadow: 0 0 8px var(--secondary-color);
@@ -90,19 +86,46 @@ body {
     margin-top: 10px;
 }
 
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    margin-top: 15px;
+    border: 2px solid var(--secondary-color);
+}
+
+/* CTA Button Hover */
+.cta-button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-info {
         max-width: 90%;
-        padding: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .contact-info {
-        max-width: 90%;
-        padding: 2rem 1rem;
-        border-radius: 8px;
+        padding: 2rem 1.2rem;
+        border-radius: 10px;
     }
 
     .contact-info h2 {
@@ -111,13 +134,21 @@ body {
 
     .contact-info li {
         font-size: 1.1rem;
+        flex-direction: column; /* Stacks items for better mobile readability */
+        text-align: center;
     }
 
     .contact-info a {
         font-size: 1.1rem;
+        text-align: center;
     }
 
     .contact-info em {
         font-size: 0.95rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 10px 16px;
     }
 }
