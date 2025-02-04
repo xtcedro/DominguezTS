@@ -1,4 +1,4 @@
-/* Import Custom Font */
+/* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 /* Color Variables */
@@ -9,6 +9,20 @@
     --text-dark: #222222;
 }
 
+/* Hero Section (Optimized Padding & Animation) */
+.hero {
+    position: relative;
+    height: 60vh; /* Reduced from 80vh */
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
@@ -17,20 +31,6 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-}
-
-/* Hero Section (Reduced Padding) */
-.hero {
-    position: relative;
-    height: 80vh; /* Reduced from 100vh */
-    padding: 3rem 1rem; /* Reduced padding */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: var(--text-light);
 }
 
 /* Hero Banner (Image) */
