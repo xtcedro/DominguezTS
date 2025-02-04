@@ -3,14 +3,14 @@
 
 /* Color Variables */
 :root {
-    --primary-color: #00274D; /* Dark Blue */
+    --primary-color: #001F3F; /* Dark Blue */
     --secondary-color: #FFD700; /* Gold */
     --text-light: #ffffff;
     --text-dark: #222222;
-    --background-light: #f8f9fa; /* Light gray */
+    --background-light: #F8F9FA; /* Light Gray */
 }
 
-/* General Styles */
+/* General Page Styling */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--primary-color);
@@ -19,87 +19,153 @@ body {
     padding: 0;
 }
 
-/* Services List Section */
+/* Services Section */
 .services-list {
     text-align: center;
     background: var(--background-light);
     color: var(--text-dark);
-    padding: 4rem 1rem;
-    border-radius: 10px;
+    padding: 4rem 2rem;
+    border-radius: 12px;
     max-width: 900px;
-    margin: 40px auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease-out forwards;
 }
 
 /* Section Header */
 .services-list h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
+    font-weight: 600;
 }
 
-/* Individual Service Boxes */
+/* Individual Service Box */
 .service {
-    background: #ffffff;
-    padding: 20px;
-    margin: 15px auto;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: scale(0.95);
+    animation: slideIn 1s ease-out forwards;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
     max-width: 700px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect for Services */
+/* Service Icon */
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
+
+/* Hover Effect */
 .service:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px var(--secondary-color);
 }
 
-/* Service Title */
+/* Service Header */
 .service h3 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 8px;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
 }
 
 /* Service Description */
 .service p {
-    font-size: 1.1rem;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    max-width: 550px;
     margin: 0;
+    line-height: 1.6;
 }
 
 /* Pricing Button */
 .pricing-button-container {
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .pricing-button {
     display: inline-block;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 1.3rem;
+    padding: 14px 22px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 6px;
     transition: transform 0.3s ease-in-out, background-color 0.3s;
+    margin-top: 15px;
+    border: 2px solid var(--secondary-color);
 }
 
-/* Hover Effect for Pricing Button */
+/* Pricing Button Hover */
 .pricing-button:hover {
-    background: #e6c300; /* Slightly darker gold */
+    background: var(--secondary-color);
+    color: var(--primary-color);
     transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .services-list {
-        max-width: 90%;
-        padding: 3rem 1rem;
+        max-width: 95%;
+        padding: 3rem 1.5rem;
     }
 
     .service {
-        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .service-icon {
+        font-size: 2rem;
+    }
+
+    .service h3 {
+        font-size: 1.6rem;
+    }
+
+    .service p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .pricing-button {
+        font-size: 1.2rem;
+        padding: 12px 18px;
     }
 }
