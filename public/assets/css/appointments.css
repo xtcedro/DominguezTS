@@ -1,125 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-/* Color Variables */
-:root {
-    --primary-color: #00274D; /* Dark Blue */
-    --secondary-color: #FFD700; /* Gold */
-    --text-light: #ffffff;
-    --text-dark: #222222;
-    --form-bg: #f8f9fa; /* Light gray background for form */
-    --input-border: #ccc;
-}
-
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--primary-color);
-    color: var(--text-light);
-    margin: 0;
-    padding: 0;
-}
-
-/* Appointment Booker Section */
-.appointment-booker {
-    background: var(--form-bg);
-    color: var(--text-dark);
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-/* Section Header */
-.appointment-booker h2 {
-    font-size: 1.8rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-/* Form Styling */
-.appointment-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-/* Form Groups */
-.form-group {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.form-group label {
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: var(--primary-color);
-}
-
-/* Input Fields */
-input, select, textarea {
-    padding: 10px;
-    border: 1px solid var(--input-border);
-    border-radius: 5px;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-textarea {
-    resize: none;
-}
-
-/* Input Focus Effect */
-input:focus, select:focus, textarea:focus {
-    border-color: var(--secondary-color);
-    outline: none;
-    box-shadow: 0px 0px 5px var(--secondary-color);
-}
-
-/* Response Message */
-.response-message {
-    padding: 10px;
-    font-weight: bold;
-    border-radius: 5px;
-    display: none;
-}
-
-/* Buttons */
-.btn {
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    font-size: 1.1rem;
-    padding: 12px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out, background 0.3s;
-}
-
-.btn:hover {
-    background: #e6c300; /* Slightly darker gold */
-    transform: scale(1.05);
-}
-
-/* View Appointments Button */
-.view-appointments {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .appointment-booker {
-        max-width: 90%;
-        padding: 1.5rem;
-    }
-}
-
 /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
@@ -130,6 +8,8 @@ input:focus, select:focus, textarea:focus {
     --text-light: #ffffff;
     --text-dark: #222222;
     --background-light: #f8f9fa; /* Light gray */
+    --card-bg: #ffffff;
+    --border-color: #ddd;
     --loading-color: #FFD700; /* Loading text color */
 }
 
@@ -163,14 +43,41 @@ body {
 
 /* Appointments Container */
 #appointments-container {
-    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Appointment Card */
+.appointment-card {
+    background: var(--card-bg);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-left: 5px solid var(--secondary-color);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Hover Effect for Cards */
+.appointment-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Appointment Details */
+.appointment-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.appointment-card p {
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin: 5px 0;
 }
 
 /* Loading Message Animation */
@@ -186,6 +93,18 @@ body {
     0% { opacity: 1; }
     50% { opacity: 0.5; }
     100% { opacity: 1; }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Center Button */
@@ -222,5 +141,9 @@ body {
 
     .loading-message {
         font-size: 1rem;
+    }
+
+    .appointment-card {
+        padding: 15px;
     }
 }
