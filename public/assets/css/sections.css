@@ -88,16 +88,27 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-section {
-        max-width: 90%;
-        padding: 2rem 1.5rem;
+        max-width: 95%;
+        padding: 1.8rem 1.2rem;
+        border-left: 4px solid var(--secondary-color); /* Adjust border size */
     }
 
     .about-section h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
-    .about-section p, .about-section li {
+    .about-section p, 
+    .about-section li {
+        font-size: 1.1rem;
+        word-break: break-word; /* Prevents email/text overflow */
+    }
+
+    .about-section li {
+        flex-direction: column; /* Stack items for better mobile display */
+        align-items: flex-start;
+    }
+
+    .about-section a {
         font-size: 1.1rem;
     }
 }
-
