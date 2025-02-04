@@ -1,0 +1,160 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Color Variables */
+:root {
+    --primary-color: #00274D; /* Dark Blue */
+    --secondary-color: #FFD700; /* Gold */
+    --text-light: #ffffff;
+    --text-dark: #222222;
+    --background-light: #f8f9fa; /* Light gray */
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mission Section */
+.mission {
+    text-align: center;
+    background: var(--background-light);
+    color: var(--text-dark);
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mission Section Text */
+.mission h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.mission p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Founder Section */
+.founder {
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.founder h2 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Founder Details */
+.founder-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Founder Image */
+.founder-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Founder Info */
+.founder-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.founder-details p {
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+/* Social Media Buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+/* Social Media Button Colors */
+.twitter {
+    background: #1DA1F2;
+    color: #ffffff;
+}
+
+.twitter:hover {
+    background: #0d8ddf;
+    transform: scale(1.05);
+}
+
+.facebook {
+    background: #1877F2;
+    color: #ffffff;
+}
+
+.facebook:hover {
+    background: #1461c4;
+    transform: scale(1.05);
+}
+
+.github {
+    background: #24292E;
+    color: #ffffff;
+}
+
+.github:hover {
+    background: #1b1f23;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .founder-details {
+        flex-direction: column;
+        text-align: center;
+    }
+}
