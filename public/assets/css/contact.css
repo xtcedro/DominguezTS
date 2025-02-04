@@ -97,3 +97,27 @@ body {
         padding: 2rem;
     }
 }
+
+@media (max-width: 768px) {
+    .contact-info {
+        max-width: 90%;
+        padding: 2rem 1rem;
+        border-radius: 8px;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-info li {
+        font-size: 1.1rem;
+    }
+
+    .contact-info a {
+        font-size: 1.1rem;
+    }
+
+    .contact-info em {
+        font-size: 0.95rem;
+    }
+}
