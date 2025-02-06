@@ -540,3 +540,45 @@ html, body {
         height: 75vh;
     }
 }
+
+/* Ensure the body uses flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Push content downward */
+    min-height: 100vh;
+    padding-top: 80px; /* Push everything down */
+}
+
+/* Chat Container - Push Down */
+.chat-container {
+    width: 75%;
+    height: 85vh;
+    margin-top: 20px; /* Adjust this value for more spacing */
+    background: var(--chat-bg);
+    color: var(--text-light);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+    .chat-container {
+        width: 85%;
+        height: 80vh;
+        margin-top: 30px; /* More space for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .chat-container {
+        width: 90%;
+        height: 75vh;
+        margin-top: 40px; /* Extra spacing for mobile */
+    }
+}
