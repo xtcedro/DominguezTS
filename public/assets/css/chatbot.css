@@ -76,7 +76,7 @@ body {
     clear: both;
 }
 
-/* Bot Message - Supports Markdown */
+/* Bot Message */
 .bot-message {
     background: var(--bot-bubble);
     color: var(--text-light);
@@ -88,6 +88,26 @@ body {
     max-width: 75%;
     word-wrap: break-word;
     font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bot Label (Gemini ✨) */
+.bot-label {
+    background: rgba(255, 215, 0, 0.2);
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Bot Text */
+.bot-text {
+    background: var(--bot-bubble);
+    padding: 10px;
+    border-radius: 8px;
 }
 
 /* Markdown Styling Inside Bot Messages */
