@@ -26,7 +26,7 @@
 
     <!-- Hero Section -->
     <section class="hero">
-		<img src="assets/images/banner.png" alt="Dominguez Tech Solutions Banner" class="hero-banner">
+        <img src="assets/images/banner.png" alt="Dominguez Tech Solutions Banner" class="hero-banner">
         <h1>🚀 Dominguez Tech Solutions</h1>
         <p><b>Fast, reliable, and affordable tech services</b> tailored for businesses and individuals.</p>
         <a href="services.html" class="cta-button">💻 Get Started</a>
@@ -51,8 +51,23 @@
         <a href="appointment-booker.html" class="cta-button">📅 Book Now</a>
     </section>
 
+    <!-- Chatbot Floating UI -->
+    <div class="chatbot-container">
+        <div class="chat-header" onclick="toggleChatbot()">💬 Chat with Us</div>
+        <div class="chat-content">
+            <div id="chat-box"></div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Type your message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer Section -->
     <footer id="footer"></footer>
+
+    <!-- Chatbot Script -->
+    <script src="assets/js/chatbot.js"></script>
 
 </body>
 </html>
