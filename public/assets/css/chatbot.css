@@ -438,3 +438,96 @@ footer p {
     }
 }
 
+/* Tablet View (Max Width: 1024px) */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 30px 10px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        max-width: 85%;
+    }
+
+    .chat-container {
+        width: 90%;
+        height: 60vh;
+        padding: 15px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+/* Mobile View (Max Width: 768px) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+        max-width: 90%;
+    }
+
+    .chat-container {
+        width: 95%;
+        height: 75vh;
+    }
+
+    .chat-box {
+        height: 60vh;
+        overflow-y: auto;
+    }
+
+    .input-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 8px;
+    }
+
+    input {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    footer a {
+        font-size: 0.85rem;
+    }
+}
+
