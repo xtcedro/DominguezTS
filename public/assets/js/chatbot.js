@@ -23,7 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             const data = await response.json();
-            chatBox.innerHTML += `<p class="bot-message"><b>Gemini ✨:</b> ${data.reply}</p>`;
+
+            // Convert response to Markdown and insert it into the chat
+            const markdownReply = marked.parse(data.reply);
+            chatBox.innerHTML += `<p class="bot-message"><b>Gemini ✨:</b> ${markdownReply}</p>`;
             chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll
         } catch (error) {
             chatBox.innerHTML += `<p class="error-message"><b>Error:</b> AI service is unavailable.</p>`;
