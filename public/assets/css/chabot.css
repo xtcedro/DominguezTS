@@ -172,3 +172,35 @@ button:hover {
         font-size: 1rem;
     }
 }
+
+/* Chatbot Sales Pitch */
+.chatbot-pitch {
+    background: linear-gradient(to right, #001F3F, #002855);
+    color: #FFD700;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background: #FFD700;
+    color: #001F3F;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    margin-top: 15px;
+}
+
+.cta-button:hover {
+    background: #e6c300;
+    color: #001F3F;
+    transform: scale(1.05);
+}
