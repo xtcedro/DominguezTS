@@ -582,3 +582,50 @@ body {
         margin-top: 40px; /* Extra spacing for mobile */
     }
 }
+
+/* Hero Section - Reduce Size */
+.hero {
+    position: relative;
+    height: 60vh; /* Decrease height from 100vh to 60vh */
+    padding: 2rem 1rem; /* Reduce padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #001F3F, #003366); /* Dark Blue Gradient */
+    color: var(--text-light);
+    box-shadow: inset 0px 0px 40px rgba(255, 215, 0, 0.2); /* Softer Glow */
+}
+
+/* Hero Heading - Reduce Font Size */
+.hero h1 {
+    font-size: 2.5rem; /* Decrease from 3rem */
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-shadow: 0px 0px 15px rgba(255, 215, 0, 0.7); /* Softer Glow */
+    opacity: 0;
+    animation: fadeInGlow 1.2s ease-out forwards 0.5s;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+    .hero {
+        height: 50vh; /* Adjust for tablets */
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 40vh; /* Smaller height for mobile */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
