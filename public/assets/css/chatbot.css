@@ -29,11 +29,11 @@ body {
     height: 100vh;
 }
 
-/* Chat Container - Bigger Size */
+/* Chat Container - Larger */
 .chat-container {
-    width: 60%;
-    height: 80vh;
-    margin: 10px auto;
+    width: 65%;
+    height: 85vh;
+    margin: 15px auto;
     background: var(--chat-bg);
     color: var(--text-light);
     padding: 20px;
@@ -48,7 +48,7 @@ body {
 #chat-box {
     flex-grow: 1;
     overflow-y: auto;
-    padding: 15px;
+    padding: 20px;
     text-align: left;
     background: transparent;
     border-radius: 8px;
@@ -60,7 +60,7 @@ body {
     padding: 14px 18px;
     margin: 10px 0;
     border-radius: 18px;
-    max-width: 75%;
+    max-width: 80%;
     word-wrap: break-word;
     display: inline-block;
     font-size: 1.2rem;
@@ -85,7 +85,7 @@ body {
     clear: both;
     padding: 12px 16px;
     border-radius: 12px;
-    max-width: 75%;
+    max-width: 80%;
     word-wrap: break-word;
     font-size: 1.1rem;
     display: flex;
@@ -103,26 +103,20 @@ body {
     margin-bottom: 5px;
 }
 
-/* Bot Text */
-.bot-text {
-    background: var(--bot-bubble);
-    padding: 10px;
-    border-radius: 8px;
-}
-
 /* Markdown Styling Inside Bot Messages */
 .bot-message strong {
-    font-weight: 600;
+    font-weight: 700;
     color: var(--secondary-color); /* Gold for emphasis */
 }
 
 .bot-message em {
     font-style: italic;
+    opacity: 0.9;
 }
 
 .bot-message code {
     background: #222;
-    color: #FFD700;
+    color: var(--secondary-color);
     padding: 4px 6px;
     border-radius: 4px;
     font-family: monospace;
@@ -138,6 +132,7 @@ body {
 /* Lists */
 .bot-message ul {
     padding-left: 20px;
+    margin-top: 5px;
 }
 
 .bot-message li {
@@ -190,16 +185,16 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Development Notice - Smaller Size */
+/* Development Notice - Smaller */
 .notice {
     text-align: center;
-    background: rgba(255, 215, 0, 0.2); /* Light Gold Background */
+    background: rgba(255, 215, 0, 0.15);
     color: var(--secondary-color);
-    padding: 10px 15px;
-    border-radius: 8px;
-    max-width: 500px;
-    margin: 20px auto;
-    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    max-width: 450px;
+    margin: 15px auto;
+    font-size: 0.85rem;
     font-weight: 500;
 }
 
@@ -218,15 +213,15 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .chat-container {
-        width: 80%;
-        height: 75vh;
+        width: 85%;
+        height: 80vh;
     }
 }
 
 @media (max-width: 768px) {
     .chat-container {
-        width: 90%;
-        height: 70vh;
+        width: 95%;
+        height: 75vh;
     }
 
     input {
@@ -238,7 +233,8 @@ button:hover {
     }
 
     .notice {
-        font-size: 0.85rem;
-        padding: 8px 12px;
+        font-size: 0.8rem;
+        padding: 6px 10px;
+        max-width: 400px;
     }
 }
