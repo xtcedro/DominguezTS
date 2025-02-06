@@ -43,7 +43,7 @@ header {
 /* Chat Container */
 .chat-container {
     width: 45%;
-    height: 100vh;
+    height: 70vh;
     margin: 10px auto;
     background: var(--chat-bg);
     color: var(--text-light);
