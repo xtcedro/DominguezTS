@@ -9,8 +9,8 @@
     --text-dark: #222222;
     --background-dark: #0F172A; /* Dark theme background */
     --chat-bg: #1E293B; /* Chat container background */
-    --user-bubble: #2563EB; /* User message */
-    --bot-bubble: #374151; /* Bot message */
+    --user-bubble: #2563EB; /* Gemini-style user message */
+    --bot-bubble: #374151; /* Gemini-style bot message */
     --input-bg: #1F2937;
     --border-color: #4B5563;
 }
@@ -29,33 +29,22 @@ body {
     height: 100vh;
 }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(to right, #001F3F, #002855);
+/* Header */
+header {
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
     color: var(--secondary-color);
-    text-align: center;
-    padding: 50px 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    width: 100%;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
     text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.7);
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    opacity: 0.9;
+    width: 100%;
+    text-align: center;
 }
 
 /* Chat Container */
 .chat-container {
     width: 45%;
     height: 70vh;
-    margin: 20px auto;
+    margin: 10px auto;
     background: var(--chat-bg);
     color: var(--text-light);
     padding: 15px;
@@ -91,22 +80,20 @@ body {
 
 /* User Message */
 .user-message {
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    background: var(--user-bubble);
+    color: white;
     align-self: flex-end;
     float: right;
     clear: both;
-    box-shadow: 2px 2px 10px rgba(255, 215, 0, 0.4);
 }
 
 /* Bot Message */
 .bot-message {
-    background: var(--primary-color);
+    background: var(--bot-bubble);
     color: var(--text-light);
     align-self: flex-start;
     float: left;
     clear: both;
-    box-shadow: 2px 2px 10px var(--border-color);
 }
 
 /* Input Section */
@@ -168,83 +155,17 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) { /* Tablets */
-    .hero {
-        padding: 40px 15px;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 2rem; /* Reduce title size */
-    }
-
-    .hero p {
-        font-size: 1rem;
-        max-width: 90%;
-    }
-
+@media (max-width: 768px) {
     .chat-container {
-        width: 80%;
-        height: 65vh;
-    }
-
-    .input-container {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    input {
-        width: 100%;
-        font-size: 1rem;
-    }
-
-    button {
-        width: 100%;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 768px) { /* Mobile */
-    .hero {
-        padding: 30px 10px;
-    }
-
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero p {
-        font-size: 0.95rem;
-    }
-
-    .chat-container {
-        width: 95%;
+        width: 90%;
         height: 75vh;
     }
 
-    .chat-container h2 {
-        font-size: 1.5rem;
-    }
-
-    .input-container {
-        flex-direction: column;
-        padding: 8px;
-    }
-
     input {
         font-size: 1rem;
-        padding: 10px;
     }
 
     button {
         font-size: 1rem;
-        padding: 12px;
-    }
-
-    /* Footer */
-    footer {
-        padding: 15px;
-        font-size: 0.9rem;
-        text-align: center;
     }
 }
