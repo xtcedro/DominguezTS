@@ -380,21 +380,7 @@ button:hover {
     }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .chat-container {
-        width: 90%;
-        height: 75vh;
-    }
 
-    input {
-        font-size: 1rem;
-    }
-
-    button {
-        font-size: 1rem;
-    }
-}
 
 /* Footer Styling */
 footer {
