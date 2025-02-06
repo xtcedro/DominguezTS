@@ -493,7 +493,7 @@ button:hover {
 /* Chat Container - Increase Size */
 .chat-container {
     width: 75%; /* Increase width */
-    height: 85vh; /* Increase height */
+    height: 100vh; /* Increase height */
     margin: 20px auto;
     background: var(--chat-bg);
     color: var(--text-light);
