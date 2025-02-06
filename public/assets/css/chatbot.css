@@ -554,7 +554,7 @@ body {
 /* Chat Container - Push Down */
 .chat-container {
     width: 75%;
-    height: 85vh;
+    height: 100vh;
     margin-top: 20px; /* Adjust this value for more spacing */
     background: var(--chat-bg);
     color: var(--text-light);
