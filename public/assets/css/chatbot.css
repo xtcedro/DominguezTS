@@ -257,7 +257,7 @@ body {
 /* Chat Container - Larger */
 .chat-container {
     width: 65%;
-    height: 85vh;
+    height: 100vh;
     margin: 15px auto;
     background: var(--chat-bg);
     color: var(--text-light);
