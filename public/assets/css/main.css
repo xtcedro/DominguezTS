@@ -35,7 +35,7 @@ body {
 /* Hero Section (Dark Blue Gradient & Glow Effect) */
 .hero {
     position: relative;
-    height: 100vh; 
+    height: 100vh;
     padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
