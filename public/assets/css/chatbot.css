@@ -555,7 +555,7 @@ body {
 .chat-container {
     width: 75%;
     height: 100vh;
-    margin-top: 20px; /* Adjust this value for more spacing */
+    margin-top: 50px; /* Adjust this value for more spacing */
     background: var(--chat-bg);
     color: var(--text-light);
     padding: 20px;
