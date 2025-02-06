@@ -114,12 +114,38 @@ body {
     opacity: 0.9;
 }
 
+/* Code Block Styling */
+.bot-message pre {
+    background: #111827; /* Dark background for contrast */
+    color: #FFD700; /* Gold text for readability */
+    padding: 12px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    overflow-x: auto;
+    white-space: pre-wrap; /* Allows wrapping */
+    word-wrap: break-word; /* Prevents overflow */
+    border-left: 4px solid var(--secondary-color);
+    margin-top: 8px;
+}
+
+/* Inline Code Styling */
 .bot-message code {
     background: #222;
-    color: var(--secondary-color);
+    color: #FFD700;
     padding: 4px 6px;
     border-radius: 4px;
-    font-family: monospace;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+}
+
+/* Highlight Code Header */
+.bot-message pre::before {
+    content: "📜 Code:";
+    display: block;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 6px;
 }
 
 .bot-message blockquote {
