@@ -55,6 +55,81 @@ header {
     overflow: hidden;
 }
 
+
+/* Hero Section (Dark Blue Gradient & Glow Effect) */
+.hero {
+    position: relative;
+    height: 100vh; 
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #001F3F, #003366); /* Dark Blue Gradient */
+    color: var(--text-light);
+    box-shadow: inset 0px 0px 50px rgba(255, 215, 0, 0.2);
+}
+
+/* Hero Heading */
+.hero h1 {
+    font-size: 3rem; /* Bigger Text */
+    font-weight: 700;
+    color: var(--secondary-color);
+    padding: 12px 24px;
+    border-radius: 10px;
+    display: inline-block;
+    text-shadow: 0px 0px 20px rgba(255, 215, 0, 0.8); /* Intense Glow */
+    opacity: 0;
+    animation: fadeInGlow 1.2s ease-out forwards 0.5s;
+}
+
+/* Hero Paragraph */
+.hero p {
+    font-size: 1.4rem; /* Increased for readability */
+    max-width: 700px;
+    margin: 12px auto;
+    padding: 10px 16px;
+    border-radius: 10px;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.6); /* Subtle contrast */
+    color: #fff;
+    text-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5);
+    opacity: 0;
+    animation: fadeInGlow 1.2s ease-out forwards 0.7s;
+}
+
+/* Hero Glow Animation */
+@keyframes fadeInGlow {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        text-shadow: 0px 0px 5px rgba(255, 215, 0, 0.2);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        text-shadow: 0px 0px 25px rgba(255, 215, 0, 1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: 90vh;
+        padding: 2.5rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+}
+
 /* Chat Box */
 #chat-box {
     flex-grow: 1;
